@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HOZ Pasta Pamulang - Authentic Italian Pasta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9d806",
+                        "accent-red": "#b91c1c",
+                        "accent-olive": "#65a30d",
+                        "background-light": "#fdfcf7",
+                        "background-dark": "#23200f",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Sticky Nav -->
+<nav class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-slate-100">HOZ Pasta</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-accent-red transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-medium hover:text-accent-red transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-accent-red transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-medium hover:text-accent-red transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-slate-900 px-4 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+                        WhatsApp Us
+                    </button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<div class="space-y-4">
+<h1 class="text-5xl lg:text-7xl font-black text-slate-900 dark:text-slate-100 leading-[1.1] tracking-tight">
+                            HOZ Pasta <span class="text-accent-red">Pamulang</span>
+</h1>
+<p class="text-xl text-slate-600 dark:text-slate-400 font-medium">Authentic Pasta, Cozy Vibes</p>
+</div>
+<!-- Ratings -->
+<div class="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 w-fit">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="text-2xl font-bold">4.7</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined">star_half</span>
+</div>
+</div>
+<p class="text-xs text-slate-500 font-medium">(752 Google Reviews)</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary hover:bg-primary/90 text-slate-900 rounded-xl font-bold transition-all" href="#menu">Explore Menu</a>
+<a class="px-8 py-4 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-xl font-bold transition-all" href="#contact">Get Directions</a>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-700 group">
+<img alt="Delicious Pasta Dish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of steaming italian pasta with herbs and cheese" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyFtL-IAk97fOzoBt3UntznTvybbxeA60dKJCBGTfe4ZfTMF6Kys0JeuJAO0YxEkpslRNoMVkXTFzRM1yJQV7NttRm31M3wRM2nG6r6L5DIdXe2O5nzBIbCH5kLpv0akrA4qIHPKQpIqVwJN3rvwf_s4v5x13M_q_rCR4OliXRIVyd3DafOtarHXLd1XIqkzlDmmVA0CkA5-7xMOJ36KJpOSr_EtOnnvZtT4k_-EJ6NijcmvstxdIV4jO3n_y4PjKvXqLJi33Sr88"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-accent-olive text-white p-6 rounded-2xl hidden md:block">
+<p class="font-bold text-lg">Freshly Made Daily</p>
+<p class="text-sm opacity-90">Artisanal Italian Flavors</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center space-y-8">
+<span class="text-accent-red font-bold tracking-widest uppercase text-sm">Our Story</span>
+<h2 class="text-4xl font-black text-slate-900 dark:text-slate-100">Fresh Ingredients Meets Casual Dining</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                    In the heart of Pamulang, we bring the authentic soul of Italian pasta to your neighborhood. Our journey started with a simple belief: great food doesn't need to be formal. We use only the finest, freshest ingredients to craft sauces that dance on your palate, served in a warm, cozy atmosphere that feels like home.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
+<div class="p-6 bg-white dark:bg-slate-800 rounded-2xl text-left border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-accent-olive text-4xl mb-4">eco</span>
+<h3 class="font-bold text-xl mb-2">Artisan Quality</h3>
+<p class="text-slate-500 dark:text-slate-400">Hand-selected herbs and locally sourced produce for every single plate.</p>
+</div>
+<div class="p-6 bg-white dark:bg-slate-800 rounded-2xl text-left border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-accent-red text-4xl mb-4">family_restroom</span>
+<h3 class="font-bold text-xl mb-2">Community Hub</h3>
+<p class="text-slate-500 dark:text-slate-400">A space where friends and family gather over the universal language of pasta.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="py-24" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<h2 class="text-4xl font-black text-slate-900 dark:text-slate-100">Menu Highlights</h2>
+<p class="text-slate-500 dark:text-slate-400">Our chef's most loved creations</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-700">
+<img alt="Creamy Carbonara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Creamy carbonara pasta with pancetta and egg yolk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8slWjrofhumCYqMnNDklbPtOL_nfAz3-t98M1O4Mu9IyJkO6IYiMjKREvZQ1z60rQQMgweK1V12NIGLwokNruQCLlx1ZSY_TwW1Ws7Czk3fojZKD2_qdNiKT2jDuxvF-oJrkf4VSiv9M78WISkig0cj6eqWXwXlsOcUZGJ7jNoSC3tqJTa5xEv5fChUSzH5oLE0s31oDqd53aTE5V7CT9A6ETeV1MfVcqVKtIU-gTOp8Glfc1IBWbl2h3M_77cdhqdBuuSJISEnY"/>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-xl">Creamy Carbonara</h3>
+<span class="text-accent-red font-bold">Rp 65k</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Silky egg sauce, crispy beef bacon, and aged parmesan cheese.</p>
+</div>
+<!-- Item 2 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-700">
+<img alt="Spicy Aglio Olio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Spaghetti aglio e olio with garlic, chili flakes and parsley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtNIJqjkRFAxdKxCm516NJWrECMBmza5bxPQLPB5AA9ju9FtCoFU6VeypAWD_lNaBK4kizF4z1GhByWlPKHnu04apHKEKK4GmmJNq5O-NZC3K9wQJ9ZpBCiAtntBuLycjA2Igb5Gcx-rxECvtdoAq0qNifEifuBgAropTieAlKbHuZ1GwDA52I7GdaN3dGf_T4rzvxTwmIhmbIeQIlDKVCRN0hNV5aIE3eCla7Um44QZc62Kl-2hdh0YRhuDQrm9W3eodO7HBhG_8"/>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-xl">Spicy Aglio Olio</h3>
+<span class="text-accent-red font-bold">Rp 55k</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Infused garlic oil, fresh chilies, and sautéed prawns.</p>
+</div>
+<!-- Item 3 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-700">
+<img alt="Fettuccine Alfredo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Rich fettuccine alfredo pasta with creamy white sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGn8QkgKpfmPJqlYPnkGe8mMGKkAX8NdAFLe3D_iU6ziBfd78o9qXQb90vsjzfCXwMAn3VgMbaXNrIZPDOpYl1sYFSNXmSCh19KKOZIyq1imPxWfzlBgrO897vhBRFzNavOa4LDyUXBWODEo8Ca9OUOU4ykbn3C55YMRSCC4Y_xA-a0paLdp--gnyaFDXglFJsbzYkp0ykEifJf1owehnm7PV-FFhtpcSQx0nM9Zhw06LsbRstlvjtyE5u1d46XjjhqrbwQvExH2s"/>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-xl">Fettuccine Alfredo</h3>
+<span class="text-accent-red font-bold">Rp 75k</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Classic butter and cream sauce with grilled chicken breast.</p>
+</div>
+<!-- Item 4 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 bg-slate-200 dark:bg-slate-700">
+<img alt="Signature Iced Tea" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Refreshing iced tea with mint and lemon garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAmDqyZNUM5IrlhtQpUq3nsVvp-BlEX6bGmT2_k0nefcUSI66yrVNQPunDRAbPXxE91gjSyQg76O3qAzYMTw8IyszA-6ImPMgSaUePKHo9v1xNfC2udtLvxthIjWO9jLZa9QG06vbGQwEJeAjWdLudxAhQSkITC_puKjk6lWc3pvu818XGsxcCh_1mAFtDDX32W7ZT5NcEfNNbzVDuYK7B92R14yfVe41t5oLw9b2x8-isAxq5MFhpQ1iq3GoZwdfBWcR9VHGK5Lc"/>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-xl">Signature Iced Tea</h3>
+<span class="text-accent-red font-bold">Rp 25k</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">House-blended tea with a hint of lemon and fresh mint leaves.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-24 bg-primary/10" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-black text-center mb-16">What Our Guests Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 relative">
+<div class="text-primary flex mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Best Carbonara in Pamulang! The place is very cozy and the staff are incredibly friendly. Highly recommended for a casual date."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<p class="font-bold">Andi Pratama</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 relative">
+<div class="text-primary flex mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Authentic flavors at a very reasonable price. The Spicy Aglio Olio is a must-try for spice lovers!"</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<p class="font-bold">Siti Nurhaliza</p>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 relative">
+<div class="text-primary flex mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Love the vibe here. Perfect for hanging out with friends while enjoying great food. The Fettuccine Alfredo is so rich and creamy."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<p class="font-bold">Robby Wijaya</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us Section -->
+<section class="py-24" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="space-y-10">
+<div class="space-y-4">
+<h2 class="text-4xl font-black">Visit Us</h2>
+<p class="text-slate-500 dark:text-slate-400">Come and enjoy the best pasta in town.</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-accent-red">location_on</span>
+<div>
+<h4 class="font-bold">Address</h4>
+<p class="text-slate-500 dark:text-slate-400">Pamulang Permai 2, Jl. Benda Raya No.B5 / 14,<br/>South Tangerang, Indonesia</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-accent-red">schedule</span>
+<div>
+<h4 class="font-bold">Opening Hours</h4>
+<p class="text-slate-500 dark:text-slate-400">Open Daily: 11:00 AM – 11:00 PM</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-accent-red">call</span>
+<div>
+<h4 class="font-bold">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400">+62 812-3456-7890</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-accent-red text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-accent-red/90 transition-all">
+<span class="material-symbols-outlined">directions</span>
+                            Get Directions
+                        </button>
+<button class="flex-1 bg-accent-olive text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-accent-olive/90 transition-all">
+<span class="material-symbols-outlined">chat</span>
+                            Chat on WhatsApp
+                        </button>
+</div>
+</div>
+<div class="rounded-3xl overflow-hidden h-[450px] bg-slate-200 dark:bg-slate-700 relative border-4 border-white dark:border-slate-800 shadow-xl">
+<div class="absolute inset-0 bg-slate-100" data-location="Pamulang, South Tangerang" style="">
+<img alt="Map location" class="w-full h-full object-cover opacity-50 grayscale" data-alt="Map representation of Pamulang city area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3i_XsagPnenRzW-NOKXgiAwgYwTFaMs4ruhFRH8hfSzAjsmcLFjJRYDb198dDxXOxNDFxbvWuSG2mC-eqkq9zu5rPZwebg1PuBfyROsxikXT_NbSpPBYkjx93cNX6NNuA6rAhJ5_Xs6qqto_LFrhh9wwSB8q2Kt2DcnE72tqfKbCWg3VjjkthI_C73CkAgEKrKtUwHkMj0zc9tn3FlLLaGHWT0ji5gMZREtRcBepQl6N0Bi18ZMJ0IkCvagmkNVGsar-p40v07oY"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<span class="material-symbols-outlined text-accent-red text-6xl animate-bounce">location_on</span>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-2 bg-black/20 blur-sm rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<span class="text-2xl font-black tracking-tight">HOZ Pasta</span>
+</div>
+<p class="max-w-xs">Crafting authentic Italian experiences in the heart of your neighborhood since 2021.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Quick Links</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#menu">Menu Highlights</a></li>
+<li><a class="hover:text-white transition-colors" href="#about">Our Story</a></li>
+<li><a class="hover:text-white transition-colors" href="#reviews">Customer Reviews</a></li>
+<li><a class="hover:text-white transition-colors" href="#contact">Location</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Legal</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 text-center text-sm">
+<p>© 2024 HOZ Pasta Pamulang. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
