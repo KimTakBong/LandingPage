@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Satu Meja | Sharing moments, one table at a time</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#17cf82",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#11211a",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky-nav bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">restaurant_menu</span>
+</div>
+<span class="text-2xl font-black tracking-tight text-slate-900 dark:text-slate-100">Satu Meja</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#experience">Experience</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="bg-primary text-slate-900 px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all" href="https://api.whatsapp.com/send?phone=6281234569884" target="_blank">Reserve Now</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background-light dark:to-background-dark z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Warm and cozy modern restaurant interior with wooden tables" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_CWF05etkifqRKTuTOghB6MOG0-A7Qp0ig6K-Nm3RiYx82rNnfqs0cbAtO735uRs_OzEE1g1GogdbXivim9ktSYE6qgOSMlwuDzOY1Ls5xPEX3UVIHjjlZsRZwhtJISqiwbSoXAmv6uWejRpjmEdBB77RpVA_e5yOtHZHRHAl9Q9k5YCmzu06P5OycibEYhWk7LJhYGwf7xCneq2RuFQc9IvHRoPWIZKb_ZLd0NpFqZyQlkuGAYeVg6Qr3b_iklgijATwSEBBhq0')"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<h1 class="text-white text-6xl md:text-8xl font-black mb-4 tracking-tighter">Satu Meja</h1>
+<p class="text-white/90 text-lg md:text-2xl font-medium mb-2">Sharing moments, one table at a time.</p>
+<div class="flex items-center justify-center gap-2 mb-8 text-yellow-400">
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="text-white font-bold">4.9</span>
+<span class="text-white/70 text-sm">(4,658 reviews)</span>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="bg-primary text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform" href="#menu">View Menu</a>
+<a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all" href="https://api.whatsapp.com/send?phone=6281234569884">Reserve / WhatsApp</a>
+<a class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition-all" href="#contact">Get Directions</a>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 px-4 bg-white dark:bg-background-dark/50" id="about">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-6">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Our Story</span>
+<h2 class="text-4xl md:text-5xl font-black leading-tight">A homey dining experience tailored for you.</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Satu Meja is more than just a restaurant; it's a sanctuary where Indonesian-Western fusion meets modern comfort. Whether you're looking for a cozy hangout spot, a productive meeting space, or a warm family meal, we've designed every corner to make you feel right at home.
+                </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">groups</span>
+<div>
+<h4 class="font-bold">Community</h4>
+<p class="text-sm text-slate-500">The perfect hub for all gatherings.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">skillet</span>
+<div>
+<h4 class="font-bold">Fusion</h4>
+<p class="text-sm text-slate-500">Best of both culinary worlds.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden bg-primary/10">
+<div class="w-full h-full bg-cover bg-center" data-alt="Chef plating a fusion Indonesian dish beautifully" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSah_NwseqLNleYOR5UfrKy97HorZxW6KkTVFFvuUgrB3gbTk8Mt7-_iNuus99nZkMSP-jNI4d8yCcr7CQvb6gvdqw30A5ME4q2cl3TEPjg72Lko9aagogGhA5gQpCHAieBNvfAiLDRgochBZwyOtWKZ_euhk8O7Hc9-Ykw23WghM7E5UyGtXJL4h8ci9TlzwX5q2BxT0E2M66zWHZSvgJEnC18zh2COQWJO1Rcug0mMx0UZDF_TK1wGx0-eaQaPCqlecy2bjqqvs')"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary p-8 rounded-2xl hidden lg:block">
+<p class="text-slate-900 font-black text-2xl">Established<br/>2021</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-20 bg-background-light dark:bg-background-dark" id="experience">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">The Satu Meja Experience</h2>
+<p class="text-slate-500 max-w-2xl mx-auto">Thoughtfully crafted spaces and services to elevate your visit.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-white">chair</span>
+</div>
+<h3 class="font-bold text-xl mb-2">Cozy Seating</h3>
+<p class="text-sm text-slate-500">Plush seating and warm lighting for ultimate relaxation.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-white">laptop_mac</span>
+</div>
+<h3 class="font-bold text-xl mb-2">WFC-Friendly</h3>
+<p class="text-sm text-slate-500">High-speed Wi-Fi and power outlets at every table.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-white">family_restroom</span>
+</div>
+<h3 class="font-bold text-xl mb-2">Family Space</h3>
+<p class="text-sm text-slate-500">Spacious layouts perfect for large family gatherings.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-white">sentiment_very_satisfied</span>
+</div>
+<h3 class="font-bold text-xl mb-2">Friendly Service</h3>
+<p class="text-sm text-slate-500">Our staff is dedicated to making your visit memorable.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="py-24 px-4 bg-white dark:bg-background-dark/30" id="menu">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Delicious Selection</span>
+<h2 class="text-4xl font-black mt-2">Our Menu Highlights</h2>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-2 w-full md:w-auto no-scrollbar">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-slate-900 font-bold">Indonesian</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 font-bold">Western</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 font-bold">Desserts</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 font-bold">Drinks</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Ayam Bakar Taliwang with spicy red chili sauce" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADyM2VGELmNPkIiz1T86QFe7R_mO6NKrxdiOzVjji4jIChKCzBKmst8wQy5acZCcuXkSj3wDE1d9_SQfrYvLre3Vfpe7ODGQ08RXxD50-E9_-V4buI0bMRl8VQ7ji3cYOwvaP6S2ifuxqEwvKACcfAjlwbepNCqcKko5aGqpeOtBoBj2zB104SqsnwRcS-g1dHzfOXYkUNX8jc6ON3YCrbkeGxBJdjIS8efe4XqzuBvP-GfzpEuspIIK6Nmhpm-4x6QryrxX36ORY')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Ayam Bakar Taliwang</h3>
+<span class="text-primary font-bold">Rp 65k</span>
+</div>
+<p class="text-slate-500 text-sm">Spicy authentic grilled chicken from Lombok, served with kangkung.</p>
+</div>
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Nasi Goreng Cabe Hijau with egg and crackers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOeBxynjPRjCFEoJHrt6MIzJI3EdAXnA8sQSpOFRU-n8A1OzHVqgq4pAQxg_1OEtYotm41NNfG5w7dkK0JEsPVGThC2r_mzztC-pFzz-TatSSJrnRCCE_tOtubik73W2xdS7lkvZhxojhtjD256uw1ewEH0OPQsqrwvPTr6bvsL8ZN1VP4VGn2WTsYDmQ3Tc1iAX0W4ReKcKea4P2L8QNA01Ey12biU49gpapaDl-rpwlvdUz4ByNCYikDPvzebFpWV5Kguc6hyd8')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Nasi Goreng Cabe Hijau</h3>
+<span class="text-primary font-bold">Rp 55k</span>
+</div>
+<p class="text-slate-500 text-sm">Green chili fried rice with aromatic spices and traditional garnishes.</p>
+</div>
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Juicy Chicken Steak with creamy mushroom sauce" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVxDdxy_LrHxVgqnLNOCqSrlclWY6tLRLAuJywlnZvFJxQMJXHg7n6kRMk6zv6Whu0pBVEam21HpoNz3JmMBPR8jPZ9HmhytSqk5zojT9LxfVkzkdIZ1pKdH--T6Yvx0uzkYHoP7YS9o7rfDf6vD9bBfobh7MkD9Kegax5yX2f3vGVmdFY_4b8bv3dMrbhmzTqVvw4bYtRUrni6SyLLs8t0X--A83nGkRIBjwEXWZJCQlHrBAHlli81gVDfiOcfO4iFmu-1dM5Oo4')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Chicken Steak</h3>
+<span class="text-primary font-bold">Rp 75k</span>
+</div>
+<p class="text-slate-500 text-sm">Juicy grilled chicken breast topped with savory mushroom sauce.</p>
+</div>
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Creamy Rigatoni Pasta with authentic Italian herbs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_qM6jkQhZYgrKRu57Abp1d5jFG-Wa799iNFAQHfqlTQAJOkV8gdXQEAxn2x4OM7FvaSu2ZHFEZGbRfhuh3sV5zEPQWI1P477hrt2dMTFkrazcbmtqQffRkli9CAUNtiLkgGRmLcOumRzYMbr2slqRfOuoHifmgNmQV_5H6WxTdrlSU1m3EA0jeeQMnMW6vQa850sALno3DjLcdNv85QFUPlVgBRtyOplmFSizmnQJPY2QZZo7JuSsK2J4z9ItANgckoY9ynHOavA')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Rigatoni Pasta</h3>
+<span class="text-primary font-bold">Rp 68k</span>
+</div>
+<p class="text-slate-500 text-sm">Tube-shaped pasta tossed in a rich, creamy sauce with Italian herbs.</p>
+</div>
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Cold Chocolate Toast with Gelato" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7CQBtD4aUCHyfmSoZ9DN71hcsNH4GOoRnTrzBCwjACpz3W8lYGjQbR5uaKpTk0MJj0R6oLBun3rlrVGRIjoNUwrDagNVHY55ARSbuWfvwAzs0lWqti34bWK_sr8P_fHM0ojeFo0Ce5QcThgWQlPk9qNVFOqutMlwK4bBjoiuWBGCld-3U_iHo-6bmjF_gBv8utLGi3D-cYPscxqMpVQT_GKP5z0L6Ln6eu4zWqtnx5E-CfO-tx15D8S8Pybi97GrBeQoq1_DErPw')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Chocolate Toast &amp; Gelato</h3>
+<span class="text-primary font-bold">Rp 45k</span>
+</div>
+<p class="text-slate-500 text-sm">Warm thick-cut toast drizzled with chocolate and topped with premium gelato.</p>
+</div>
+<!-- Dish Item -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Signature specialty coffee latte" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWpe_rTqCDiTGvGjS6-eKf5eamV_kfBvdiS6su7jK1mqBZErgBTisBxcwnoJiAm8eBvQBWEZll68E0l1-0mTavih0Qqq9-GtDUXJ3mbey8UMryI9MidazBAPo9U8eIiZF9WJB8SnbyT7trjCDot4TFGkVQ9uM4LH1fvWX4WIMPAqpB54JrIv-a8r15jN2xPYFN_Kgv3O-z1L2jG312foaiUuX-CzgVszhLA8Bt95E0nxUpdykKR0hJEq4QcMgCunxLenr_oVlQgI8')"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Signature Latte</h3>
+<span class="text-primary font-bold">Rp 38k</span>
+</div>
+<p class="text-slate-500 text-sm">Locally sourced beans, perfectly roasted and brewed with creamy milk.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark/80">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid lg:grid-cols-3 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-black mb-6">Loved by our Community</h2>
+<div class="flex items-center gap-4 mb-2">
+<span class="text-6xl font-black text-primary">4.9</span>
+<div>
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+</div>
+<p class="text-slate-500 text-sm font-medium">Average Rating</p>
+</div>
+</div>
+<p class="text-slate-500 mt-4">Based on over 4,000+ happy visitors across Google and social media.</p>
+</div>
+<div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm italic">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+</div>
+<p class="text-lg mb-6">"The food was great and staff were super friendly. Definitely our new favorite weekend spot!"</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20"></div>
+<span class="font-bold not-italic">— Sarah J.</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm italic">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+<span class="material-symbols-outlined text-sm fill-current">star</span>
+</div>
+<p class="text-lg mb-6">"Cozy vibes and perfect for catching up with friends or finishing some remote work."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20"></div>
+<span class="font-bold not-italic">— David L.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit & Contact Section -->
+<section class="py-24 px-4 bg-white dark:bg-background-dark" id="contact">
+<div class="max-w-7xl mx-auto overflow-hidden rounded-3xl border border-primary/10 shadow-xl bg-background-light dark:bg-slate-900">
+<div class="grid lg:grid-cols-2">
+<div class="p-12 lg:p-20">
+<h2 class="text-4xl font-black mb-8">Come Visit Us</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<h4 class="font-bold text-lg">Address</h4>
+<p class="text-slate-500">Jl. Tanjung Duren Utara 4 No.464 11,<br/>West Jakarta, Indonesia</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<div>
+<h4 class="font-bold text-lg">Opening Hours</h4>
+<p class="text-slate-500">Open Daily: 10:00 AM — 10:00 PM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">phone_iphone</span>
+<div>
+<h4 class="font-bold text-lg">Contact &amp; Social</h4>
+<div class="flex gap-4 mt-2">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-1 font-semibold" href="https://api.whatsapp.com/send?phone=6281234569884">
+                                        WhatsApp
+                                    </a>
+<span class="text-slate-300">|</span>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary flex items-center gap-1 font-semibold" href="#">
+                                        Instagram
+                                    </a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex gap-4">
+<a class="bg-primary text-slate-900 px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity" href="https://api.whatsapp.com/send?phone=6281234569884">
+<span class="material-symbols-outlined">chat_bubble</span> Book a Table
+                        </a>
+</div>
+</div>
+<div class="relative h-[400px] lg:h-auto bg-slate-200">
+<div class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Stylized map showing West Jakarta area" data-location="West Jakarta" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDKndDbJU-rGVzkYADjS8C5OCZcHddlba8BVcxFRYiFsSMIq7zLterzJBr4xEBhuwLjN07Yl8BZQk63UqL6OMAuBaX3_EWANTQ8iFwag2di-oO99wUXSt8n603MBB1umtUjcSIYRp89BTp-WmmPQWqBNxf9YKciMLnXXL-euU17mXNc3HcBjavsiSyLLabNVdWGtmnsMPMzUlJFt2pztX_-FObmROauOPFQm8pMQO0XMk4DZd_KsOaw4-LDLqAlbrSEBho0WgHm2E')"></div>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16 px-4">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+<span class="text-2xl font-black">Satu Meja</span>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Modern casual dining where every meal is an opportunity to share special moments. Proudly serving fusion delights since 2021.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Navigation</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary" href="#about">About Us</a></li>
+<li><a class="hover:text-primary" href="#menu">Our Menu</a></li>
+<li><a class="hover:text-primary" href="#experience">Experience</a></li>
+<li><a class="hover:text-primary" href="#reviews">Reviews</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Support</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+<li><a class="hover:text-primary" href="#">Franchise</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Follow Us</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-xs">© 2024 Satu Meja Restaurant Group. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-slate-500 text-xs flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">location_on</span> West Jakarta, Indonesia</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-primary text-slate-900 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform group" href="https://api.whatsapp.com/send?phone=6281234569884" target="_blank">
+<span class="material-symbols-outlined text-3xl font-bold">chat</span>
+<div class="absolute right-full mr-4 bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+            Reserve via WhatsApp
+        </div>
+</a>
+</body></html>
