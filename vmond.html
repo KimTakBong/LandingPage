@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2930d",
+                        "accent": "#4a6741",
+                        "charcoal": "#2d2d2d",
+                        "cream": "#fdfaf5",
+                        "off-white": "#f7f2ea",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(45, 45, 45, 0.4), rgba(45, 45, 45, 0.7));
+        }
+    </style></head>
+<body class="bg-cream text-charcoal font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-cream/90 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-white">VMOND</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#facilities">Facilities</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#visit">Visit</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:brightness-110 transition-all">
+                        Order Now
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Cozy dimly lit café interior at night with warm wood tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUOz8FNnRQxoy_RYfTRzpB7R7k-9LRmKrTdTeaElYhyR4ilg_kValVnDl1u_WL_Dhohpt_vGRGvstqfumn_uvtffYME2W_s3BdzWiNmX-YvpEcrc9RyHLieEHoLoyY9mgfqrBTve7lzG_hPMQVcGEqlQtIDRpEChdiwMVlXMiTcyuMteOjezpHrGf9cxB7Eh0aFLjhotyvh1K2DJKU1m4ihcjXW2vmAG2QROXdaAIusLoZXGZV0N7SKNVHC0ld1OAZwxvle2DeFsM"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 mb-6">
+<span class="text-yellow-400">⭐</span>
+<span class="text-white text-sm font-medium">4.5 (554 reviews)</span>
+</div>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter mb-6">
+                Vmond Coffee and Eatery Space
+            </h1>
+<p class="text-slate-200 text-lg md:text-xl font-normal max-w-2xl mx-auto mb-10">
+                Where cozy moments meet culinary delights. Experience the perfect blend of artisanal brews and a warm atmosphere.
+            </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-base font-bold flex items-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">menu_book</span> View Menu
+                </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl text-base font-bold flex items-center gap-2 hover:bg-white/20 transition-all">
+<span class="material-symbols-outlined">near_me</span> Get Directions
+                </button>
+<button class="bg-green-600 text-white px-8 py-4 rounded-xl text-base font-bold flex items-center gap-2 hover:bg-green-700 transition-all">
+<span class="material-symbols-outlined">chat</span> Contact WhatsApp
+                </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-cream" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Barista carefully pouring latte art into a ceramic cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm9TUSOvVNCC8erllfaXloH_Mu6WA3r9-5ZfH167f5_JIiPVd8Rk6qeZfonI52GNFIEPULkc-ZvQBg5ZBflTzNVH6LWXX70xo_qHd93Ou0bCtg90PuU-qTrZkYwrhkZociRpFVcRgwE7lIgmRm6fyn1UGG7EO9piBbvyo2OlT9pL6wdgINvTRH9aD59hRaYFxIgwwePPzjnSjEcYOV7JAvk9RvfbjArImCY57O33U_xY0jRlExtHm7-EGXbT62zDc7REvV7OfBHpY"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl shadow-xl hidden md:block">
+<p class="text-charcoal/70 text-lg leading-relaxed">Est. 2021</p>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest">Our Story</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold leading-tight text-charcoal">A Lifestyle Destination For Every Soul</h3>
+<p class="text-charcoal/70 text-lg leading-relaxed">
+                        Vmond is more than just a café; it's a lifestyle destination where cozy moments meet culinary excellence. Designed as the perfect gathering spot, we focus on relaxation, quality brews, and a warm atmosphere for every visitor.
+                    </p>
+<p class="text-charcoal/70 text-lg leading-relaxed">
+                        Whether you're looking for a quiet corner to work, a space to catch up with old friends, or simply a sanctuary to enjoy the finest coffee in South Tangerang, Vmond welcomes you home.
+                    </p>
+<div class="pt-4 flex gap-8">
+<div>
+<p class="text-charcoal/70 text-lg leading-relaxed">15k+</p>
+<p class="text-charcoal/70 text-lg leading-relaxed">Happy Guests</p>
+</div>
+<div>
+<p class="text-charcoal/70 text-lg leading-relaxed">50+</p>
+<p class="text-charcoal/70 text-lg leading-relaxed">Menu Items</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="py-24 bg-off-white" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Our Specialties</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold leading-tight text-charcoal">Menu Highlights</h3>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white border border-primary/5 rounded-2xl overflow-hidden hover:shadow-xl transition-all group shadow-sm">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Signature iced coffee with caramel swirls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWJ5VT5RUAIKIJVG0tFBvb-XznVHqCSXHp4U7D0iZ6pK42-RgFxDdyUJcF47ozS3aQPqd96jkTAhI8NVnKDqztv7wQM9ypAy0GaNvESPUsH78EzRuXDatKwXT2Pl7-VukZMTR6WeB7S3IGJnHqNUM_pgF-SiJ6j6mxGxtp3KJXBIaecI2xK5tlyoyQE2BqTyMecxHurxdzKT3JBSpjFG98SWmLUSv4VJfuZSUraQmHEw345D8GhPihB8ClOl50TyS9iJHfM8OToDk"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold dark:text-white">Signature Coffee</h4>
+<span class="text-primary font-bold">Rp 35.000</span>
+</div>
+<p class="text-charcoal/70 text-lg leading-relaxed">Our secret house-blend bean, slow-dripped and perfectly balanced with creamy texture.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Add to Cart <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-primary/5 rounded-2xl overflow-hidden hover:shadow-xl transition-all group shadow-sm">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Glass of handcrafted hibiscus iced tea with fresh fruit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCybxUy48RG6ZpIsTOEfJ4JYJrK1AtBTOPtS8wCpnw84GoSSEpmIPnLvobRXLBtLcCQOTKl_J7kVfDfXxVWoGTLMMISAFWRs8TsYyEee79IJMLoqV_mM8t7wp1p40tsY2IGOMqdNYDYjxQYD2x7977VoLKshNTPAKh0nQK__SCO3GPUZWx3ql-Fhq7a3vCVxR4UrcS8V328BwqMBrvqvXV-HGxWT9j_8FZgS6WH81zuMAFyefGadTgxuj3JqDwVY6Ug43I12NJq5uc"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold dark:text-white">Handcrafted Beverages</h4>
+<span class="text-primary font-bold">Rp 32.000</span>
+</div>
+<p class="text-charcoal/70 text-lg leading-relaxed">Refreshing non-coffee alternatives, from botanical infusions to artisanal sodas.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Add to Cart <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border border-primary/5 rounded-2xl overflow-hidden hover:shadow-xl transition-all group shadow-sm">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Gourmet avocado toast with poached egg on artisan bread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvTtOipkzZmV1iAneDG3w5WKDY3uO5A11dR7v_mZN8JWWl78sjrMxfdXH0gtLfHtgqTbwJKVf-KnqIc83Wwo_7qXJMad3T7lbTrD_r2q9aBybA6FubJ1PcfDSYRlK1wLbXhXIKKRaHOzfKshC7zagcuo2MSfoKYEBl_jkzVtF0w3VUssJBmEtMOdDbMNKzWVGqM1KATlB8d1fc8fiCp2qbyqBYpkOnFFgfbwHc7qPtlJZrSnGfZT9FunIYzUS7lxZ54BU8Pvd1Jkg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold dark:text-white">Artisan Eatery</h4>
+<span class="text-primary font-bold">Rp 48.000</span>
+</div>
+<p class="text-charcoal/70 text-lg leading-relaxed">Gourmet meals prepared fresh. Perfectly paired with your favorite drink.</p>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Add to Cart <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Facilities -->
+<section class="py-24 bg-cream" id="facilities">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
+<div class="bg-primary/20 p-4 rounded-full text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h5 class="font-bold text-lg dark:text-white mb-2">Dine-in Space</h5>
+<p class="text-xs text-slate-500">Cozy indoor and outdoor seating</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
+<div class="bg-primary/20 p-4 rounded-full text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+</div>
+<h5 class="font-bold text-lg dark:text-white mb-2">Takeaway</h5>
+<p class="text-xs text-slate-500">Fast and eco-friendly packaging</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
+<div class="bg-primary/20 p-4 rounded-full text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">delivery_dining</span>
+</div>
+<h5 class="font-bold text-lg dark:text-white mb-2">Fast Delivery</h5>
+<p class="text-xs text-slate-500">Right to your doorstep</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
+<div class="bg-primary/20 p-4 rounded-full text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<h5 class="font-bold text-lg dark:text-white mb-2">Social Gathering</h5>
+<p class="text-xs text-slate-500">Perfect for events and meetings</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-24 bg-off-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<div class="flex justify-center gap-1 mb-4">
+<span class="material-symbols-outlined text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-yellow-500 fill-1">star_half</span>
+</div>
+<h3 class="text-4xl md:text-5xl font-extrabold leading-tight text-charcoal">Loved by Locals</h3>
+<p class="text-charcoal/70 text-lg leading-relaxed">Average rating of 4.5 based on 550+ reviews</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5">
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"The atmosphere here is just magical in the evening. The perfect spot to unwind after a long day. Their signature iced coffee is a must-try!"</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 overflow-hidden">
+<img data-alt="Portrait of a smiling customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByGp6LZlaWIA9mP3EIvNEW8ZI1e0utW3Mkv018fKD5SdbNcHpC1E7bT_IrAZLAgY-94srU4OcqztSsE-Vrs-Ps-Ph_Jh92Oy32eCe84Hw8-S5NtXmPLjvGx_39bsv9-PF15GEun6hG-ZHnDHeSzUjT6ktYA-lu0Yr3s6LrhtxzxFu1CLcN-ofAA7-kVBHuPuBXIZmThkzZXHAbZPbOErx4CKTvk86nyG6-8RIFhpQtZs3dYiHjzn_28cqB6rXG-b9bdoEQGRRPwN8"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Sarah Jenkins</p>
+<p class="text-xs text-primary">Local Guide</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5">
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Best workspace in Tangerang. Good WiFi, great music volume, and the staff are incredibly friendly. Plus the artisan snacks are delicious."</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 overflow-hidden">
+<img data-alt="Portrait of a smiling customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3t1zfUokH20IWHrrbjxVxCOXxv4HK9AUzZg-yEoF_OWSoH4Ar7F3WvLHqwvy5-M-GGs78vFonnkRVG6A6hd1uSmRwvuoanfvuFt-0qV9PoZbAJX8oqUfFfxamoWy07uBTD17-Bc7mM7U55VvywFUKa_LyNO8fYpZqkhiyNKTMkuvb6pLVANgBJ2dZBViVwzNkyR180dr98CHgFroKw7e1vbVbb2Rf8CROBqEK28eQONMAqgIQOsNTyMSbQ5CTVI9HoHbdNGpdKx8"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">David Miller</p>
+<p class="text-xs text-primary">Entrepreneur</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5">
+<p class="text-slate-600 dark:text-slate-300 italic mb-6">"Vmond has the most consistent coffee quality in town. Love the industrial-cozy vibe they have going on. My go-to weekend spot."</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 overflow-hidden">
+<img data-alt="Portrait of a smiling customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDUJnMhLrIbAnsmhCkRtrrazZ5L3oYcwTKvKcOPMLoqgVd1uRMocF-Kpzd4FwQDsqRXRETwVBhUFg8qa0e0GI-KMIxIVJrSW3tBeH4HkAALlvFJstDhQOhCCc0TsCTP4FOHcIJO-YFa_ogvmZKz1DZtueIZPqlWrgzokjzanf0CBl_Crn3SnER-KS1w-aBzCol6ymTNx668u1A9sqLZorw1ZEGBWDSCd9VFHqSAeRHwIQW2DOugZvOPmmCzsalrfsg6KtSVgVw6as"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Michael Chen</p>
+<p class="text-xs text-primary">Coffee Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us -->
+<section class="py-24 bg-cream" id="visit">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-charcoal rounded-3xl overflow-hidden shadow-2xl">
+<div class="grid lg:grid-cols-2">
+<div class="p-10 md:p-16 space-y-8">
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-charcoal">Visit Our Space</h2>
+<p class="text-charcoal/70 text-lg leading-relaxed">Join us for a cup of coffee and experience the Vmond lifestyle.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div class="text-white">
+<p class="font-bold">Address</p>
+<p class="text-charcoal/70 text-lg leading-relaxed">Jl. Maruga Raya, Serua, South Tangerang, Banten 15414</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div class="text-white">
+<p class="font-bold">Opening Hours</p>
+<p class="text-charcoal/70 text-lg leading-relaxed">Monday - Sunday: 3:00 PM - 11:00 PM</p>
+<p class="material-symbols-outlined text-primary">Open Now</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-base font-bold flex items-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">call</span> Call Us
+                            </button>
+<button class="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-white/20">
+<span class="material-symbols-outlined">map</span> Get Directions
+                            </button>
+</div>
+</div>
+<div class="relative h-[400px] lg:h-auto min-h-[400px] bg-slate-200">
+<img class="w-full h-full object-cover" data-alt="Interactive map showing the location of Vmond Coffee" data-location="South Tangerang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_YrB_-GOmgYsswuU4VZh1yn1Xo73oSLQS2W6_0aZzpe6LM7SyzI3txwDNGltX48n5M6C5GwJTfIjhE74-y1jd5Rtg6XN98GaDYcc1UljOgKW5aJ7Sk8HzlOQ1zOgOiCKthDarQHr32sBRlW2KBV8BIQboDyBqf0MAqoJWZPgFni0je3qgssqGTFYRe8e-F5pby3wIBqrkE0A5b_UZX_hrVgRuiOoaXvtV9dJ8yjz2GxIK6sU2e8wx5DGx5SSzochXa_Od1b7AqI"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[2px]">
+<div class="bg-white p-4 rounded-xl shadow-xl flex items-center gap-3">
+<div class="bg-primary size-10 rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<p class="font-bold text-slate-900">Vmond Coffee</p>
+<p class="text-xs text-slate-500">Jl. Maruga Raya</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Gallery -->
+<section class="py-24 bg-off-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Our Moments</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold leading-tight text-charcoal">Instagram Feed</h3>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 mb-2">
+                    @vmond.coffee <span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a perfectly brewed coffee beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXL1Veg62T5SCLpuEBQQne4ZuG0s77Warby69LX0fc_zyVIAuPidOvsl7QYHRmCGU09xmaXqYKWyZbvmTqGuL04sS9zhNodgotnzX5NxRIGHlcCT479hUOI7wnt3F9sFIsWSEj5Iiw9BfJc0Nl-JTZ91Wvuu-bnz3BZ8yHT9hfPWkx_QDxZ-KPoDGrJS5ATNJrrJOBceu1PyQ9n8pjXP6cntPk0oYAeu2wWvg6dK0g2-IpAiyIeVWc4eenAjaOnN_Gf7rifRpnV0"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="People chatting and laughing in a café" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD90FUF1x7BBl-Bn9u0olOARp_EBB9JrkspG9gPrBZGV0ZpP0Mzio2gbglawWJ4L8kxnkEQrA9JJwzsUN0u_Eka0LwCpfFinX4SQqu2CrxZNpXnQNRznvjj0yIciP4Rs7FT3_vSjR7VSBC0m08GntpOXD5OBGCdX-RGoCwasBCYp3iA28PDYgw1FoqPWbSEWJAdQW5cZvB8_mgXMTC5kUFlPY7kjqzQyhmk7PzexDo4y0TSLA0yy_MSdvgLTXt-3y9Te08AL2cMMZA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Interior lighting and decoration detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpP6ppzdmUbjz6rRD01oEMeCxhHl6llxlozkV8LpRY_lnYC-IZirAJIx-dw-UHaqO__VUGPbvrnzcngFwFdolCkNW7zuJg1Gl5EDhqP6gZngon3FrvGBUSq5qW7ZnXO3esTKg50YBS7rScwO-B-5KsdJCruiPWLLbNiE_h-hrJmQnlSs7JvQ_MqfMaYXomANLtop_DsP_K2xbbCI09MVGpkg11FD4kXrVnfc6b6c0eI55GpxQ_uxqOSnVO1Jk4hYLqCMi2qmXeeMw"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Freshly baked pastry on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UyCJC5_nVAxHUfD1VyHmH3AXjxT-Eewlb0_XX_eNAS9lAeWPuY8rzE0YwIJ8DTH61fLozLaPUybsMHQVS3MFB4Sz5X3QTMO71oPHQPzGTi-NNrymeOHWhJorm2lxxFJ0pW_78owV1t2edjJziRxXIauAI4g9O8rpfYX6_nYu3y-8pn0nvgHnVVuhYJX6EOWppGBhZEqeOxHEldv1FrMB2zDIGEspAQjLcPcSWp9KTV8JuuBXvsGG-L1gbLELD9Dah0gt-b-qmCY"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Aesthetic latte art in a blue ceramic mug" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EGsQwR9KMZ7u0LnuMHrul5ao8xZGLn_IRZ7quQB-AvXJWuGJ2EETXEvrYwYn_uUqS_z6WuyqV2YXjAZkg99QNXGU1lsRUqmctaOLh6rc-TdexB_6BZNF5fUFql41Ijiw_0PXi_zLveuhVDITVb3a1AbbZReBWDloEVQsXouCIz1Dg01jdVRNdSWrbypASSp0e7NxYEWsY40mQWd6IX42Gb3ZpK2lP3usV4GA7oi5I0yalu2ZSonyCdLCH5ETtwQ5N8xYns4c1Vs"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Delicious chocolate cake dessert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC69fVIB5Re9GgWlrUFp7MpGs8aIKjvQhu1Py03O1XQ4j0-i2mV30KWpUZURjz1lxCmWsLA0nMk5Z5zb1fjPnFg9ig1p3Rn3NmPJ36iGJG8aGTU_YxJDNa-Xg8YrplAb65HM0HU80f7yCCX4McsziGEbrAXwohcAfqkXowhWL_0caZLq__JdKcYiTgfp9LLXmPjQAJZlfMx1shUEVHloAcaiL3w79ZT1llN5cppabmukDSaGzhB1Sx7nsD0NoUteiJ3M5GTlMVQNs4"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">favorite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-charcoal text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-12 border-b border-white/10 pb-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-2xl font-black tracking-tight">VMOND</span>
+</div>
+<p class="text-white/60 text-sm">Where cozy moments meet culinary delights. Join us for a unique coffee experience in the heart of South Tangerang.</p>
+</div>
+<div>
+<h5 class="font-bold mb-6">Explore</h5>
+<ul class="text-white/60 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Our Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Facilities</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Franchise</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Support</h5>
+<ul class="text-white/60 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Stay Connected</h5>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+<p>© 2024 Vmond Coffee and Eatery Space. All rights reserved.</p>
+<div class="flex gap-6">
+<p>Designed with passion in Tangerang</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
