@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sudutsatu | Homey &amp; Vintage Cafe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5d4037",
+                        "background-light": "#f7f7f6",
+                        "background-dark": "#1c1816",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .glass-nav {
+            background: rgba(247, 247, 246, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">coffee</span>
+<span class="text-xl font-black tracking-tight text-primary">SUDUTSATU</span>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#facilities">Experience</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#visit">Visit</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                        Visit Us
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Cafe Interior" class="w-full h-full object-cover" data-alt="Cozy vintage cafe interior with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZQ6GxcMnMqvaDX7DLGBnBp-tML0w-dO5dJyT0e7ZNKGbRWx87sHdEt30uxZe66M6KRXgxCpezHjfowrHribNivFGPPJVrrW2IRay1EI-g1c8mw0db2v2AKApFBQbe0h1RhgjuGRX9UOflmN2-jMBuk_HYO50lKQGBQF5xAI8LyfGyjsGJguslulwLibwZxozgHpkVA554Jj7Ffndzx6t0NMqXl9vE9qVEzE5UqX1OCSC4phmrbhh58ByuXil4q5dH_Zc3H_H2jlQ"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<h1 class="text-white text-5xl md:text-7xl font-black mb-4 tracking-tighter">Sudutsatu</h1>
+<p class="text-white/90 text-lg md:text-xl mb-8 font-light">
+                    Experience the warmth of our vintage corner with comforting food and the finest coffee. 
+                    <span class="block mt-2 font-medium">⭐ 4.6 (1,539 reviews)</span>
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-2 hover:scale-105 transition-transform" href="#menu">
+<span class="material-symbols-outlined">menu_book</span> View Menu
+                    </a>
+<a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-all" href="#visit">
+<span class="material-symbols-outlined">near_me</span> Get Directions
+                    </a>
+</div>
+</div>
+</section>
+<!-- Stats Overview -->
+<section class="max-w-7xl mx-auto px-4 -mt-12 relative z-30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl border border-primary/5 flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">star</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Average Rating</p>
+<p class="text-2xl font-black text-primary">4.6 / 5.0</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl border border-primary/5 flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Happy Guests</p>
+<p class="text-2xl font-black text-primary">1,500+</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl border border-primary/5 flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Affordability</p>
+<p class="text-2xl font-black text-primary">Rp - RpRp</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 px-4 max-w-7xl mx-auto" id="about">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-3xl"></div>
+<h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
+                        Your Second Home <br/><span class="text-primary tracking-tight">Homey &amp; Vintage</span>
+</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        Sudutsatu is more than just a cafe; it's a sanctuary in the heart of the city. Inspired by classic Indonesian homes, our vintage decor and warm lighting create the perfect atmosphere for focused work sessions or cozy afternoon hangouts with friends.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Work-Friendly</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Cozy Ambience</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Vintage Decor</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-medium">Affordable Menu</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 h-[500px]">
+<img alt="Coffee Detail" class="w-full h-full object-cover rounded-2xl" data-alt="Close up of a latte on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpDd82ZRJzLRHRULA0O8f4MQNYA-YtSK4D2WPku3mnJo-_c5qfk9wn2GW4v6Q7_jembdOTC8VV3R8Z-16VJ_cO9Rjr30YekdvY8qN2RfigGpJClt7uvf41hrpoDh4ydbKD0Ndh_5kW_JkcXGDjRJW8ymWv5shkqR_ETnwX2Uhyk-BWpu3IkIKa060SWssXCYIuvMMF4ezaLMh7y_teIGiXjeY4g8dzY614nMB2T6PKPfLweqq37KMmyXS8xGsYzydZDjX2Ba0yW0I"/>
+<img alt="Seating Area" class="w-full h-full object-cover rounded-2xl translate-y-8" data-alt="Interior of a restaurant with wooden furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNGoCm7UufNZJ7xu7AagABak-zPatJT5W7Ull9h2ThDo33oVNkBxewhErYfTULMOesmtjTVXR9rbBm2O7HWF-PGSnszsHZ9h6xoamkif_h52I2xL9ZOQ5EUMMvhgXoUQoEEjnimLDq2yNQrEs2K-oycmHvdPD6p9hYmqqk6ZQCU_-HJYml9g9Dwlutm2ehbwyI8jJW8p_ZiuLB_Ub8o7j067yMy4bZtql9yRlFjZpX_nW6s-5lFiZ6_2Hn2IZ_4s2sMbNxu7Nz6Hk"/>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="bg-primary/5 py-24 px-4" id="menu">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-primary mb-4">Menu Highlights</h2>
+<p class="text-slate-600 dark:text-slate-400">Hand-picked favorites from our kitchen to your table.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Food Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Nasi Goreng" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Plate of traditional fried rice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuA7djZa1weLI2rI3u55-ARv6WtQQMsR8snQYgAJaSVO1Hez6P8Hbr6_M4Hk3NkKooiorJABbaFQXD_fWCiVcyzMWim4YkUgXfXU1Wlv9Uc9W25IT_PG4t3POjBZ4ztrDhezVHUi1gUK8jDOkPrkqvhV7TLPlIYwA0Bgmvq8dKzfHrBJy0r7E5DStSBIEq_5EVG1JCe9QRbuwVPeqiAPNn-wcWdAFDKX3uRVCLbqp_xDksD8Ol29F8ZRGdO_obL_Vv5NNquD_k9AY"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Nasi Goreng Harum</h3>
+<span class="text-primary font-bold">Rp 45k</span>
+</div>
+<p class="text-sm text-slate-500">Our signature aromatic fried rice served with sunny side up egg and crackers.</p>
+</div>
+</div>
+<!-- Food Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Fish and Chips" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dory fish and chips on a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT6p16goAM8cMJOIz7QqCwHItBQbGKkJkFKaixTLV9rL3-bbCl0w4RSdjepzUAp6ZZEoTGBH3UzlnJixF-DD8DFc2e5ErXNOHQ6W7fMKoUTNEC6EqdJJmmXYKLvzHVabvfLlcjk-dr6a06UbowLM8JtNJA70UuygwcOd69_5Sacom5eN4oaJd-o79acop1muLyqrwxJNCmjr9s9Cjo5RcGMJ6haxtbLCPfYU2nVnJFtLX2SN5p4NfJ5AuVvu96w4fWfZviZxvMjO4"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Dory Fish &amp; Chips</h3>
+<span class="text-primary font-bold">Rp 58k</span>
+</div>
+<p class="text-sm text-slate-500">Crispy battered dory fish fillet served with thick cut fries and tartar sauce.</p>
+</div>
+</div>
+<!-- Food Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Spaghetti" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pasta dish with tomato sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbHyo4LEKvPt1VpPfkeI81-WAJYcvA4dOInyO74nMGRZy1euZSVKwInVOU5J6891aCYtDt57go3m50fYcfT8_r6tIhUy1HiDUpecVkfP-spPTrvYY7GE2PgBb5_ogferlfQ6nx5seJ8fKa13imeTbBdZYfWAnJT6dtYF96m9GC_ke2MQOb87PwNqzeYx_FI-7v9UwdaaqrWUDbWE2YDD1qzJEclbhhx3QRew_WW8EdfAuKnoOhWbfMGXPn74koW1tClbWzW21QNTE"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Spaghetti Bolognese</h3>
+<span class="text-primary font-bold">Rp 52k</span>
+</div>
+<p class="text-sm text-slate-500">Classic Italian pasta with slow-cooked minced beef and rich tomato sauce.</p>
+</div>
+</div>
+<!-- Drink Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Iced Coffee" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Iced coffee in a tall glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxAzqunU93GnYUo-FFsSm-PpE572HtxGA1QEK64PfgoRELxIoC7hbKOrhY91f0gvI17aOkTudzU1fzsnpwqGxCf7Vd7QQqIC9lxV38XBamZQUffg6YSyD2LsTsipBLrnmQLulj4U9Diu5Qj0kmhSmz9jKeRx2O6GyaKJqo9ha7gaCX01gauYYTpLz2YIhfEXDutcIZc4qR7dweZihnG-VNP6oLYSz-GtCYdp_xKVnsJUW41FM77zwajx19c85x-GLnW7VfiIHtfzs"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Signature Iced Coffee</h3>
+<span class="text-primary font-bold">Rp 28k</span>
+</div>
+<p class="text-sm text-slate-500">Double espresso shot over creamy milk and our special palm sugar blend.</p>
+</div>
+</div>
+<!-- Drink Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Cappuccino" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Hot cappuccino with latte art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvthGs9jSxMf_DDuV4KM_y4rWS25gDzPsRNhIduQb7BhN-o73XKXoZ_i5iWDIiyYEdqeD0ohM-AR-fAFTWYDJkkm2uECkjlG8fcf2jDpEUXoRDHUA_Aty5TlEAOGeyqnV8aS-Dx0ITLKwWmG_NZK_3039Dfg4-21SI4-5H2qZqZV_gElxG6jjEemKS5Jm5bA8lA3RWMI9eaEk7svxgNuCDwTM-SyyGYWZJIJKQtMzmsYNesUtxLkNKb555-mTS7JaKjS4wVFoVt5I"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Hot Cappuccino</h3>
+<span class="text-primary font-bold">Rp 32k</span>
+</div>
+<p class="text-sm text-slate-500">Perfectly balanced espresso and steamed milk with silky micro-foam.</p>
+</div>
+</div>
+<!-- Drink Item -->
+<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm border border-primary/5 group">
+<div class="h-56 overflow-hidden">
+<img alt="Mojito" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Refreshing lime mojito drink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbajYDuFRunBg8IKIFrQb_mt_8azRaSgT_mPIAtWJITI8CEisCUfdFGyJuUAhYp3QYuKGZDyfF6uOVUmtdxdaWa7vbNLj2hfjmmOdq2MQ_OwfgzKDyLH5_xFHxiPv1sJ1AFkvX6JW9rtyPJaBq4Z3fzz8pcGDWr9WQNSimWw2anBUDF66TzXvPkbSJU3hUJXSj4QHN8t0iQAu1SteOa6V4WkRzC9eDFsmOfei0Go_HINuf-36s4Jo32zHWo5NhY9bDyUt4a5o5XBA"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-xl">Fresh Mint Mojito</h3>
+<span class="text-primary font-bold">Rp 35k</span>
+</div>
+<p class="text-sm text-slate-500">Zero alcohol. Sparkling water with fresh mint leaves and lime juice.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Facilities -->
+<section class="py-24 px-4 max-w-7xl mx-auto" id="facilities">
+<h2 class="text-3xl font-black text-center mb-16">The Sudutsatu Experience</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center p-8 border border-primary/10 rounded-2xl bg-white dark:bg-background-dark hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">chair</span>
+<h3 class="text-xl font-bold mb-2">Cozy Seating</h3>
+<p class="text-slate-500 text-sm">Ergonomic chairs and soft sofas designed for long hours of comfort.</p>
+</div>
+<div class="text-center p-8 border border-primary/10 rounded-2xl bg-white dark:bg-background-dark hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">wifi</span>
+<h3 class="text-xl font-bold mb-2">High-Speed WiFi</h3>
+<p class="text-slate-500 text-sm">Reliable fiber optic connection for seamless remote working or streaming.</p>
+</div>
+<div class="text-center p-8 border border-primary/10 rounded-2xl bg-white dark:bg-background-dark hover:shadow-xl transition-shadow">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">temp_preferences_custom</span>
+<h3 class="text-xl font-bold mb-2">Vintage Decor</h3>
+<p class="text-slate-500 text-sm">Curated antique collection that creates a nostalgic, home-like vibe.</p>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="bg-primary text-white py-24 px-4 overflow-hidden" id="reviews">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-4xl font-black mb-4">What Our Guests Say</h2>
+<div class="flex items-center gap-2">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star_half</span>
+</div>
+<span class="font-bold">4.6 / 5.0 Rating</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10">
+<div class="flex gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="italic mb-6 text-white/90">"Very comfy atmosphere. The lighting is perfect for working or just chilling. The vintage vibe really makes me feel at home."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-light" style="background: rgba(255,255,255,0.2)"></div>
+<div>
+<p class="font-bold text-sm">Aditya R.</p>
+<p class="text-xs text-white/60">Google Local Guide</p>
+</div>
+</div>
+</div>
+<div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10">
+<div class="flex gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="italic mb-6 text-white/90">"Good food, good price, good service. Their Nasi Goreng Harum is a must-try! Highly recommended for weekend hangouts."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-light" style="background: rgba(255,255,255,0.2)"></div>
+<div>
+<p class="font-bold text-sm">Sarah W.</p>
+<p class="text-xs text-white/60">Food Blogger</p>
+</div>
+</div>
+</div>
+<div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10">
+<div class="flex gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="italic mb-6 text-white/90">"Homey vintage vibe with excellent coffee. I spent almost 4 hours here working and didn't feel tired at all. The staff are so friendly."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-light" style="background: rgba(255,255,255,0.2)"></div>
+<div>
+<p class="font-bold text-sm">Jessica M.</p>
+<p class="text-xs text-white/60">Remote Developer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us Section -->
+<section class="py-24 px-4 max-w-7xl mx-auto" id="visit">
+<div class="grid lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-4xl font-black mb-8">Visit Our Corner</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+<div>
+<h4 class="font-bold">Location</h4>
+<p class="text-slate-600 dark:text-slate-400">Jl. Tj. Duren Barat I No.1C, Grogol petamburan, West Jakarta</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+<div>
+<h4 class="font-bold">Opening Hours</h4>
+<p class="text-slate-600 dark:text-slate-400">Open Daily: 10:00 AM - 09:30 PM</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-2xl">call</span>
+<div>
+<h4 class="font-bold">Contact</h4>
+<p class="text-slate-600 dark:text-slate-400">+62 21 5566 7788</p>
+</div>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:opacity-90">
+<span class="material-symbols-outlined">directions</span> Get Directions
+                        </button>
+<button class="border border-primary text-primary px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-primary/5">
+<span class="material-symbols-outlined">call</span> Call Now
+                        </button>
+</div>
+</div>
+<div class="h-[400px] rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
+<div class="w-full h-full bg-slate-200" data-location="Jakarta, Indonesia" style="">
+<img alt="Map" class="w-full h-full object-cover grayscale opacity-80" data-alt="Map view showing West Jakarta area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA47QYIt_ZiqRs_8LbKGHTu91c3n9DDdG3MWyYdlHeYTSJ2_fHylsqZn2QqytauoOOq_22BhwQIxY5pm9s9Pfe3hE3nknAk-WCECaQ61tcoZUz9MM86ADNLZ4zG9l86ApDoUWJQc7zSTW1xwoagY3TBO9KgKncVPeXOdHtm1FkWOHrk2vgAagEU7fF6Vf9DImmrHQfPkTIoRq7hmuMKF9YZpAZlM05YaCeRp8Guu_ZBUjHtcQp3R9xFNaDhsETRH1zVBRzzdBKeoEc"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-slate-400 py-16 px-4">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-white mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">coffee</span>
+<span class="text-xl font-black tracking-tight">SUDUTSATU</span>
+</div>
+<p class="text-sm leading-relaxed">
+                        A cozy homey corner in West Jakarta serving vintage vibes, comfort food, and premium coffee since 2018.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Quick Links</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#menu">Menu Highlights</a></li>
+<li><a class="hover:text-primary transition-colors" href="#facilities">Experience</a></li>
+<li><a class="hover:text-primary transition-colors" href="#visit">Location</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Social</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">TikTok</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Facebook</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Newsletter</h4>
+<p class="text-sm mb-4">Stay updated with our weekly specials.</p>
+<div class="flex">
+<input class="bg-white/5 border-none rounded-l-lg text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Your email" type="email"/>
+<button class="bg-primary text-white px-4 rounded-r-lg">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-xs">
+                © 2024 Sudutsatu Cafe. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
