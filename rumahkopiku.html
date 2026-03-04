@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rumah Kopiku | Cozy Coffee &amp; Comfort in Pamulang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf7317",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211911",
+                        "accent-muted": "#97734e",
+                        "surface-light": "#f3ede7",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-surface-light bg-background-light/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">coffee</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Rumah Kopiku</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#home">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#location">Location</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden sm:flex items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all" href="https://api.whatsapp.com/send?phone=628176941541" target="_blank">
+                    Order via WhatsApp
+                </a>
+<button class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative px-4 py-6 md:px-10 lg:px-20" id="home">
+<div class="relative overflow-hidden rounded-3xl bg-slate-900 min-h-[600px] flex items-center">
+<div class="absolute inset-0 opacity-60">
+<img class="h-full w-full object-cover" data-alt="Serene cafe interior with warm lighting and wooden furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoswap1_lPDNjrlCt2Rxlhx7CzqCXaW9p7VlqZY8tAHB3KnserWVNtEF2mkyJKhYtUyDiBL8eVMdyZY372n3-rXokJZSLpOrBvcBlAQ5JZJJHCUsSsGfn7ggnWg9lCM75EDPq5SOf2lveit1Mngyxskw-LIl2kaDFG5ceaV5UeIZWMg6hceblwcypaoKM2hK3Xz0z1ZHdcy1WVP49gehAdk013o7qwNq5JL812GhFLweOCcvLmmIwDq4wdVk08nQM8kWD0Bsg4iGk"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark/80 to-transparent"></div>
+<div class="relative z-10 max-w-3xl px-8 md:px-16">
+<div class="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-md border border-white/20">
+<span class="flex text-yellow-400">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0.5">star_half</span>
+</span>
+<span class="text-xs font-bold text-white">4.6/5 from 239 reviews</span>
+</div>
+<h1 class="text-4xl font-black text-white md:text-6xl lg:text-7xl leading-[1.1]">
+                        Your Cozy Escape for <span class="text-primary">Coffee &amp; Comfort</span>
+</h1>
+<p class="mt-6 text-lg text-slate-200 md:text-xl max-w-xl leading-relaxed">
+                        Experience a peaceful café escape in Pamulang, perfect for relaxing, working, or gathering with loved ones.
+                    </p>
+<div class="mt-10 flex flex-wrap gap-4">
+<a class="flex items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-xl hover:scale-105 transition-transform" href="#menu">
+                            View Menu
+                        </a>
+<a class="flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-bold text-slate-900 hover:bg-slate-100 transition-colors" href="https://api.whatsapp.com/send?phone=628176941541">
+                            Order via WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="about">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div>
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">The Experience</h2>
+<h3 class="text-3xl md:text-5xl font-black leading-tight">A Cozy Hidden Gem in Pamulang</h3>
+</div>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Rumah Kopiku offers a peaceful escape from the relentless city noise. We've curated a space where time slows down, allowing you to savor every sip and every bite in a tranquil environment.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-6 rounded-2xl bg-surface-light dark:bg-slate-800/50 border border-surface-light dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">sentiment_satisfied</span>
+<h4 class="font-bold mb-1">Friendly Staff</h4>
+<p class="text-sm text-accent-muted">Welcoming with a smile.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-light dark:bg-slate-800/50 border border-surface-light dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">event_seat</span>
+<h4 class="font-bold mb-1">Cozy Seating</h4>
+<p class="text-sm text-accent-muted">Perfect for work or focus.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-light dark:bg-slate-800/50 border border-surface-light dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">restaurant</span>
+<h4 class="font-bold mb-1">Quality Fare</h4>
+<p class="text-sm text-accent-muted">Premium beans &amp; food.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-2xl h-80 w-full object-cover shadow-2xl" data-alt="Barista preparing fresh artisan coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXjrTP_OZeFDu9-TaOfIhlUoZTqJq6Vwd-91-skJFb0fZ6hOU6syA4Mt1k_9uJyAX6BqAR9EwQmGdQwD5IXxdQ2UQ_tN_kGJ6Yr4BPP-NiHhC773-0wigIK1NwPeD3u3veprP8YUlaeiCxKWO1nlbA_yNj15GoZTWHLcELn2BfexE51Qipkd_tL3MMBGHceafGSoo1-egkJfaOePBehlnGpUpnT6dhUMB8OO6j6YppEG8MxLzEAuyG2EvAEnaKmGjnxTIEFiO_nl4"/>
+<img class="rounded-2xl h-80 w-full object-cover mt-12 shadow-2xl" data-alt="Modern aesthetic cafe interior with plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbJ7o_dlZDyohoK-ir7acgU9P5RG3-lTHGiXkYDBg-Tq_YBsUVzUCkTaTsl5ORBNE9ja-VXS-b57MlH0OoNyqyD5P96BFC0zQ8QS4ukFgjMzUCxcItobFiNfbQOlW7Pkt0Hpajrkkxy-U-7H2eYPUdhhUU7sp5OH2cMMBjQQovlgZsU4x5br_t2vXb9zaglcwuEBm48KzWAc7GF52LvY_DKb3SqAMzbslE7BJjdHba8nurIeHf3n5_Q0-0peEgCln1Z2DsuerHSt0"/>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="bg-surface-light dark:bg-slate-900/50 py-24" id="menu">
+<div class="max-w-7xl mx-auto px-6 text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Our Specialties</h2>
+<p class="text-accent-muted max-w-2xl mx-auto">From handcrafted coffee to freshly baked delights, everything is prepared with passion and the finest ingredients.</p>
+</div>
+<div class="max-w-7xl mx-auto px-6 space-y-20">
+<!-- Drinks -->
+<div>
+<h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+<span class="h-1 w-12 bg-primary"></span> Coffee &amp; Drinks
+                    </h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group overflow-hidden rounded-2xl bg-background-light dark:bg-background-dark shadow-sm hover:shadow-xl transition-shadow border border-surface-light dark:border-slate-800">
+<div class="h-56 overflow-hidden">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Refreshing iced latte with milk swirls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2IgRHuuahl7P5nbuCQRWJwWUgfyL6LqLqQ1eFCJP6SGVeHbWIcvv5r1NWDJ7DjOYtf-35MyC0sA_ernQJOIKxf4KPiLpEdUqEJjE6JZJrSIWy-HmIWxcf3sb5kTbdWN4Sgx5gwthu5lwPh1pPNWnih2GjDMdx8wYCgs9gA2CdHrWiKm1YNleVzuhLkne6U3GHr_9DT5v7mTsBf2-fwxukGc_6QPDLkZJRkcmaFWh8VpVHuUDx8ukJyuH3olrGMX5m3364qp0gpbc"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-lg font-bold">Signature Iced Coffee</h4>
+<span class="text-primary font-bold">Rp 28k</span>
+</div>
+<p class="text-sm text-slate-500">Smooth espresso blended with our secret sweet cream.</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-2xl bg-background-light dark:bg-background-dark shadow-sm hover:shadow-xl transition-shadow border border-surface-light dark:border-slate-800">
+<div class="h-56 overflow-hidden">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Classic latte with beautiful latte art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrYNjiFlhWpu3K2gsJapD0CaLGCehT6Uc_VLpgTMkzCiCYWeo-8sRBhCTbJCBRk47VFi3h38SSytuZ-k-P0HLDMX6h4QW2Y2o-5DrFMnVCDl0TzVYc1Q3u1yMJVxYq86Ce97kuBpBLPt2cN6bPkjWxqHDsn0_ZTD_D2Bo7a9UFuJEyiCLcMNPU3b_TW_O3TzirKD4zB_lbqQ_sFE5S4vR1lCVpy3sYg5Qu826PEMLUqSF4wPP_IEmzcpWrrO8dfZli0kBAh4N6z8w"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-lg font-bold">Cafe Latte</h4>
+<span class="text-primary font-bold">Rp 25k</span>
+</div>
+<p class="text-sm text-slate-500">Double shot of espresso with silky micro-foam milk.</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-2xl bg-background-light dark:bg-background-dark shadow-sm hover:shadow-xl transition-shadow border border-surface-light dark:border-slate-800">
+<div class="h-56 overflow-hidden">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Freshly squeezed orange juice in a tall glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs7ZgEN09hpwt_-D5rv-Os8Kf0LoiX_nASn6jEAiQ2ogJWsGAJ8pjBt_2ocPYjvxXoa5M5p42oZ7MKO3nYXNFlpsrGpVORvc3fXWkNM8d0sXjAMmxOJX22LrwoVvACEn5Z1Yg4adZnamlMRasYIG4zcv33Dbt8t2TEwqXBJUbfwfO6qRZI0L3Zit_g2iaE9-1dpOGMXi6efBZ7ez7M9nYW0aljYU5jMkXe5szEjALkmPgfCCRhragkD68od3sdfUn6r9aa7u2kzkw"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-lg font-bold">Fresh Tropical Juice</h4>
+<span class="text-primary font-bold">Rp 22k</span>
+</div>
+<p class="text-sm text-slate-500">Seasonal fresh fruits cold-pressed to order.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bakery -->
+<div>
+<h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+<span class="h-1 w-12 bg-primary"></span> Bakery &amp; Pastries
+                    </h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group overflow-hidden rounded-2xl bg-background-light dark:bg-background-dark shadow-sm hover:shadow-xl transition-shadow border border-surface-light dark:border-slate-800">
+<div class="h-56 overflow-hidden">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Flaky golden brown butter croissant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuPThYJA7nhYK6WIl2fJMYtIxluHSiGx1q79rD0ang0rkSW2AA0Vw3kODkCFwP_QkjZpupUtzA0gzeV8e7HogAQLpxbo58EjwTn9dxI_uoWRQZHJAQBgbTAyrHAtvgrDmV-XNIZowFd-spu9KaelplLCvpkZ9BNplsqiWfmhMWBRlWC7bIlPZscEXmSeHeCGWZ2MBc-fZQWhnntUr5Jzo5y-75O0pW-xMhVXeQulBjHQ-fDHgB_-kgG0qNk7hsgbu68YI-LWt-ccg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-lg font-bold">Butter Croissant</h4>
+<span class="text-primary font-bold">Rp 24k</span>
+</div>
+<p class="text-sm text-slate-500">Authentic French style, flaky and buttery texture.</p>
+</div>
+</div>
+<div class="group overflow-hidden rounded-2xl bg-background-light dark:bg-background-dark shadow-sm hover:shadow-xl transition-shadow border border-surface-light dark:border-slate-800">
+<div class="h-56 overflow-hidden">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pain au chocolat with dark chocolate filling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD80xfyF5qPEfivJwbyNFirAUd0w6ygOiUrRNVwW8-XgtUa1MbPNPMQ6Jqr1_uXwWb8A2NnFFPVeHnJwd-2Wt5tJ1g4a3aNS68ZqSuBuagqo9Hk316GKs2mm1cCn3kFAS0FsBo4c1bf-V9jyaECQTgccyWb2-ALZRYg-pzJE5piX2LV8YQSF7xTDfSojs0UuhZRRPAmYpfJQlEemOF5PaYvtmApfp9yvuUofF9dXxzqzIeSHkD3e3smpyc4LYSTtwsGVpaNCbyEUo4"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-lg font-bold">Pain au Chocolat</h4>
+<span class="text-primary font-bold">Rp 26k</span>
+</div>
+<p class="text-sm text-slate-500">Filled with premium dark chocolate batons.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="reviews">
+<div class="grid lg:grid-cols-[1fr,2fr] gap-16">
+<div class="bg-primary p-12 rounded-3xl text-white flex flex-col justify-center items-center text-center">
+<h3 class="text-lg font-medium opacity-90 mb-2">Average Rating</h3>
+<div class="text-7xl font-black mb-4">4.6</div>
+<div class="flex text-yellow-400 mb-6">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0.5">star_half</span>
+</div>
+<p class="text-white/80 font-medium">Based on 239 reviews from our lovely guests.</p>
+</div>
+<div class="space-y-6">
+<div class="p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-surface-light dark:border-slate-700">
+<p class="text-lg italic mb-6">"Great ambience and friendly staff. It's truly a hidden gem in the heart of Pamulang. The coffee is exceptional."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">AR</div>
+<div>
+<h4 class="font-bold">Andi R.</h4>
+<p class="text-xs text-accent-muted">Local Guide</p>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-surface-light dark:border-slate-700">
+<p class="text-lg italic mb-6">"Perfect spot for relaxation away from the noise. I spent the whole afternoon working here and the vibes were just right."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">SL</div>
+<div>
+<h4 class="font-bold">Sarah L.</h4>
+<p class="text-xs text-accent-muted">Regular Customer</p>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-surface-light dark:border-slate-700">
+<p class="text-lg italic mb-6">"Very cozy hidden place with great food and service. Highly recommend the butter croissant with their house latte."</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">MK</div>
+<div>
+<h4 class="font-bold">Michael K.</h4>
+<p class="text-xs text-accent-muted">Food Blogger</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Feed -->
+<section class="py-24 bg-surface-light dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-black">Follow Our Journey</h2>
+<p class="text-accent-muted mt-2">@rumahkopiku on Instagram</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2" href="https://instagram.com/rumahkopiku">
+                        View Profile <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<img class="aspect-square w-full object-cover rounded-xl hover:opacity-90 transition-opacity" data-alt="Close up of coffee beans in a bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi0--kVQGT3VfusUv0x84Yic8l-sysreGTybC_7qjgm0d34Y9CDvQAT8tOlQcJ9m8bbuBteoigV5awtu33fVwz2nz6mPQk5DTFrOu9KCzX6-hLQJu3JMSShdNVBVfDBdAg079gnqJAsp8LjWpG_bjDnwKdxzfES4L3zxosXwBu5Js172ybSEIKMJMiDisUxAZT2cFltVgwwKalty1vSyFpAmK_f3CN3k472l8f0QmA6G3TwEdJRxnPEbKMGRQNw27Ax1i5zDXHeAU"/>
+<img class="aspect-square w-full object-cover rounded-xl hover:opacity-90 transition-opacity" data-alt="Aesthetic coffee and pastry arrangement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgX6beYqmOMalOnxYsWZc7t5s_ZJu56Fg9_ZPs6HDxp4hWis88ZQs_PgdAmo2VL7epLjUgi6XiRk8BgSTfyqo9mpuA94qPnc1o7azui_OmZK_9Ua3BwmBce1bQX8FkpPbwHg_Z8QjzS2LXN4j2zq_5kimebfrJYGaTD2qLkIi38yHrQGaYclgsNaLbIyI1PVjs1okGOtS-P554Uxr0C1X4o5hj7YNhYvV3D_LgmDUWX0Z1GHZkuRQhkgkHOg-Q21RveWxKklakJNQ"/>
+<img class="aspect-square w-full object-cover rounded-xl hover:opacity-90 transition-opacity" data-alt="Cozy interior seating area with soft light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgajv2-e5aOSn-KhhSTxd6Sd1PEM_dU6krKJBRKhzkpGPqAlz7SQkT2Kq-mX5ZFdVUsYPwCJlRjA456qqIuP7fMErwunJeWbtDOp38eESSygLZu_WoAHnBMW3g4ETOfAgdQWCk8IFVKsHdgzJvygn2t7dhhRhcvPPNqhZAQqOHYNcUNU1AezxPGkBlIXbGqD2yhjUIxTfTLtP5BkAo0zVwD8InuRwmE68iWy0DU9YAn5YgtZ7arTV7fOnvjjzLqWx98qq1kihtTJg"/>
+<img class="aspect-square w-full object-cover rounded-xl hover:opacity-90 transition-opacity" data-alt="Pouring milk into coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7b2cjzNg4KvkW4ES9vdQFtqtvSw595cx4j2Mwuu3_TuDFKhKFX61-NY6NOb3Aktz2WmPwQIyFJX2EohJIrxsNU6hyBJqpvfEXWu32UFhZoEqEL7LZ7ATutD9g68yJGMVs1y3V8lsi_Cymf86vtDCy8wYRUjEhwtrHDRdfqShd0ryk4FtLHUFzWamhlxIRmsXYMyIgvJcRN-8DXS-51oL6JWGFe6BtwXsW8x-s_f0ewx2IydIKOfy6ofQnpkXEjiff4eAzk4QK5H8"/>
+</div>
+</div>
+</section>
+<!-- Location & Contact -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="location">
+<div class="grid lg:grid-cols-2 gap-16">
+<div class="space-y-10">
+<h2 class="text-4xl font-black">Visit Our Sanctuary</h2>
+<div class="space-y-6">
+<div class="flex gap-6">
+<div class="h-14 w-14 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<h4 class="text-lg font-bold">Our Address</h4>
+<p class="text-slate-600 dark:text-slate-400">Jl. Pinang Raya, Pamulang Timur, South Tangerang, Banten 15417</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-14 w-14 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<div>
+<h4 class="text-lg font-bold">Opening Hours</h4>
+<p class="text-slate-600 dark:text-slate-400">Monday - Sunday: 15:00 - 23:00</p>
+<span class="inline-block mt-2 px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase">Open Now</span>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-14 w-14 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<div>
+<h4 class="text-lg font-bold">WhatsApp Contact</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-4">+62 817-6941-541</p>
+<a class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-green-200" href="https://api.whatsapp.com/send?phone=628176941541">
+<span class="material-symbols-outlined">message</span> Chat with Us
+                                </a>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[500px] w-full bg-slate-200 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
+<div class="h-full w-full bg-slate-300 flex items-center justify-center" data-location="South Tangerang" style="">
+<div class="text-center p-8">
+<span class="material-symbols-outlined text-6xl text-primary mb-4">map</span>
+<p class="font-bold text-slate-800">Jl. Pinang Raya, Pamulang Timur</p>
+<p class="text-slate-500">Google Maps View Placeholder</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+<span class="material-symbols-outlined text-white">coffee</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Rumah Kopiku</h2>
+</div>
+<p class="text-slate-400 max-w-sm">Crafting moments of peace through artisanal coffee and home-style comfort in the heart of Pamulang.</p>
+<div class="flex gap-4">
+<a class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#home">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#menu">Our Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#reviews">Reviews</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Support</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#location">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#location">Location</a></li>
+<li><a class="hover:text-primary transition-colors" href="https://api.whatsapp.com/send?phone=628176941541">Order Help</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-sm">© 2024 Rumah Kopiku. All rights reserved.</p>
+<p class="text-slate-500 text-sm">Designed for Comfort &amp; Community</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[100] h-16 w-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-transform" href="https://api.whatsapp.com/send?phone=628176941541" target="_blank">
+<span class="material-symbols-outlined text-4xl">chat</span>
+</a>
+</body></html>
