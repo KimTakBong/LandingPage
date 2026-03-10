@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dinobites Cafe - Charming Cafe in West Jakarta</title>
+<meta content="Relaxed locale in a charming setting dishing up health-conscious eats &amp; light fare. Experience our girly ambience in West Jakarta." name="description"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="https://dinobitescafe.id/" property="og:url"/>
+<meta content="Dinobites Cafe - Charming Cafe in West Jakarta" property="og:title"/>
+<meta content="Relaxed locale in a charming setting dishing up health-conscious eats &amp; light fare." property="og:description"/>
+<meta content="https://placehold.co/1200x630/fce7f3/db2777?text=Dinobites+Cafe" property="og:image"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dino-yellow': '#FFEB3B',
+            'dino-pink': '#FF4081',
+            'dino-green': '#4CAF50',
+            'dino-dark-pink': '#E91E63',
+            'charcoal': '#1F2937',
+          },
+          fontFamily: {
+            sans: ['Fredoka', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          backgroundImage: {
+            'grid-pattern': "radial-gradient(circle, #00000010 1px, transparent 1px)",
+            'triangle-pattern': "url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 20 L10 0 L20 20 Z\" fill=\"%23FF4081\" fill-opacity=\"0.1\"/%3E%3C/svg%3E')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(2deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    .floating-btn { animation: float 3s ease-in-out infinite; }
+    .dino-float { animation: float 5s ease-in-out infinite; }
+    html { scroll-behavior: smooth; }
+    
+    .yellow-grid {
+        background-color: #FFEB3B;
+        background-image: linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px);
+        background-size: 30px 30px;
+    }
+    .pink-triangles {
+        background-color: #fce7f3;
+        background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 40 L20 0 L40 40 Z" fill="%23FF4081" fill-opacity="0.1"/%3E%3C/svg%3E');
+        background-size: 40px 40px;
+    }
+    .bubbly-border { border-radius: 60px 20px 60px 20px; }
+  </style>
+<!-- BEGIN: Schema Markup -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Dinobites Cafe",
+    "image": "https://placehold.co/600x400/fce7f3/db2777?text=Dinobites+Cafe",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gg. Macan No.102C",
+      "addressLocality": "Duri Kepa",
+      "addressRegion": "West Jakarta",
+      "postalCode": "11510",
+      "addressCountry": "ID"
+    },
+    "telephone": "021-56960504",
+    "priceRange": "Rp 50.000 - Rp 100.000",
+    "openingHours": "Mo-Su 07:00-22:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "150"
+    }
+  }
+  </script>
+<!-- END: Schema Markup -->
+</head>
+<body class="bg-white text-charcoal font-sans selection:bg-dino-pink selection:text-white overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b-4 border-dino-yellow" data-purpose="main-nav">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center gap-2">
+<div class="bg-dino-yellow p-1 rounded-full"><img alt="Logo" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfghur3LJzeq1QwzmuK1_bDWXpIkFNHWAo_wOItMTKS2-OT6Q3xdvqBzQb1uWpp0yXmS-_hRrm_XezvoYdpRGCGNViImDgMX4W3LEHROhKKkDtMyhmk7sTUqqeiIB3jQDL3Mc_wXfe00CzIOs3Osm84Psm1MXqAJsv8_wYRIB5xJWKyPyhB9x9zwuKE9pU78Vga0LWNBLCyWQqP4fJnSah_p-0ix1OJ9-vbMYNueX7pS3gPcDB3ZYK7K174vPCy-GLtvwOe_MrVX0"/></div>
+<span class="font-serif text-3xl font-black text-dino-dark-pink tracking-tight">Dinobites.</span>
+</div>
+<div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-charcoal">
+<a class="hover:text-dino-pink transition-colors" href="#menu">Menu</a>
+<a class="hover:text-dino-pink transition-colors" href="#about">Our Story</a>
+<a class="hover:text-dino-pink transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-dino-pink transition-colors" href="#location">Location</a>
+</div>
+<div>
+<a class="bg-dino-pink text-white px-8 py-3 rounded-full text-sm font-black hover:bg-dino-dark-pink shadow-[4px_4px_0px_#000] transition-all transform hover:translate-x-1 hover:translate-y-1 active:translate-x-0 active:translate-y-0" href="https://wa.me/02156960504" target="_blank">BOOK TABLE</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden pink-triangles" data-purpose="hero">
+<!-- Decorative Dinos -->
+<img alt="Dino" class="absolute -left-20 bottom-10 w-64 opacity-20 dino-float hidden lg:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfghur3LJzeq1QwzmuK1_bDWXpIkFNHWAo_wOItMTKS2-OT6Q3xdvqBzQb1uWpp0yXmS-_hRrm_XezvoYdpRGCGNViImDgMX4W3LEHROhKKkDtMyhmk7sTUqqeiIB3jQDL3Mc_wXfe00CzIOs3Osm84Psm1MXqAJsv8_wYRIB5xJWKyPyhB9x9zwuKE9pU78Vga0LWNBLCyWQqP4fJnSah_p-0ix1OJ9-vbMYNueX7pS3gPcDB3ZYK7K174vPCy-GLtvwOe_MrVX0"/>
+<img alt="Dino" class="absolute right-10 top-40 w-48 opacity-20 dino-float hidden lg:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHunaFEdPi_A1WvU70GPVPd4Qi7FCFCm1s477Uf9VPXTI5zqmvILNEX4OVeUHX43GA4UXn6mc3tHik-e_ZeG19xABnugJfNgZ6coaOD9dQuifOpjMOf0PK6w35MOn4Jm-YSX4Q57lTW4e3Lp8Iyh-TYyiw91LWWAhVVacxzSqYjzVm5aLAAhs2uA85Rkf2vmU1DXwXswUpFYHlTnqgaWlndroTuv3Ab_zFS-5xw6AdMBtrDhUa6sHkNEjk_QYNUrC3f-kgQIwT8I" style="animation-delay: 1s;"/>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-center lg:text-left">
+<div class="inline-flex items-center space-x-2 bg-dino-yellow px-4 py-2 rounded-full border-2 border-black mb-6 shadow-[4px_4px_0px_#000]">
+<span class="text-red-600 font-black">★ ★ ★ ★ ★</span>
+<span class="text-xs font-black text-charcoal uppercase">4.6 RATING</span>
+</div>
+<h1 class="font-serif text-6xl md:text-8xl font-black text-charcoal leading-none mb-6">
+          Dinobites <br/><span class="text-dino-pink bg-white px-4 inline-block transform -rotate-2 border-4 border-black shadow-[8px_8px_0px_#000]">Cafe</span>
+</h1>
+<p class="text-xl md:text-2xl font-medium text-gray-700 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed italic">
+          Relaxed locale in a charming setting dishing up health-conscious eats &amp; light fare.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
+<a class="bg-dino-green text-white px-10 py-5 rounded-2xl font-black text-lg shadow-[6px_6px_0px_#000] hover:translate-x-1 hover:translate-y-1 active:translate-x-0 active:translate-y-0 transition-all flex items-center justify-center gap-3" href="https://wa.me/02156960504">
+<svg class="w-7 h-7" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            Book WhatsApp
+          </a>
+<a class="bg-white text-charcoal border-4 border-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-dino-yellow shadow-[6px_6px_0px_#000] hover:translate-x-1 hover:translate-y-1 active:translate-x-0 active:translate-y-0 transition-all flex items-center justify-center" href="#menu">
+            VIEW MENU
+          </a>
+</div>
+</div>
+<div class="relative flex justify-center lg:justify-end">
+<div class="relative w-80 h-80 md:w-[550px] md:h-[550px]">
+<div class="absolute inset-0 bg-dino-pink rounded-full blur-3xl opacity-30 animate-pulse"></div>
+<!-- Central Image like the promo flyer -->
+<div class="relative w-full h-full p-4 bg-white border-8 border-black rounded-[4rem] overflow-hidden shadow-[20px_20px_0px_rgba(0,0,0,0.15)] rotate-3 hover:rotate-0 transition-all duration-700">
+<img alt="Dinobites Cafe Ambience" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG1JeFEXKxp7Jv2BOCRBzjm05qNDvnOUIBY_cV5ETpip7KaJofqp77LMoJ9THHIJyjzaU6f88iy3a4vhp3wSpjf6waKMxSQCMACn1t9UCl5P2sbPcPR-qWGitzBSLT8joSMGvJ8vVRfC5E_3dIF4jjsjjTGc69xuRUmv4T1AFWH3oFXjw4njLN1eJWaOpGqR6t1spc7vLnpO64oyeltjPLkCdjqzpFUFd4qmkL4YkRiUYPjZ76uz_v614ohSf7jcGDDPzhjygVwnw"/>
+<div class="absolute top-6 right-6 bg-red-600 text-white font-black p-4 rounded-full shadow-lg transform rotate-12 flex flex-col items-center justify-center border-4 border-white">
+<span class="text-2xl leading-none">10%</span>
+<span class="text-xs leading-none uppercase">OFF</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: MenuSection -->
+<section class="py-24 bg-white relative overflow-hidden" data-purpose="menu" id="menu">
+<!-- Decorative Grid Overlay -->
+<div class="absolute inset-0 yellow-grid opacity-10 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center mb-16">
+<div class="bg-dino-pink text-white inline-block px-8 py-2 transform -rotate-1 mb-4 border-4 border-black font-black uppercase tracking-widest">
+    SENIN - JUMAT
+</div>
+<h2 class="font-serif text-5xl md:text-6xl font-black text-charcoal mb-4 italic">Signature Selection</h2>
+<div class="h-2 w-32 bg-dino-yellow mx-auto border-2 border-black rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<!-- Dragon Bowl -->
+<div class="group bg-white rounded-[3rem] p-5 border-4 border-black hover:shadow-[12px_12px_0px_#FF4081] transition-all duration-300 hover:-translate-y-2">
+<div class="overflow-hidden rounded-[2rem] aspect-square mb-6 border-4 border-dino-yellow bg-yellow-50">
+<img alt="Dragon Bowl" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0z91f39PZQf4OUf3GCTJsV4Uh5E7wCcNLIH7n51eI27bweVE3rr_XwABky_UuSqQCSQsxoHtr-_2RU_HGzgHklV--DhT0CAbA-F0xHi0kupmrr4AiGIR1IzYKNBq_0UPVo5BaFesndui2AerrpdCDh1BE9MDTnyKDssn7p-ncbUFFr6Gn8mITMAl29-1Hlt3F93NICzKxM5GkTd_vn7KHCSWwqzDU1UDtNU9RcYlyoflp6lmxWH70Hdgon0vCZqjIclcA0yVL5Oc"/>
+</div>
+<h3 class="font-black text-2xl mb-1 text-charcoal">Dragon Bowl</h3>
+<p class="text-gray-600 font-medium text-sm mb-6">Fresh dragon fruit, granola, nuts and healthy toppings.</p>
+<div class="flex justify-between items-center bg-gray-50 p-3 rounded-2xl border-2 border-dashed border-gray-300">
+<span class="font-black text-xl text-dino-dark-pink">Rp 55.000</span>
+<button class="bg-dino-pink text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black transition-colors font-bold shadow-md">+</button>
+</div>
+</div>
+<!-- Chicken Bites -->
+<div class="group bg-white rounded-[3rem] p-5 border-4 border-black hover:shadow-[12px_12px_0px_#4CAF50] transition-all duration-300 hover:-translate-y-2">
+<div class="overflow-hidden rounded-[2rem] aspect-square mb-6 border-4 border-dino-yellow bg-yellow-50">
+<img alt="Chicken Bites" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFrmOFSdOF-HkwRghGdYTeOHIepe6NDYO0ErfPz2oMgk6CS-5rzmUre00ivtTEhqlE16MHKyNdX_6gNDH-B7RMT35GG9YtGTedY8-pe1WTDnnb-1eNj8oE07GjQwsMExQ7DOGlsS4bhn4CyVMkdZj-AmxyF_rGHQhtTrWQT5VisXpni62HoK9wv-yiOwPr5VlvNaBdxer9SaPKb0920Qfa-vcdumRcKWtYH45jYivD2WLJNzQaucE7nMk53tpllKEi8Ld8kRAz6Sw"/>
+</div>
+<h3 class="font-black text-2xl mb-1 text-charcoal">Chicken Bites</h3>
+<p class="text-gray-600 font-medium text-sm mb-6">Crispy golden bites served with signature dipping sauce.</p>
+<div class="flex justify-between items-center bg-gray-50 p-3 rounded-2xl border-2 border-dashed border-gray-300">
+<span class="font-black text-xl text-dino-dark-pink">Rp 50.000</span>
+<button class="bg-dino-pink text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black transition-colors font-bold shadow-md">+</button>
+</div>
+</div>
+<!-- Carbonara -->
+<div class="group bg-white rounded-[3rem] p-5 border-4 border-black hover:shadow-[12px_12px_0px_#FFEB3B] transition-all duration-300 hover:-translate-y-2">
+<div class="overflow-hidden rounded-[2rem] aspect-square mb-6 border-4 border-dino-yellow bg-yellow-50">
+<img alt="Carbonara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEJxcsfWpFOB8FuLtFnTMnTAz6pqd7_TWaliaThuoZ0FOCjAsMnbIHLMsYTsGmnRRXrDHuyuj1a2lhQjDbtRnQlphwZAo-91D53tqiqtshDoa3sIewXI3G1zqAXcaDIzEw8-w3Wgcx27bOMBS6LT4AWrt3qTbGfkkAYH5RxPrmBIIwx6pyDHFkPkGrPOpdrbCNoqQmGZyzx3jFpZ0Ndy_TszWWCX2AJdHL4ROx4w8d3X_8kyw5Lwh5u1q2QEcZunZcas2S6OhNkEU"/>
+</div>
+<h3 class="font-black text-2xl mb-1 text-charcoal">Carbonara</h3>
+<p class="text-gray-600 font-medium text-sm mb-6">Creamy authentic pasta with smoked beef and parmesan.</p>
+<div class="flex justify-between items-center bg-gray-50 p-3 rounded-2xl border-2 border-dashed border-gray-300">
+<span class="font-black text-xl text-dino-dark-pink">Rp 65.000</span>
+<button class="bg-dino-pink text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black transition-colors font-bold shadow-md">+</button>
+</div>
+</div>
+<!-- Fish and Chips -->
+<div class="group bg-white rounded-[3rem] p-5 border-4 border-black hover:shadow-[12px_12px_0px_#3F51B5] transition-all duration-300 hover:-translate-y-2">
+<div class="overflow-hidden rounded-[2rem] aspect-square mb-6 border-4 border-dino-yellow bg-yellow-50">
+<img alt="Fish and Chips" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIOMLIW7Diqj3sXGK_Q7qKDeAiKTiJGNqG9AtismmVGSx87gLGfS5SbVugXKIrbK5NqyCJTLpgSlUvJL4QgQY5alxnvgIePA93_4RqQouVcDLy-MwVHPRJAqjdY4X-cVjnHaXuMIZr5l9zdqM6VqGNWzgF50sQ5cEFnF3D6rRawe9bY8Gp26OLCHbWC8MYxtdWb209p71v0O5RiC9ZB0rBZAT5zDkE_0bIj2rnZ7CKxVL-keb6IOImjdiseowFmpPHxRl77Y5swnE"/>
+</div>
+<h3 class="font-black text-2xl mb-1 text-charcoal">Fish &amp; Chips</h3>
+<p class="text-gray-600 font-medium text-sm mb-6">Beer-battered dory served with chips and tartar sauce.</p>
+<div class="flex justify-between items-center bg-gray-50 p-3 rounded-2xl border-2 border-dashed border-gray-300">
+<span class="font-black text-xl text-dino-dark-pink">Rp 75.000</span>
+<button class="bg-dino-pink text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black transition-colors font-bold shadow-md">+</button>
+</div>
+</div>
+</div>
+<div class="text-center mt-16">
+<button class="bg-charcoal text-white px-10 py-4 rounded-full font-black text-lg shadow-[6px_6px_0px_#FFEB3B] hover:translate-x-1 hover:translate-y-1 transition-all">EXPLORE FULL MENU (PDF)</button>
+</div>
+</div>
+</section>
+<!-- END: MenuSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 yellow-grid relative border-y-8 border-black" data-purpose="about" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="relative z-10 p-4 bg-white border-8 border-black rounded-[3rem] shadow-[20px_20px_0px_#FF4081]">
+<img alt="Interior" class="rounded-[2rem] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1InsrXgmLsr1M2GCjQ_QC2ROzIFI9Y6XPJ-M2M25KawLWsrLANanFZaGtJlSBKK8bD_eFjO3xTA1TFWpBUzhUFbNwqpDToLpR0Z6dHhzVP5rydhKiX_cxUCwnLWalGA-Kr4u-nnS1Ejd9gKogtThWkhFUt8lCN4036SJK6WhTn_S_J8S-iJuSLjnX6WLigmH1yhxKkLBOtSXgQsbiGbP05Q3rxXDKqC3SoFLSbe3-tvemFrRvcpkXcSFSZzLd_E5OIuBKQjxuN3I"/>
+</div>
+<!-- Dino Mascot from flyer -->
+<img alt="Dino Mascot" class="absolute -bottom-12 -left-12 w-48 dino-float z-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMQXGZytejNMUqyfL4gLS9yicDPwBIpHcPKpMiDOgy9N9yB1YQKrESzFVm8znKz_P5_qAhQiNCYV9MD_IVmOZXm2a58bUb5sSaUAbMa_PNM7Bhcveo0U-P2fqKFxciS4szvJ0JlDrMSCaRGvDvOAyRdKX09lRxxbZphDp3VTbpBgr6-Oe60VIGttTokAh8ZPVMkF0uy8su1gvTwv32vXtcVLR4BAT2jFkavXqRfVM7jwuS4r9eANqlOhprjGNqZLi2EKg_9zOCCOQ"/>
+</div>
+<div>
+<h2 class="font-serif text-5xl md:text-7xl font-black mb-8 text-charcoal leading-tight">Homey Vibes &amp; <br/><span class="text-dino-dark-pink italic bg-white px-4 inline-block transform -rotate-2 border-4 border-black shadow-[6px_6px_0px_#000]">Friendly Smiles</span></h2>
+<div class="space-y-6 text-gray-800 text-xl leading-relaxed font-medium">
+<p>At Dinobites, we believe healthy food shouldn't be boring. Our <span class="text-dino-pink font-black uppercase">girly ambience</span> is designed to be your second home – a place to unwind, gossip with friends, or simply enjoy some "me time".</p>
+<p>Our team of <span class="font-black italic text-dino-green">friendly staff</span> is dedicated to serving you nutritious, delicious, and Instagram-worthy meals prepared with the freshest ingredients.</p>
+<ul class="grid grid-cols-2 gap-4 mt-8">
+<li class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-black font-black text-sm uppercase"><div class="w-4 h-4 rounded-full bg-dino-pink border-2 border-black"></div> Healthy Options</li>
+<li class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-black font-black text-sm uppercase"><div class="w-4 h-4 rounded-full bg-dino-green border-2 border-black"></div> Cozy Vibes</li>
+<li class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-black font-black text-sm uppercase"><div class="w-4 h-4 rounded-full bg-dino-yellow border-2 border-black"></div> Great Lighting</li>
+<li class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-black font-black text-sm uppercase"><div class="w-4 h-4 rounded-full bg-blue-400 border-2 border-black"></div> High-Speed WiFi</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: ReviewsSection -->
+<section class="py-24 bg-white pink-triangles" data-purpose="testimonials" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-20">
+<h2 class="font-serif text-5xl font-black text-charcoal mb-4 italic">Kind Words</h2>
+<p class="text-xl font-bold text-dino-pink uppercase tracking-widest">From our lovely community</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<!-- Beatrice -->
+<div class="bg-white rounded-[3rem] p-10 border-4 border-black shadow-[10px_10px_0px_#FFEB3B] relative">
+<div class="absolute -top-6 -left-4 bg-dino-pink text-white w-12 h-12 rounded-full border-4 border-black flex items-center justify-center font-black text-2xl shadow-md">"</div>
+<div class="mb-4 text-red-500 font-black text-xl">★★★★★</div>
+<p class="text-gray-700 font-medium italic mb-8 leading-relaxed text-lg">"Such a cute place! The Dragon Bowl is life-changing and the lighting is perfect for my OOTDs. Truly the hidden gem of West Jakarta."</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-dino-yellow border-4 border-black flex items-center justify-center font-black text-charcoal text-xl">B</div>
+<div>
+<p class="font-black text-lg">Beatrice</p>
+<p class="text-sm font-bold text-dino-pink uppercase">Local Guide</p>
+</div>
+</div>
+</div>
+<!-- David -->
+<div class="bg-white rounded-[3rem] p-10 border-4 border-black shadow-[10px_10px_0px_#4CAF50] relative transform lg:-translate-y-6">
+<div class="absolute -top-6 -left-4 bg-dino-green text-white w-12 h-12 rounded-full border-4 border-black flex items-center justify-center font-black text-2xl shadow-md">"</div>
+<div class="mb-4 text-red-500 font-black text-xl">★★★★★</div>
+<p class="text-gray-700 font-medium italic mb-8 leading-relaxed text-lg">"Unexpectedly great carbonara! Friendly staff who remember your name. Highly recommend the Chicken Bites for snacks while working."</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-dino-green border-4 border-black flex items-center justify-center font-black text-white text-xl">D</div>
+<div>
+<p class="font-black text-lg">David</p>
+<p class="text-sm font-bold text-dino-green uppercase">Food Blogger</p>
+</div>
+</div>
+</div>
+<!-- Takkunyah -->
+<div class="bg-white rounded-[3rem] p-10 border-4 border-black shadow-[10px_10px_0px_#FF4081] relative">
+<div class="absolute -top-6 -left-4 bg-dino-pink text-white w-12 h-12 rounded-full border-4 border-black flex items-center justify-center font-black text-2xl shadow-md">"</div>
+<div class="mb-4 text-red-500 font-black text-xl">★★★★★</div>
+<p class="text-gray-700 font-medium italic mb-8 leading-relaxed text-lg">"Atmosphere 10/10. It's so pink and aesthetic but the food quality is the real winner here. Fish and chips are super fresh!"</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-dino-pink border-4 border-black flex items-center justify-center font-black text-white text-xl">T</div>
+<div>
+<p class="font-black text-lg">Takkunyah</p>
+<p class="text-sm font-bold text-dino-pink uppercase">Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReviewsSection -->
+<!-- BEGIN: InstagramFeed -->
+<section class="py-24 bg-dino-yellow relative border-y-8 border-black" data-purpose="instagram">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+<div class="text-center md:text-left">
+<h2 class="font-serif text-5xl font-black text-charcoal">@dinobites.cafe</h2>
+<p class="text-charcoal font-bold uppercase tracking-widest italic opacity-70">Tag us to get featured!</p>
+</div>
+<a class="bg-white text-charcoal px-10 py-4 rounded-full font-black text-lg border-4 border-black shadow-[6px_6px_0px_#FF4081] hover:translate-x-1 hover:translate-y-1 transition-all" href="#">FOLLOW US</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfghur3LJzeq1QwzmuK1_bDWXpIkFNHWAo_wOItMTKS2-OT6Q3xdvqBzQb1uWpp0yXmS-_hRrm_XezvoYdpRGCGNViImDgMX4W3LEHROhKKkDtMyhmk7sTUqqeiIB3jQDL3Mc_wXfe00CzIOs3Osm84Psm1MXqAJsv8_wYRIB5xJWKyPyhB9x9zwuKE9pU78Vga0LWNBLCyWQqP4fJnSah_p-0ix1OJ9-vbMYNueX7pS3gPcDB3ZYK7K174vPCy-GLtvwOe_MrVX0"/>
+</div>
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg rotate-2">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHunaFEdPi_A1WvU70GPVPd4Qi7FCFCm1s477Uf9VPXTI5zqmvILNEX4OVeUHX43GA4UXn6mc3tHik-e_ZeG19xABnugJfNgZ6coaOD9dQuifOpjMOf0PK6w35MOn4Jm-YSX4Q57lTW4e3Lp8Iyh-TYyiw91LWWAhVVacxzSqYjzVm5aLAAhs2uA85Rkf2vmU1DXwXswUpFYHlTnqgaWlndroTuv3Ab_zFS-5xw6AdMBtrDhUa6sHkNEjk_QYNUrC3f-kgQIwT8I"/>
+</div>
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg -rotate-2">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMQXGZytejNMUqyfL4gLS9yicDPwBIpHcPKpMiDOgy9N9yB1YQKrESzFVm8znKz_P5_qAhQiNCYV9MD_IVmOZXm2a58bUb5sSaUAbMa_PNM7Bhcveo0U-P2fqKFxciS4szvJ0JlDrMSCaRGvDvOAyRdKX09lRxxbZphDp3VTbpBgr6-Oe60VIGttTokAh8ZPVMkF0uy8su1gvTwv32vXtcVLR4BAT2jFkavXqRfVM7jwuS4r9eANqlOhprjGNqZLi2EKg_9zOCCOQ"/>
+</div>
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO7qLl6HKEwL-3ERnYpmNsvUXPnc7ApBy6F2mbM2mmyLGOT5MLrhdun-fa1s1WfRxhFJAc0gxyNoWh-VxMNiRViRD2gYIy6etSY4nU-CELWNJmaf36Dee5lMxrWwcC_9EorLXY9ypXE3_z9xu38oiE0WvzbMmEry_zv6epUeFMdnlQAKaeTUK8q5PBksI8HF_5pORL6JBgtbu0zB_KiWPkqVamJLjlvYEQjrWXYYusFdDvbBVdMA4wGgDBY8_ozoz9XEICELoMs6Y"/>
+</div>
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg rotate-3">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR7pnHf8r7KpcaNmsyL79gB2tdjlQr-TfcdY3-JgoMu60iVQl0OyXc3YnW0NdxfDwjKX-OlEYUDk1krrH7-6Q6O4aR78_vpOhjSoQVEDa1Q67ZCqjq_uju0vtn_G9Rn0qSoc2j42rGtIzFJtPlx3JwknvWiWAVYrla2TxJWQ58haTcTqmB6T7vwLnPdG5AnTEIEAc3ephOopLuSFINkxVsjtXj3wHaNWWSalFU5blue7O0B21HXNML9W6kLaiVPZa6QfyOsX3jTyY"/>
+</div>
+<div class="aspect-square bg-white border-4 border-black rounded-3xl overflow-hidden group cursor-pointer relative shadow-lg -rotate-1">
+<img alt="IG Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbOMAieUqQwfZnQKZCM0HH1ifNrLGoluAti49dPdP9-K97MAKjaVdkmMdbAzs79x4zhJ7AAeFj1E0B0mGlJYaJz3mnxSjg85_glVmnn3H8KDUcpdzMaYMZbfFeCzPUT5vwjaSMPVB7WMHcfPJdG4I-cpAuLZcsFl_xtv1Fnwbt1fSxiGBab7LrpyMT_zluvETeDdO6CsGymIBFjJ3Hb7zHY6U6pNfClLKW4NbsxyaG4qmtnoCOPgn1ebR_JW4fUT7Ev_GdS1uPZQ0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InstagramFeed -->
+<!-- BEGIN: LocationSection -->
+<section class="py-24 bg-white" data-purpose="location-map" id="location">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<h2 class="font-serif text-6xl font-black mb-10 text-charcoal leading-tight">Find Your <br/><span class="text-dino-pink bg-dino-yellow px-4 border-4 border-black shadow-[6px_6px_0px_#000] inline-block -rotate-2">Happy Place</span></h2>
+<div class="space-y-10">
+<div class="bg-gray-50 p-6 rounded-3xl border-4 border-dashed border-gray-300">
+<p class="font-black text-dino-pink uppercase tracking-widest text-sm mb-3">Address</p>
+<p class="text-xl font-medium">Gg. Macan No.102C, RT.1/RW.13,<br/>Duri Kepa, Kec. Kb. Jeruk,<br/>Jakarta Barat, 11510</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-3xl border-4 border-dashed border-gray-300">
+<p class="font-black text-dino-green uppercase tracking-widest text-sm mb-3">Contact</p>
+<p class="text-xl font-medium">021-56960504</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-3xl border-4 border-dashed border-gray-300">
+<p class="font-black text-dino-dark-pink uppercase tracking-widest text-sm mb-3">Hours</p>
+<p class="text-2xl font-black text-charcoal">7am - Late <br/><span class="text-dino-pink text-sm uppercase">EVERY SINGLE DAY</span></p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 relative min-h-[500px] rounded-[3rem] overflow-hidden border-8 border-black shadow-[20px_20px_0px_rgba(0,0,0,0.1)]">
+<iframe allowfullscreen="" class="absolute inset-0 w-full h-full border-0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6974127521796!2d106.7725835!3d-6.1712497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f658097d8b51%3A0x6e76d3f27f58a77d!2sGg.%20Macan%20No.102C%2C%20RT.1%2FRW.13%2C%20Duri%20Kepa%2C%20Kec.%20Kb.%20Jeruk%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011510!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LocationSection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-charcoal text-white pt-24 pb-12 border-t-8 border-dino-pink" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-2">
+<span class="font-serif text-5xl font-black text-white tracking-tight mb-8 block">Dinobites<span class="text-dino-yellow">.</span></span>
+<p class="text-gray-400 text-xl font-medium max-w-sm mb-10 leading-relaxed">Experience West Jakarta's most charming cafe. Healthy food, aesthetic vibes, and community at the heart of everything we do.</p>
+<div class="flex gap-6">
+<a class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center hover:bg-dino-pink hover:scale-110 transition-all font-black border-2 border-white/20" href="#">IG</a>
+<a class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center hover:bg-dino-pink hover:scale-110 transition-all font-black border-2 border-white/20" href="#">FB</a>
+<a class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center hover:bg-dino-pink hover:scale-110 transition-all font-black border-2 border-white/20" href="#">TT</a>
+</div>
+</div>
+<div>
+<h4 class="font-black text-2xl mb-8 text-dino-yellow uppercase tracking-widest">Quick Links</h4>
+<ul class="space-y-6 text-gray-400 font-bold text-lg">
+<li><a class="hover:text-dino-pink transition-colors" href="#menu">OUR MENU</a></li>
+<li><a class="hover:text-dino-pink transition-colors" href="#about">ABOUT US</a></li>
+<li><a class="hover:text-dino-pink transition-colors" href="#location">VISIT US</a></li>
+<li><a class="hover:text-dino-pink transition-colors" href="#">FRANCHISE</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-black text-2xl mb-8 text-dino-pink uppercase tracking-widest">Contact</h4>
+<ul class="space-y-6 text-gray-400 font-bold text-lg">
+<li>Gg. Macan No.102C, Duri Kepa</li>
+<li>hello@dinobites.cafe</li>
+<li>021-56960504</li>
+</ul>
+</div>
+</div>
+<div class="pt-10 border-t border-white/10 text-center text-gray-500 font-bold">
+<p>© 2024 Dinobites Cafe. Designed for Dino &amp; aesthetic lovers. 🦖💖</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: WhatsAppFloating -->
+<a class="fixed bottom-10 right-10 z-[60] floating-btn bg-[#25D366] text-white px-8 py-4 rounded-full shadow-[10px_10px_0px_#000] border-4 border-black flex items-center gap-3 font-black text-lg hover:scale-105 transition-transform" href="https://wa.me/02156960504" target="_blank">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+    CHAT WITH US!
+  </a>
+<!-- END: WhatsAppFloating -->
+</body></html>
