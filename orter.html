@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Orter Cafe &amp; Kitchen | Hidden Gem in Jelambar</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Montserrat & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'orter-orange': '#f3a82c',
+            'orter-dark': '#0f0f0f',
+            'orter-gray': '#1a1a1a',
+            'orter-text-muted': '#a1a1a1',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-gradient {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501339819358-ee5f8b47d2fe?q=80&w=2000&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="antialiased">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-orter-dark/80 backdrop-blur-md border-b border-white/10" data-purpose="main-nav">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex-shrink-0 flex items-center">
+<span class="text-orter-orange font-display font-extrabold text-2xl tracking-tighter">ORTER.</span>
+</div>
+<div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest">
+<a class="hover:text-orter-orange transition-colors" href="#about">About</a>
+<a class="hover:text-orter-orange transition-colors" href="#menu">Menu</a>
+<a class="hover:text-orter-orange transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-orter-orange transition-colors" href="#contact">Contact</a>
+</div>
+<div>
+<a class="bg-orter-orange text-black px-6 py-2 rounded-full font-bold text-xs uppercase tracking-tighter hover:bg-orange-400 transition-all" href="#">
+            Order Now
+          </a>
+</div>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: HeroSection -->
+<section class="relative h-screen flex items-center justify-center hero-gradient text-center px-4" data-purpose="hero-banner">
+<div class="max-w-4xl">
+<span class="text-orter-orange font-display font-bold tracking-[0.3em] uppercase text-sm mb-4 block">Hidden Gem in Jelambar</span>
+<h1 class="text-5xl md:text-8xl font-display font-extrabold mb-6 leading-tight">
+        ORTER CAFE<br/>&amp; KITCHEN
+      </h1>
+<p class="text-orter-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+        Experience the perfect blend of industrial vibes and soulful flavors. From specialty coffee to our signature crispy treats.
+      </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-orter-orange text-black px-8 py-4 rounded-md font-bold text-sm hover:scale-105 transition-transform flex items-center justify-center gap-2" href="https://wa.me/628121087070" target="_blank">
+          Order via WhatsApp
+        </a>
+<a class="border border-white/30 px-8 py-4 rounded-md font-bold text-sm hover:bg-white/10 transition-colors backdrop-blur-sm" href="#menu">
+          Explore Menu
+        </a>
+</div>
+</div>
+<!-- WhatsApp Floating Icon -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] p-4 rounded-full shadow-lg z-50 hover:scale-110 transition-transform" href="https://wa.me/628121087070">
+<svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.524.904 3.056 1.381 4.64 1.382 5.013 0 9.089-4.075 9.092-9.087.002-2.428-.943-4.712-2.657-6.427-1.715-1.714-3.998-2.66-6.426-2.66-5.014 0-9.089 4.076-9.092 9.089-.001 1.701.469 3.362 1.358 4.811l-1.018 3.715 3.794-.995zm11.366-6.33c-.312-.156-1.848-.912-2.134-1.017-.286-.105-.494-.156-.701.156-.207.312-.804 1.017-.986 1.224-.182.207-.364.234-.676.078-.312-.156-1.316-.485-2.506-1.545-.926-.826-1.551-1.846-1.733-2.158-.182-.312-.019-.481.137-.636.141-.14.312-.364.468-.546.156-.182.208-.312.312-.52.104-.208.052-.39-.026-.546-.078-.156-.701-1.691-.961-2.313-.253-.607-.51-.525-.701-.535-.181-.01-.39-.011-.598-.011s-.546.078-.832.39c-.286.312-1.092 1.066-1.092 2.6s1.118 3.015 1.274 3.223c.156.208 2.2 3.359 5.331 4.713.745.322 1.325.515 1.777.659.748.237 1.43.204 1.969.123.6-.09 1.847-.754 2.108-1.482.26-.728.26-1.352.182-1.482-.078-.13-.286-.208-.598-.364z"></path></svg>
+</a>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 bg-orter-dark" data-purpose="about-section" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<img alt="Cafe Interior" class="rounded-lg shadow-2xl w-full object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_A4bwcZHVFKPkU0BNW3-YFXrhB_CTN1pkRstkWd4PT5eMK4Ogl0olE0A0jG8mYGtjNhb5SqFuGTRVd28OptqYEwxmzG1x6H-4AO8KcAT1Mpoe9FZXP5-Q6zPZUzpWYaGgtey-BWVSklOpLwJaP2N6MCPuq3FcuyVfA86Chiy5VLLVQunY08Fn9KrcP8H88sZr0KNfU7Q_HU1Y4f3gMoUJ_9oOcSF2ArlMlYLXj-xi3YGza6hRpglVJ2Aqkz7Tg4HiPcUNrP9ted8"/>
+<div class="absolute -bottom-6 -right-6 bg-orter-orange text-black p-8 rounded-lg text-center shadow-xl">
+<p class="text-4xl font-extrabold">4.8</p>
+<p class="text-[10px] uppercase font-bold tracking-widest mt-1">Google Rating</p>
+</div>
+</div>
+<div>
+<span class="text-orter-orange font-display font-bold tracking-widest uppercase text-xs mb-4 block">Our Vibe</span>
+<h2 class="text-4xl md:text-5xl font-display font-bold mb-8">Comfy Interior,<br/>Tasteful Food.</h2>
+<p class="text-orter-text-muted mb-8 text-lg leading-relaxed">
+            We believe that great food shouldn't cost a fortune. Nestled in the heart of Jelambar, Orter offers a cozy industrial space designed for digital nomads, families, and friends alike.
+          </p>
+<ul class="space-y-4 text-sm font-medium">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-orter-orange rounded-full"></span> Premium Quality Ingredients
+            </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-orter-orange rounded-full"></span> Affordable Prices (Rp 25k - 50k)
+            </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-orter-orange rounded-full"></span> Perfect Ambience for Remote Work
+            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: MenuHighlights -->
+<section class="py-24 bg-orter-gray" data-purpose="menu-highlights" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-orter-orange font-display font-bold tracking-widest uppercase text-xs mb-4 block">Popular Choices</span>
+<h2 class="text-4xl md:text-5xl font-display font-bold">Crafted with Passion</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img alt="Nasi Goreng Orter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuCWj73AtCzF0snbwF7Gkxsk3omHSUDywezVNLQiNs5W2VTQkSXE6UpDZ9irWCzLmUw8SBPwnMogch6-htb903yNlArybzhqJLxBjjLhgxiqpdtwgn0sOgvCMER4BQCaL-3BW6Iii53lJgYxWPqq-_5rtQX2IvOQviBB8fXK_m7muslHgCsS9PnMV4qOmwCWlwdZ8sSmxa5QYxqFVeeahkuEedfaS10CkpGsspU3qwWsnS3QpmLZ_HpCxohD2k8MvzG-A64GM8u9k"/>
+</div>
+<h3 class="text-lg font-bold mb-2">Nasi Goreng Orter</h3>
+<p class="text-orter-text-muted text-xs leading-relaxed">Authentic local fried rice with our signature spice blend and toppings.</p>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img alt="Royal Milk Tea" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVLXhWiJYw6Xsba2yM9WvrSvCOwf03AC84YYuchl6on9thfaQGLBbkY2tHU6hQDnOEkEdYirVCzLIRu7rF8rUGmpREMU-KM53BEpwquKxhDpedhgO0djVFr0-52_S6Qowp9fpLbPi28v2PQDbDBZxB2iSAHQUIqTm4-vYc1kIKSvaomQuCMYQeCgXU_T59LeC2d8w2GfhBntx_C9u8x3yDm_hWr7c43FRUBP8fwPwqS6wfbdIoS4uqwZa_bAgxTNFE4nJ-7tIiX-g"/>
+</div>
+<h3 class="text-lg font-bold mb-2">Royal Milk Tea</h3>
+<p class="text-orter-text-muted text-xs leading-relaxed">Smooth, creamy, and perfectly balanced sweetness for any time of day.</p>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img alt="Banana Caramel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKarolGTIasq86z6JCNSXeIwVjUZzzED6zNbVlyF0VtE9PkAeyOw2FriKEbfzBxw4xktKzBK7bfWkpALAO_O2rcTO3R3i-CDFpxJAwdtOF0L7q1ThQleErmc0tkg_55mRo8Y2m0m6bmLjP_mJiHkLEezKKRqZdGBakUaICK-GiSRIfuKPa6apO1ib64IxRcDQrYiqcMZUNsBJlamR2jZM6rWEyFRFR8qCG2sOtRowi6NsMD2IznPTwAs0CA-A4fYuicwyp6FLoBYY"/>
+</div>
+<h3 class="text-lg font-bold mb-2">Banana Caramel</h3>
+<p class="text-orter-text-muted text-xs leading-relaxed">Pisang goreng crunchy dengan baluran saus karamel yang manis dan gurih.</p>
+</div>
+<!-- Item 4 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-4 aspect-square">
+<img alt="Signature Latte" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdoz4kHlb9Mi536ciWMlrA7Bg67TfOU6AgsM1VLlLEvOYBXm23ksTEUsmELzixL1dV6XiL7_8PobcZsjqY6dhMYGoDOc-eN5iw-obYUrCiACM5Zg4H_chkG3SK-NinLbx4VYNwP3g-CYYbOqObh7cQIXhMIVlO_JqlAEstQZp2gnv_Mu6mu0Wjuxvy4uHB8otS7V2IXcOiMgu9kY7yi_Shipnbdl9-byLvKEQhNghCmY37PU09Lm2Acip-zwnaBnuIExW8at_aBF4"/>
+</div>
+<h3 class="text-lg font-bold mb-2">Signature Latte</h3>
+<p class="text-orter-text-muted text-xs leading-relaxed">Our house blend coffee, roasted locally for a rich and smooth experience.</p>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="italic text-orter-text-muted mb-4 text-sm">"See something you like? Check out our full menu in person."</p>
+<p class="text-xl font-bold">Price Range: Rp 25.000 – 50.000</p>
+</div>
+</div>
+</section>
+<!-- END: MenuHighlights -->
+<!-- BEGIN: ReviewsSection -->
+<section class="py-24 bg-orter-dark" data-purpose="reviews" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<span class="text-orter-orange font-display font-bold tracking-widest uppercase text-xs mb-4 block">Community Love</span>
+<h2 class="text-4xl md:text-5xl font-display font-bold">Loved by Locals</h2>
+</div>
+<div class="flex items-center gap-2 mt-4 md:mt-0">
+<div class="flex text-orter-orange">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-5 h-5 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+<span class="font-bold text-xl">4.8</span>
+<span class="text-orter-text-muted text-xs">(229 reviews)</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+<p class="text-sm italic text-white/90 leading-relaxed mb-6">
+            "Tempatnya enak buat nongkrong dan tugas. Makanannya enak-enak semua, especially the snacks!"
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-orter-orange/20 flex items-center justify-center text-orter-orange font-bold">M</div>
+<div>
+<p class="text-sm font-bold">Melanao Indonesia</p>
+<p class="text-[10px] text-orter-text-muted uppercase tracking-wider">Google Reviewer</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+<p class="text-sm italic text-white/90 leading-relaxed mb-6">
+            "Suka banget sama signature coffee-nya. Suasananya industrial tapi tetep homey. Recomended hidden gem di Jelambar!"
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">D</div>
+<div>
+<p class="text-sm font-bold">diafedia</p>
+<p class="text-[10px] text-orter-text-muted uppercase tracking-wider">Local Guide</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+<p class="text-sm italic text-white/90 leading-relaxed mb-6">
+            "Harga bersahabat banget buat kantong, tapi rasanya bintang lima. Nasi gorengnya juara sih."
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold">N</div>
+<div>
+<p class="text-sm font-bold">Nauval Hilmi</p>
+<p class="text-[10px] text-orter-text-muted uppercase tracking-wider">Coffee Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReviewsSection -->
+<!-- BEGIN: VisitSection -->
+<section class="py-24 bg-orter-dark border-t border-white/5" data-purpose="visit-info" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<span class="text-orter-orange font-display font-bold tracking-widest uppercase text-xs mb-4 block">Visit Us</span>
+<h2 class="text-4xl md:text-5xl font-display font-bold mb-12">Where to find us</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-orter-orange/10 flex items-center justify-center">
+<svg class="w-5 h-5 text-orter-orange" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="font-bold mb-1">Address</h4>
+<p class="text-orter-text-muted text-sm leading-relaxed">Jl. Jelambar Utama No.30, RT.1/RW.4, Jelambar, Kec. Grogol petamburan, Jakarta Barat.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-orter-orange/10 flex items-center justify-center">
+<svg class="w-5 h-5 text-orter-orange" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h4 class="font-bold mb-1">Hours</h4>
+<p class="text-orter-text-muted text-sm leading-relaxed">Monday - Sunday: 11:00 AM - Close</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-orter-orange/10 flex items-center justify-center">
+<svg class="w-5 h-5 text-orter-orange" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</div>
+<div>
+<h4 class="font-bold mb-1">WhatsApp</h4>
+<p class="text-orter-text-muted text-sm leading-relaxed">0812-1087-070</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] w-full rounded-2xl overflow-hidden border border-white/10">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-6.1529087,106.7854184&amp;z=15&amp;ie=UTF8&amp;output=embed" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- END: VisitSection -->
+<!-- BEGIN: InstagramFeed -->
+<section class="py-24 bg-orter-gray overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<h2 class="text-4xl font-display font-bold text-white mb-2 tracking-tighter">@ORTER.JKT</h2>
+<p class="text-orter-orange font-bold uppercase tracking-[0.3em] text-xs mb-16">
+<a class="hover:text-white transition" href="https://www.instagram.com/orter.jkt/" target="_blank">Follow us on Instagram</a>
+</p>
+<!-- Instagram Embed -->
+<div class="max-w-full mx-auto">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/orter.jkt/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0; padding:0; width:100%;">
+<div style="padding:16px;">
+<a href="https://www.instagram.com/orter.jkt/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+<div style="display: flex; flex-direction: row; align-items: center;">
+<div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+<div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+<div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+</div>
+</div>
+<div style="padding: 19% 0;"></div>
+<div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+<svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g transform="translate(-511.000000, -20.000000)" fill="#000000">
+<g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g>
+</svg>
+</div>
+<div style="padding-top: 8px;">
+<div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+</div>
+</a>
+<p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+<a href="https://www.instagram.com/orter.jkt/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Orter Cafe &amp; Kitchen (@orter.jkt)</a>
+</p>
+</div>
+</blockquote>
+<script async="" src="//www.instagram.com/embed.js"></script>
+</div>
+</div>
+</section>
+<!-- END: InstagramFeed -->
+<!-- BEGIN: Footer -->
+<footer class="py-12 bg-black text-center border-t border-white/5" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4">
+<span class="text-orter-orange font-display font-extrabold text-3xl tracking-tighter mb-8 block">ORTER.</span>
+<div class="flex justify-center space-x-6 mb-8 text-xs font-semibold uppercase tracking-widest text-orter-text-muted">
+<a class="hover:text-white transition-colors" href="#">Instagram</a>
+<a class="hover:text-white transition-colors" href="#">TikTok</a>
+<a class="hover:text-white transition-colors" href="#">Facebook</a>
+</div>
+<p class="text-orter-text-muted text-[10px] uppercase tracking-widest">
+        © 2023 Orter Cafe &amp; Kitchen. All Rights Reserved.
+      </p>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
