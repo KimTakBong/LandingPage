@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hanyakopi. Pamulang | Kopi Enak, Harga Teman, Buka 24 Jam</title>
+<meta content="Nikmati kopi terbaik di Tangerang Selatan. Hanyakopi. Pamulang buka 24 jam dengan suasana nyaman, harga bersahabat, dan fasilitas lengkap." name="description"/>
+<meta content="kopi pamulang, coffee shop 24 jam, hanyakopi, tangerang selatan coffee, tempat nongkrong pamulang" name="keywords"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="Hanyakopi. Pamulang - Best Coffee in Town" property="og:title"/>
+<meta content="Kopi Enak, Harga Teman, Buka 24 Jam di West Pamulang." property="og:description"/>
+<meta content="{{DATA:IMAGE:IMAGE_12}}" property="og:image"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            white: '#ffffff',
+                            gray: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Anton', 'sans-serif'],
+                        script: ['La Belle Aurore', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Anton&amp;family=La+Belle+Aurore&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&amp;display=swap" rel="stylesheet"/>
+<style>
+        .text-outline {
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+        }
+        .geometric-border {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .grid-line-v {
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .grid-line-h {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .animate-slide {
+            animation: slideIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-brand-black text-brand-white font-sans antialiased overflow-x-hidden">
+<!-- Navbar -->
+<nav class="sticky top-0 z-50 bg-brand-black border-b border-white/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center gap-4">
+<span class="text-2xl font-heading tracking-tight uppercase border-2 border-white px-3 py-1">Hanyakopi.</span>
+</div>
+<div class="hidden md:flex items-center space-x-12 font-bold uppercase tracking-widest text-xs">
+<a class="hover:text-gray-400 transition-colors" href="#menu">Menu</a>
+<a class="hover:text-gray-400 transition-colors" href="#about">Experience</a>
+<a class="hover:text-gray-400 transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-gray-400 transition-colors" href="#location">Contact</a>
+</div>
+<div>
+<a class="bg-white text-black px-6 py-2 font-heading uppercase tracking-wider hover:bg-gray-200 transition-colors" href="https://wa.me/6282258825332">Order Now</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center border-b border-white/10">
+<!-- Background Accents -->
+<div class="absolute top-0 left-1/4 h-full grid-line-v hidden lg:block"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 w-full relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-3/5 text-left">
+<div class="mb-4 flex items-center gap-2">
+<span class="text-xs font-bold tracking-[0.3em] uppercase opacity-60">West Pamulang / 24 Hours</span>
+<div class="h-px w-24 bg-white/40"></div>
+</div>
+<h1 class="text-[7rem] md:text-[11rem] font-heading leading-[0.8] tracking-tighter uppercase mb-6 relative">
+<span class="block">Hanya</span>
+<span class="block text-outline">Kopi.</span>
+<span class="absolute -bottom-4 right-0 lg:right-24 font-script text-4xl md:text-6xl text-white normal-case tracking-normal">Pamulang</span>
+</h1>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 mt-12">
+<p class="text-xl max-w-sm font-light leading-relaxed opacity-80">
+                            Kopi Enak, Harga Teman, <br/>
+                            Buka <span class="font-bold underline decoration-white/40">24 Jam</span> Untukmu.
+                        </p>
+<div class="flex flex-col gap-4">
+<a class="group flex items-center gap-4 bg-white text-black px-8 py-4 font-heading text-xl uppercase tracking-wider hover:scale-105 transition-transform" href="https://wa.me/6282258825332">
+<span>Chat WhatsApp</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2 text-sm font-bold tracking-widest uppercase">
+<span class="text-yellow-500">★</span>
+<span>4.6 (242 REVIEWS)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/5 flex justify-center">
+<div class="relative w-full max-w-md aspect-square">
+<div class="absolute inset-0 border-2 border-white rounded-full p-4">
+<div class="w-full h-full rounded-full overflow-hidden bg-white/10 flex items-center justify-center">
+<img alt="Lifestyle" class="w-full h-full object-cover scale-110 grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzP-TBH_De2LUVpR5YD5syMRyyIjyBsPinRm9_A_4SZBbRhph18CdT2lOf0L_Bp206uDKY1x5CKOGyS03LtYzeq31naAZP9IYdUXm59O-oKEh0j7DJzyNVz6SuUOjQVhsBvK15DR1pI0vETohH5s_dyUEwg6wzN3VYmIM3udT0cPAnGkRHAwTNWB4YYVL1yilOFu2LdBEqlEhrrcMamCReDg0YxRLLzgHPTEEOFcaaRplQmPJNKPFcoa9RvTq877BxIt-Jqq00Hzc"/>
+</div>
+</div>
+<!-- Circular Badge -->
+<div class="absolute -bottom-4 -left-4 bg-brand-black border border-white p-6 rounded-full w-32 h-32 flex flex-col items-center justify-center text-center animate-spin-slow">
+<span class="text-[0.6rem] font-bold tracking-widest uppercase mb-1">Stay Awake</span>
+<span class="text-2xl font-heading">24H</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="py-32 bg-brand-black overflow-hidden" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/20 pb-12">
+<h2 class="text-7xl md:text-9xl font-heading tracking-tighter uppercase leading-none">Pilih<br/>Favoritmu</h2>
+<p class="text-gray-400 font-bold uppercase tracking-widest text-sm mb-2">Price Range: Rp 25k - 50k</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<!-- Coffee Column -->
+<div>
+<div class="flex items-center gap-4 mb-12">
+<span class="font-script text-3xl">01.</span>
+<h3 class="text-4xl font-heading uppercase tracking-widest">Coffee Series</h3>
+</div>
+<div class="space-y-10">
+<div class="group flex justify-between items-end border-b border-white/20 pb-4 hover:border-white transition-colors">
+<div class="flex flex-col">
+<span class="text-xs font-bold uppercase tracking-widest text-white/50 mb-1">Top Pick</span>
+<h4 class="text-2xl font-heading uppercase tracking-widest">Caramel Macchiato</h4>
+<p class="text-xs italic opacity-40">Anisa Putri's favorite</p>
+</div>
+<span class="text-2xl font-heading">35K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Palm Sugar Latte</h4>
+<span class="text-2xl font-heading">28K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Americano (Hot/Ice)</h4>
+<span class="text-2xl font-heading">25K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Hazelnut Latte</h4>
+<span class="text-2xl font-heading">32K</span>
+</div>
+</div>
+</div>
+<!-- Milk Tea Column -->
+<div>
+<div class="flex items-center gap-4 mb-12">
+<span class="font-script text-3xl">02.</span>
+<h3 class="text-4xl font-heading uppercase tracking-widest">Milk &amp; Tea</h3>
+</div>
+<div class="space-y-10">
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Classic Milk Tea</h4>
+<span class="text-2xl font-heading">27K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Matcha Cream Latte</h4>
+<span class="text-2xl font-heading">35K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Chocolate Pamulang</h4>
+<span class="text-2xl font-heading">30K</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4">
+<h4 class="text-2xl font-heading uppercase tracking-widest">Peach Iced Tea</h4>
+<span class="text-2xl font-heading">25K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-32 relative bg-brand-black" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -left-12 top-0 bottom-0 grid-line-v opacity-20"></div>
+<div class="space-y-8 pl-8">
+<h2 class="text-6xl md:text-8xl font-heading uppercase tracking-tighter leading-none">Best Coffee<br/>In Town</h2>
+<p class="text-xl font-light opacity-70 leading-relaxed max-w-md">
+                            Kami bukan sekadar coffee shop. Kami adalah ruang di mana ide-ide lahir, pertemanan dipererat, dan rasa lelah hilang.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+<div class="p-6 border border-white/20 rounded-2xl flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">wifi</span>
+<span class="font-bold tracking-widest uppercase text-xs">High Speed WiFi</span>
+</div>
+<div class="p-6 border border-white/20 rounded-2xl flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">schedule</span>
+<span class="font-bold tracking-widest uppercase text-xs">Open 24/7</span>
+</div>
+<div class="p-6 border border-white/20 rounded-2xl flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">local_shipping</span>
+<span class="font-bold tracking-widest uppercase text-xs">Delivery Ready</span>
+</div>
+<div class="p-6 border border-white/20 rounded-2xl flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">takeout_dining</span>
+<span class="font-bold tracking-widest uppercase text-xs">Takeaway available</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center order-1 lg:order-2">
+<div class="relative">
+<div class="w-64 h-64 md:w-96 md:h-96 rounded-full border-2 border-white overflow-hidden -rotate-6">
+<img alt="Cafe" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCTB0gR4dK_4eSR2g8PeYupmh3KtlRtEApzb7XpbYwSSmzyAlH_cBTy4CUQxO9lX9khKeH7EjrojtRp2bZ6TRx6-KpMdtq7HFvnNBgC7nXRX_p3HjcLAZBEvRof42LhQCvpIbDD98impE1RCxaydhV5_uWhD2ivNW_CWMQwWjEjsdacsHL_Uo1Du4xR1UsGBtTMy-4iQuBcTpbFFd-PFFVo5d4NQAbsPpX0gqyj1a72CSSvUZxwi18s_jzg65Pkm8-V-GDMrMg41g"/>
+</div>
+<div class="absolute -top-10 -right-10 w-48 h-48 rounded-full border border-white/30 bg-brand-black flex items-center justify-center p-4">
+<div class="text-center">
+<span class="block font-script text-2xl">Lifestyle</span>
+<span class="block font-heading text-xl uppercase">Pamulang</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 border-y border-white/10" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-baseline justify-between gap-4 mb-24">
+<h2 class="text-7xl md:text-9xl font-heading uppercase tracking-tighter">Voice of<br/>Community</h2>
+<div class="flex items-center gap-6">
+<span class="text-8xl font-heading">4.6</span>
+<div class="flex flex-col uppercase font-bold tracking-widest text-[10px]">
+<span class="text-yellow-500">★★★★★</span>
+<span>242 Verified Clients</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/20">
+<!-- Review 1 -->
+<div class="p-12 border-b md:border-b-0 md:border-r border-white/20 bg-brand-black hover:bg-zinc-900 transition-colors">
+<span class="font-script text-3xl block mb-8">01.</span>
+<p class="text-xl font-light mb-12 italic leading-relaxed">"Caramel Macchiato-nya juara! Tempat paling asik buat nugas malam-malam di Pamulang."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full border border-white flex items-center justify-center font-heading">AP</div>
+<div>
+<span class="block font-bold uppercase tracking-widest text-xs">Anisa Putri</span>
+<span class="text-[10px] opacity-50 uppercase tracking-widest">Local Guide</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-12 border-b md:border-b-0 md:border-r border-white/20 bg-brand-black hover:bg-zinc-900 transition-colors">
+<span class="font-script text-3xl block mb-8">02.</span>
+<p class="text-xl font-light mb-12 italic leading-relaxed">"Buka 24 jam itu ngebantu banget buat yang suka overtime. Kopinya strong tapi gak bikin mual."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full border border-white flex items-center justify-center font-heading">AI</div>
+<div>
+<span class="block font-bold uppercase tracking-widest text-xs">Andhika Ichsan</span>
+<span class="text-[10px] opacity-50 uppercase tracking-widest">Student</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-12 bg-brand-black hover:bg-zinc-900 transition-colors">
+<span class="font-script text-3xl block mb-8">03.</span>
+<p class="text-xl font-light mb-12 italic leading-relaxed">"Pelayanan ramah, harga benar-benar 'harga teman'. Sukses terus buat Hanyakopi!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full border border-white flex items-center justify-center font-heading">AR</div>
+<div>
+<span class="block font-bold uppercase tracking-widest text-xs">Agus Rizky Satria</span>
+<span class="text-[10px] opacity-50 uppercase tracking-widest">Creator</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-32 bg-brand-black" id="location">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 border border-white/20">
+<div class="p-12 md:p-24 border-b lg:border-b-0 lg:border-r border-white/20">
+<h2 class="text-5xl md:text-7xl font-heading uppercase tracking-tighter mb-16">Connect<br/>With Us</h2>
+<div class="space-y-12">
+<div>
+<span class="text-[10px] font-bold tracking-[0.4em] uppercase opacity-40 block mb-2">Location</span>
+<p class="text-2xl font-light">West Pamulang, South Tangerang City, Banten.</p>
+<a class="inline-block mt-4 border-b border-white text-xs font-bold uppercase tracking-widest pb-1 hover:opacity-60" href="#">Get Directions</a>
+</div>
+<div>
+<span class="text-[10px] font-bold tracking-[0.4em] uppercase opacity-40 block mb-2">Operation</span>
+<p class="text-2xl font-light italic">Every Day — 24 Hours</p>
+</div>
+<div>
+<span class="text-[10px] font-bold tracking-[0.4em] uppercase opacity-40 block mb-2">Direct</span>
+<p class="text-2xl font-light">0822-5882-5332</p>
+</div>
+</div>
+</div>
+<div class="relative min-h-[400px] bg-zinc-900 overflow-hidden">
+<!-- Google Maps Embed -->
+<iframe class="absolute inset-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.999674373297!2d106.7361281!3d-6.3434022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef9dc37bdf43%3A0xcfe3fee3a9cd9e7f!2sHanyakopi.%20Pamulang!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: Instagram Section -->
+<section class="py-32 bg-brand-black" id="instagram">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="text-[10px] font-bold tracking-[0.4em] uppercase opacity-40 block mb-4">Follow Us</span>
+<h2 class="text-5xl font-heading uppercase mb-4">@hanyakopipamulang</h2>
+<p class="text-gray-500 max-w-lg mx-auto mb-8">Stay updated with our latest brews, events, and community moments.</p>
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" href="https://www.instagram.com/hanyakopipamulang" target="_blank" rel="noopener noreferrer">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+Follow on Instagram
+</a>
+<!-- Instagram Embed -->
+<div class="w-full mx-auto mt-16">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/hanyakopipamulang/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:0; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0 auto; padding:0; width:100%;">
+<div style="padding:16px;">
+<a href="https://www.instagram.com/hanyakopipamulang/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+<div style="display: flex; flex-direction: row; align-items: center;">
+<div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+<div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+<div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+</div>
+</div>
+<div style="padding: 19% 0;"></div>
+<div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+<svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g transform="translate(-511.000000, -20.000000)" fill="#000000">
+<g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g>
+</svg>
+</div>
+<div style="padding-top: 8px;">
+<div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+</div>
+</a>
+<p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+<a href="https://www.instagram.com/hanyakopipamulang/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Hanyakopi. Pamulang (@hanyakopipamulang)</a>
+</p>
+</div>
+</blockquote>
+</div>
+</div>
+</section>
+<!-- END: Instagram Section -->
+<!-- Footer -->
+<footer class="bg-brand-black border-t border-white/10 py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="mb-16">
+<span class="text-[6rem] md:text-[10rem] font-heading tracking-tighter opacity-10 leading-none select-none">HANYAKOPI</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+<div class="text-left">
+<h4 class="font-heading text-3xl uppercase mb-4">Hanyakopi. Pamulang</h4>
+<p class="text-gray-500 max-w-sm">Tempat ngopi terbaik di Pamulang dengan konsep modern dan harga bersahabat.</p>
+</div>
+<div class="flex justify-center md:justify-end gap-12">
+<a class="text-white hover:opacity-50 transition-opacity font-bold uppercase tracking-[0.3em] text-[10px]" href="#">Instagram</a>
+<a class="text-white hover:opacity-50 transition-opacity font-bold uppercase tracking-[0.3em] text-[10px]" href="#">Twitter</a>
+<a class="text-white hover:opacity-50 transition-opacity font-bold uppercase tracking-[0.3em] text-[10px]" href="#">TikTok</a>
+</div>
+</div>
+<div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold tracking-widest uppercase opacity-40">
+<span>© 2023 Hanyakopi. Pamulang. All rights reserved.</span>
+<span class="italic">Bring your own tumbler for 10% discount.</span>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-10 right-10 z-[100] bg-white text-black px-6 py-4 rounded-full font-heading uppercase tracking-widest text-sm flex items-center gap-3 hover:scale-110 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]" href="https://wa.me/6282258825332">
+<span class="material-symbols-outlined">chat</span>
+<span class="hidden sm:block">Connect</span>
+</a>
+<!-- Instagram Embed Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+<script>
+        // Simple intersection observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body></html>
