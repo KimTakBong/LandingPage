@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SNUG COFFEE KEBON JERUK | Boutique Coffee Experience</title>
+    <meta content="Experience the finest specialty coffee in West Jakarta. SNUG COFFEE offers a refined hidden gem with serene outdoor vibes and artisanal comfort food." name="description"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Instrument+Serif:italic&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c45c2c",
+                        "accent": "#fdf8f4",
+                        "coffee-900": "#1a120b",
+                        "coffee-800": "#2c1e13",
+                        "coffee-100": "#efe9e5",
+                        "background-light": "#faf9f6",
+                        "background-dark": "#120d0b",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Instrument Serif", "serif"]
+                    },
+                    borderRadius: {
+                        "none": "0",
+                        "sm": "0.125rem",
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'premium': '0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 10px 40px -5px rgba(0, 0, 0, 0.03)',
+                        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.02)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass {
+            background: rgba(18, 13, 11, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .section-fade {
+            position: relative;
+        }
+        .section-fade::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent, var(--bg-color));
+            pointer-events: none;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .reveal-on-scroll {
+            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-coffee-900 dark:text-stone-200 antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 z-50 w-full glass border-b border-black/[0.03] dark:border-white/[0.03]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3 group cursor-pointer">
+                    <img src="assets/snug.jpg" alt="SNUG COFFEE Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105"/>
+                </div>
+                <nav class="hidden lg:flex items-center gap-12">
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#about">About</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#menu">Menu</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#membership">Membership</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#reviews">Reviews</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#visit">Visit</a>
+                </nav>
+                <div class="flex items-center gap-6">
+                    <button class="bg-coffee-900 dark:bg-stone-100 text-white dark:text-coffee-900 px-7 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all">
+                        Order Online
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover scale-105" data-alt="Warm interior of SNUG COFFEE cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZ7dmN9MGZFjWRO8XweOhh624Riyd2rQvZWJxMnNeSLI9EW9jzMJaDhsVvO-gG8qv8qzNbgEgUQ018iLSnUGEFXkXxWZlWDvoP4gIGkzqT6LEZ47EC6QiqqiZaMz-b_thHpQacX_6OFffW4z9JM-WIcT704l8x15QrN2uIlav6YqOm0sjjnABr69YlxCpOrnqvxq5KLhm4OstNhzEeBdhaLWk3ZDvuOvoBNMqJn4aWvKZAycYVFNp-jLV-xQ84X4whS0P0e4Gr2g"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-background-light via-black/30 to-black/50 dark:from-background-dark"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl w-full text-center">
+            <div class="inline-flex items-center gap-4 mb-8 glass px-6 py-2 rounded-full border border-white/20">
+                <div class="flex text-primary gap-0.5">
+                    <span class="material-symbols-outlined text-[10px] fill-1">star</span>
+                    <span class="material-symbols-outlined text-[10px] fill-1">star</span>
+                    <span class="material-symbols-outlined text-[10px] fill-1">star</span>
+                    <span class="material-symbols-outlined text-[10px] fill-1">star</span>
+                    <span class="material-symbols-outlined text-[10px] fill-1">star</span>
+                </div>
+                <span class="text-white text-[10px] font-bold tracking-[0.3em] uppercase">97 Reviews</span>
+            </div>
+            <h2 class="text-7xl md:text-[120px] font-black text-white leading-[0.9] mb-8 tracking-tighter uppercase">
+                S<span class="italic font-serif normal-case text-primary font-normal">n</span>ug<br/>
+                <span class="text-5xl md:text-8xl tracking-normal opacity-90">Coffee</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-200 mb-12 max-w-xl mx-auto font-light leading-relaxed text-balance">
+                A sanctuary of stillness in West Jakarta. Experience our boutique roasts within a space designed for connection.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a class="w-full sm:w-auto bg-primary text-white px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-coffee-900 transition-all shadow-xl shadow-primary/20" href="#menu">
+                    Explore Menu
+                </a>
+                <a class="w-full sm:w-auto glass text-white px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-coffee-900 transition-all border border-white/20" href="#">
+                    Visit Us
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+            <span class="material-symbols-outlined text-white/50">expand_more</span>
+        </div>
+    </section>
+
+    <!-- About Section (Boutique Gallery Style) -->
+    <section class="py-32 px-6 lg:px-12 bg-background-light dark:bg-background-dark" id="about">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+                <div class="lg:col-span-6 order-2 lg:order-1">
+                    <div class="relative group">
+                        <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-premium transition-transform duration-700 group-hover:scale-[1.02]">
+                            <img class="w-full h-full object-cover" data-alt="Cozy outdoor seating area at Snug Coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx9MeZZNt6KACDKHhTpfOIZErFtjvEozlGw4kQL6QJ9VYdieQDhPJUkIHa_t5lEsrP5DIOg93e90MHwgUZZORp0NCsTkCL0MQ7epD1rdPxRexk_lWhkFgx6aZK5FdxX2SC6HlEelXo8DQpzyOhjRgvKyeNXR8tRFeYuzx1lArXfeU1AhTW_4zZwtBiYKya2SN4KynLZYO6geHRTsg5a1IjGQ6Wyw0CAyFD_3nkRW8B16RrDmGSPiFzdwlzix6WCo9fn57nLkM_eP0"/>
+                        </div>
+                        <div class="absolute -top-12 -left-12 w-48 h-48 bg-accent rounded-full -z-10 dark:bg-coffee-800/20"></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 order-1 lg:order-2 space-y-12">
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">Our Essence</span>
+                        <h2 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] mb-8 uppercase">A Quiet <br/><span class="font-serif italic text-primary normal-case font-normal">Sanctuary</span></h2>
+                        <p class="text-xl text-stone-600 dark:text-stone-400 font-light leading-relaxed mb-8">
+                            Nestled in the heart of West Jakarta, Snug was conceived as a boutique alternative to the daily grind. Our name reflects a promise: a warm, tactile atmosphere where the science of coffee meets the soul of a community.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-y-10 gap-x-8 pt-4 border-t border-black/[0.05] dark:border-white/[0.05]">
+                        <div class="space-y-2">
+                            <span class="material-symbols-outlined text-primary text-3xl">park</span>
+                            <h4 class="font-bold uppercase tracking-widest text-[10px]">Outdoor Garden</h4>
+                            <p class="text-xs text-stone-500">Breezy, natural serenity.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                            <h4 class="font-bold uppercase tracking-widest text-[10px]">Curated Vibe</h4>
+                            <p class="text-xs text-stone-500">Artisan community hub.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="material-symbols-outlined text-primary text-3xl">wifi</span>
+                            <h4 class="font-bold uppercase tracking-widest text-[10px]">Focus Space</h4>
+                            <p class="text-xs text-stone-500">High-speed sanctuary.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="material-symbols-outlined text-primary text-3xl">pets</span>
+                            <h4 class="font-bold uppercase tracking-widest text-[10px]">All Welcome</h4>
+                            <p class="text-xs text-stone-500">Pet-friendly atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section class="py-32 px-6 lg:px-12 bg-accent dark:bg-background-dark/80" id="menu">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+                <div class="max-w-2xl">
+                    <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">The Selection</span>
+                    <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase">Artisanal <br/><span class="font-serif italic text-primary normal-case font-normal">Roasts</span></h2>
+                </div>
+                <a class="group flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] hover:text-primary transition-all" href="#">
+                    View Full Menu
+                    <span class="w-10 h-10 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </span>
+                </a>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Item 1 -->
+                <div class="group">
+                    <div class="relative aspect-square overflow-hidden rounded-3xl mb-8 shadow-premium">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Himalayan Sea Salt Caramel coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLLQeLPHk2-FuLY_iv5FgyxVgbZfoeUctsMckce9wVIKl_MsYZ0sf_rY0VtcKMBxnLiwb_5vNxJkoPr65SCx0d0SetPuJa9Di6cLS4cIUnjqaUIUFb0Hcax-ESnHnqTCoyh-cNOydU_ElNsxSdJLZSqfhm9qqI6fpe0wuwCnk2_kZmLXYq_2rj_cVe-tD72PsiqiGGucPTF8oFOOwwx2N4hckLiILOSKPT4YEwbVfQGRlzLOrcTQaLyAPyJ42jX_WosgYPTgdW3ws"/>
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-white text-coffee-900 px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-transform">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h5 class="text-2xl font-bold tracking-tight uppercase">Himalayan Salted <br/>Caramel</h5>
+                        <span class="text-primary font-bold">38k</span>
+                    </div>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">A refined profile of sweet cream finished with traces of pink sea salt.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="group">
+                    <div class="relative aspect-square overflow-hidden rounded-3xl mb-8 shadow-premium">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Osmanthus Cream specialty coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2x04Z24J-Y-NFxkY5Zd19rHaLDR0trzFTzrmFsphgOfnLJ6LGdTdY-oIRcZQ1mlQ1J6ZFKxxbKSD_6JbLGoL5JOwz6b4i6Reu2E-86XZWtLmr7axWqdzTaRC_qVM7sgDxpFOp3svnawmnGWaZhVRCFSuNIUdpQrcKx8kJrN5l9CO5_OYyJV9mdDLMtaG0R83MqOi3IzR73Ux5-cLGKdBUxiQd0yCqX4lNGFzXtV4adQauzoIx59FIRme1JZ_KsDXLRq-Rd9mu7K4"/>
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-white text-coffee-900 px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-transform">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h5 class="text-2xl font-bold tracking-tight uppercase">Osmanthus <br/>Cream</h5>
+                        <span class="text-primary font-bold">40k</span>
+                    </div>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">Subtle floral aromatics layered over our signature velvet cream.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="group">
+                    <div class="relative aspect-square overflow-hidden rounded-3xl mb-8 shadow-premium">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Classic Kopi Susu Gula Aren" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjIAsLzeQM8K8wbXwmPoz3g073ZTuuQSG74m9KCGHS8DbIemuSqY6fiZSwIqPWYi24eT_VwxbvDbbQhP6rD5BwS4AloUiMVgYrzT_wG4-AtY0p9p9YWuaz6-JlAY1X5qsnL6pdwntpoPn_knG2ZK-gCqCrdkKuKgeJOeC7zYQjrCFC_fBITuLFmnB4kXAUu6P30fxqHbRigGZWcxlriqyxKxLK_9IxWzpInTAAaXdy_FghpUWzpDDQnIRJlEw1aYEsqMkS1bHNHvI"/>
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-white text-coffee-900 px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-transform">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h5 class="text-2xl font-bold tracking-tight uppercase">Kopi Susu <br/>Gula Aren</h5>
+                        <span class="text-primary font-bold">25k</span>
+                    </div>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">The neighborhood favorite. Bold espresso balanced with pure palm sugar.</p>
+                </div>
+            </div>
+
+            <!-- Comfort Food Promotion -->
+            <div class="mt-32 bg-coffee-900 text-white rounded-[3rem] p-12 lg:p-24 overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[150px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+                <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                    <div class="space-y-10">
+                        <h4 class="text-5xl md:text-7xl font-black italic tracking-tighter uppercase leading-none">
+                            Essential <br/> <span class="text-primary font-serif not-italic normal-case">Pairings</span>
+                        </h4>
+                        <p class="text-lg text-stone-400 font-light max-w-md">Our kitchen offers a curated menu of artisanal pastries and savory bites, designed to elevate your coffee ritual.</p>
+                        <button class="bg-white text-coffee-900 px-10 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-primary hover:text-white transition-all">Explore Kitchen</button>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <img class="rounded-3xl h-64 w-full object-cover shadow-2xl" data-alt="Freshly baked pastry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFBvUS8KOIk5XeyWBaGzSbEFxaLQcAfeqp4I9JDnep28RbBFJdV5aYzLfGnsDYQK-FRE34iTI2QoIzQGaHjiaas0DpT9OaBI54VczhMb6CTMwU2yTHBn2bZfbBYK--VlIFjbRnmk4gyXscA_MG8_mxpQ4NT97wHpmd2fBUTcxWQ5UZkxhA5LGjqBwCiTKKVfO619DpMd7q2G11mr-6jTYPGzqNNO059mspo8Tp8A3MMbJ3BwBcVomL_wfi8rR7eEka7nBLfKE6ujc"/>
+                            <img class="rounded-3xl h-64 w-full object-cover translate-y-12 shadow-2xl" data-alt="Hot breakfast sandwich" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKZ77kic3EvLt7ZZxeuntEMamyMJ7WxB_sK7WDrWryWYGJ0VKcHk4RaifX5SpZgQ3BB1w1qZj6z3E9s91DLdoq3EMkGcyygHrXQOI-8b2xWp3W6_I8z5JzSSRL4zCs--F1Km3vyMGdkqlXs76RKcCSWg8YbwFlaiV5ExyWXG9YQvKqTfUq9_CprBbdxckQNHSM1L7doL4x1tmUb3mNLqJYxOV4M-K9vUC2MwSEjvCiQsUrn_o3dNpTKMFIHA-dqGyELMrLj1DK7Gw"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="py-32 px-6 lg:px-12" id="membership">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="bg-background-light dark:bg-stone-900/50 border border-black/[0.05] dark:border-white/[0.05] rounded-[3rem] p-8 lg:p-24 shadow-premium overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-24 items-center">
+                    <div class="space-y-12">
+                        <div>
+                            <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">The Collective</span>
+                            <h2 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] uppercase">Snug <br/><span class="font-serif italic text-primary normal-case font-normal">Exclusive</span></h2>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex gap-6 items-start">
+                                <span class="material-symbols-outlined text-primary">circle</span>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1">Accumulate Value</h4>
+                                    <p class="text-stone-500 text-sm font-light">Earn beans with every visit, redeemable for curated house-items.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <span class="material-symbols-outlined text-primary">circle</span>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1">Pre-Release Access</h4>
+                                    <p class="text-stone-500 text-sm font-light">Early tasting of our seasonal single-origin small batches.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <span class="material-symbols-outlined text-primary">circle</span>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1">Ritual Gifting</h4>
+                                    <p class="text-stone-500 text-sm font-light">Bespoke compliments for your personal milestones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bg-coffee-900 text-white dark:bg-stone-100 dark:text-coffee-900 px-12 py-5 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-primary dark:hover:bg-primary transition-all">Apply for Access</button>
+                    </div>
+                    <div class="relative group">
+                        <img class="w-full h-auto drop-shadow-2xl transition-transform duration-700 group-hover:-rotate-3" data-alt="Exclusive membership card design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2x78BfzUO03rc1kgruVroMnFk8h-2hysmKq2FOQmKiHLELXkbL7_U5yJxKt2hWRBVtZZkWPtv0KRNHBoVlJZfifUAPJzrm-S-8mei-xV8teAaB61M4cBl1GsQb4_yzqpWfQdMPel1zyBrl0rYCRm23knIk6EWp-va-WaHi3fkgMCKPOmjTANUH13T4WoHkCktHuv6ZZ3QYplBTc6d8omnyIwtKFFJfQPtUkeARbzU83iwAYHJa0WNOHbCDqWjiWDWjVY0jGJ_qzA"/>
+                        <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square bg-accent rounded-full blur-[100px] opacity-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="py-32 px-6 lg:px-12 bg-accent/50 dark:bg-background-dark/30" id="instagram">
+        <div class="max-w-[1400px] mx-auto text-center">
+            <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">Follow Us</span>
+            <h2 class="text-5xl font-black uppercase tracking-tighter mb-4">@snugcoffee.id</h2>
+            <p class="text-stone-600 dark:text-stone-400 max-w-lg mx-auto mb-8 font-light">Stay updated with our latest brews, events, and community moments.</p>
+            <a class="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-coffee-900 text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:opacity-90 transition-opacity" href="https://www.instagram.com/snugcoffee.id" target="_blank" rel="noopener noreferrer">
+                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                Follow on Instagram
+            </a>
+            <!-- Instagram Embed -->
+            <div class="w-full max-w-5xl mx-auto mt-16">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/snugcoffee.id/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:0; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0 auto; padding:0; width:100%;">
+                    <div style="padding:16px;">
+                        <a href="https://www.instagram.com/snugcoffee.id/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <div style="display: flex; flex-direction: row; align-items: center;">
+                                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g>
+                                </svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+                            </div>
+                        </a>
+                        <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/snugcoffee.id/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">SNUG COFFEE (@snugcoffee.id)</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Elegant Minimal) -->
+    <section class="py-32 px-6 lg:px-12 bg-background-light dark:bg-background-dark" id="reviews">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid lg:grid-cols-12 gap-24">
+                <div class="lg:col-span-4 space-y-8">
+                    <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">The Voice</span>
+                    <h2 class="text-5xl font-black uppercase tracking-tighter">Honest <br/><span class="font-serif italic text-primary normal-case font-normal">Perspectives</span></h2>
+                    <div class="flex items-center gap-6 py-6 border-y border-black/[0.05] dark:border-white/[0.05]">
+                        <span class="text-6xl font-black text-coffee-900 dark:text-white">4.9</span>
+                        <div>
+                            <div class="flex text-primary mb-1">
+                                <span class="material-symbols-outlined text-sm fill-1">star</span>
+                                <span class="material-symbols-outlined text-sm fill-1">star</span>
+                                <span class="material-symbols-outlined text-sm fill-1">star</span>
+                                <span class="material-symbols-outlined text-sm fill-1">star</span>
+                                <span class="material-symbols-outlined text-sm fill-1">star</span>
+                            </div>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-stone-500">Based on 97 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-8 grid gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-accent dark:bg-stone-900/30 p-10 rounded-3xl border border-black/[0.03] dark:border-white/[0.03] transition-all hover:shadow-premium">
+                        <p class="text-xl font-light italic leading-relaxed mb-10 text-stone-700 dark:text-stone-300">"Great ambience, quiet place, good service, affordable price for coffee and snacks. Definitely one of my favorite spots in the neighborhood."</p>
+                        <div class="flex items-center gap-4">
+                            <img class="w-12 h-12 rounded-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjl-InAQxN4s80tJnb7ct6ZTk35wuSVn1duYbsAsZDxnskl00dHhp25YUX3ykswM39QvRcodX-_Bu4yzCKU3O55XlyMD5trq4kLGMF5yx_fXxGc8cUN1g6ctbl4Wqc0UzOZwRSHjw6V76_ee9sZj1UW-ClGWDHTWG-LDPo-YMKvudxxEcTbjfQPj_I1DeMK40zSmgVDz525G2sX8tLHQ-3zFnfZGZToINfDKHnQyQOiO8PBLnlUUvXt07GQqD_BiELr3gXSC7P9DI"/>
+                            <div>
+                                <h6 class="text-xs font-bold uppercase tracking-widest">Nadya</h6>
+                                <p class="text-[10px] text-stone-500 uppercase">Local Guide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-accent dark:bg-stone-900/30 p-10 rounded-3xl border border-black/[0.03] dark:border-white/[0.03] transition-all hover:shadow-premium">
+                        <p class="text-xl font-light italic leading-relaxed mb-10 text-stone-700 dark:text-stone-300">"One good stop for kopi susu gula aren!! The sweetness is just right and the coffee is quite strong. The outdoor area is amazing during sunset."</p>
+                        <div class="flex items-center gap-4">
+                            <img class="w-12 h-12 rounded-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJhr4FThWbuMH2V2fqb4h9NyZ-km-Gz_g_1gHr3bseOirdfo6M2sTJbeErNlt8XYSbqK6CYDAulVDy9iNNy9LBi9otVYoUlNjD3JJTPqOFOIyQsTyqedSFcvw1qN3BVJviA9oMXD_gcjbPeJH6FDr9SKtfGRUuwYx1Rsxl0UeiTHAzHjfoeNRebsYK_s4cOjeTBetChgTy78RhymJ0XOvFIh3tiPb2iGGMSCbqbLLqlMRT13HfogZjJ_5lmeDEtN1lhOTSAdcPRtU"/>
+                            <div>
+                                <h6 class="text-xs font-bold uppercase tracking-widest">Michael Alexander</h6>
+                                <p class="text-[10px] text-stone-500 uppercase">Coffee Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section class="py-32 px-6 lg:px-12 bg-accent dark:bg-background-dark/50" id="visit">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">Directions</span>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-12">Find <span class="font-serif italic text-primary normal-case font-normal">Us</span></h2>
+                <div class="space-y-12">
+                    <div class="flex gap-8 justify-center">
+                        <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+                        <div class="text-left">
+                            <h5 class="text-xs font-bold uppercase tracking-widest mb-3">Daily Ritual</h5>
+                            <p class="text-stone-500 font-light leading-relaxed">Monday - Sunday <br/>07:30 - 22:00</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 justify-center">
+                        <span class="material-symbols-outlined text-primary text-3xl">contact_support</span>
+                        <div class="text-left">
+                            <h5 class="text-xs font-bold uppercase tracking-widest mb-3">Reach Out</h5>
+                            <p class="text-stone-500 font-light leading-relaxed">+62 812 3456 7890 <br/>hello@snugcoffee.id</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 justify-center">
+                        <span class="material-symbols-outlined text-primary text-3xl">delivery_dining</span>
+                        <div class="text-left">
+                            <h5 class="text-xs font-bold uppercase tracking-widest mb-3">Available On</h5>
+                            <p class="text-stone-500 font-light leading-relaxed">GoFood, GrabFood, ShopeeFood</p>
+                        </div>
+                    </div>
+                    <div class="pt-8 border-t border-black/[0.05] dark:border-white/[0.05]">
+                        <h5 class="text-xs font-bold uppercase tracking-widest mb-6 text-primary">Our Locations</h5>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto">
+                            <div class="space-y-3">
+                                <h6 class="text-xs font-bold uppercase tracking-widest text-coffee-900 dark:text-white">West Jakarta</h6>
+                                <ul class="space-y-2 text-sm font-light text-stone-500">
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Taman Palem
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Tanjung Duren
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Kebon Jeruk
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Puri Kembangan
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Kemanggisan
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="space-y-3">
+                                <h6 class="text-xs font-bold uppercase tracking-widest text-coffee-900 dark:text-white">North Jakarta</h6>
+                                <ul class="space-y-2 text-sm font-light text-stone-500">
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Pluit Kencana
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                        Sunter
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="mt-16 w-full md:w-auto bg-primary text-white px-12 py-6 rounded-full text-xs font-bold uppercase tracking-[0.3em] flex items-center justify-center gap-4 hover:bg-coffee-900 transition-all shadow-xl shadow-primary/30" href="https://www.google.com/maps/search/snugcoffee.id/@-6.1178702,106.6765173,11.82z?entry=ttu&g_ep=EgoyMDI2MDMxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    Navigate via Maps
+                    <span class="material-symbols-outlined text-xl">open_in_new</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Sophisticated Dark) -->
+    <footer class="bg-coffee-900 text-stone-400 py-24 px-6 lg:px-12">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid lg:grid-cols-12 gap-16 pb-16 border-b border-white/[0.05]">
+                <div class="lg:col-span-6 space-y-8">
+                    <div class="flex items-center gap-3 text-white">
+                        <img src="assets/snug.jpg" alt="SNUG COFFEE Logo" class="h-8 w-auto object-contain"/>
+                    </div>
+                    <p class="max-w-sm text-sm font-light leading-relaxed">Refining the coffee culture of West Jakarta. A boutique experience centered around connection, quality, and serenity.</p>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white" href="#">
+                            <span class="material-symbols-outlined">brand_awareness</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white" href="#">
+                            <span class="material-symbols-outlined">camera</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h6 class="text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-10">Exploration</h6>
+                    <ul class="space-y-4 text-xs font-bold uppercase tracking-widest">
+                        <li><a class="hover:text-primary transition-colors" href="#">Curated Menu</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Membership</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Our Story</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Ethics</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3">
+                    <h6 class="text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-10">Monthly Journal</h6>
+                    <p class="text-xs mb-8 font-light">Join our collective for seasonal updates and events.</p>
+                    <div class="flex flex-col gap-4">
+                        <input class="bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest w-full px-6 py-4 focus:ring-1 focus:ring-primary focus:border-primary placeholder:text-stone-600 outline-none" placeholder="Email Address" type="email"/>
+                        <button class="bg-primary text-white rounded-full py-4 font-bold text-[10px] uppercase tracking-[0.3em] hover:bg-white hover:text-coffee-900 transition-all">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-50">© 2024 SNUG COFFEE KEBON JERUK. All rights reserved.</p>
+                <div class="flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em]">
+                    <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+                    <a class="hover:text-primary transition-colors" href="#">WhatsApp</a>
+                    <a class="hover:text-primary transition-colors" href="#">Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button (Refined) -->
+    <a class="fixed bottom-10 right-10 z-[100] group" href="#">
+        <div class="relative flex items-center gap-4">
+            <span class="glass text-coffee-900 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-widest shadow-2xl opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all whitespace-nowrap hidden sm:block">
+                Start Conversation
+            </span>
+            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-500">
+                <span class="material-symbols-outlined text-3xl">chat</span>
+            </div>
+        </div>
+    </a>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
