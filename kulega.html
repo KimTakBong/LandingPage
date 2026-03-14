@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kulega Greenlake City | Cafe 24 Jam Tangerang - Pancong, Mie & Kopi</title>
+    <meta content="Nikmati suasana nongkrong asik 24 jam di Kulega Greenlake City. Menu lengkap Pancong, Mie, dan Kopi berkualitas dengan harga terjangkau." name="description"/>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Playful Typography: Quicksand for body, Comfortaa for headings/accents -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&amp;family=Quicksand:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <script data-purpose="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apricot: '#f7a961',
+                        softCream: '#fdfcf0',
+                        sageGreen: '#d9e7d3',
+                        mutedClay: '#e89e7a',
+                        softGrey: '#7a7a7a',
+                        warmDark: '#4a4440',
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Comfortaa', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style data-purpose="custom-animations">
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+        .blob-bg {
+            position: absolute;
+            z-index: -1;
+            filter: blur(40px);
+            opacity: 0.5;
+        }
+        .outline-text {
+            -webkit-text-stroke: 2px currentColor;
+            color: transparent;
+        }
+        .floating-wa {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 50;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+        .organic-shape-1 {
+            clip-path: circle(70% at 20% 30%);
+            background: #fce7d2;
+        }
+        .organic-shape-2 {
+            clip-path: circle(60% at 80% 70%);
+            background: #d9e7d3;
+        }
+    </style>
+</head>
+<body class="bg-softCream text-warmDark overflow-x-hidden selection:bg-apricot selection:text-white font-sans">
+    <!-- BEGIN: Organic Background Elements -->
+    <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-5%] w-[40vw] h-[40vw] organic-shape-1 opacity-60"></div>
+        <div class="absolute bottom-[5%] right-[-10%] w-[35vw] h-[35vw] organic-shape-2 opacity-60"></div>
+    </div>
+
+    <!-- BEGIN: Marquee Header -->
+    <div class="bg-apricot text-white py-3 overflow-hidden border-b border-white/20">
+        <div class="animate-marquee flex gap-12 items-center">
+            <span class="font-bold uppercase tracking-widest text-sm">OPEN 24 HOURS • PANCONG • MIE • KOPI • KULEGA GREENLAKE CITY • BUKA 24 JAM •</span>
+            <span class="font-bold uppercase tracking-widest text-sm">OPEN 24 HOURS • PANCONG • MIE • KOPI • KULEGA GREENLAKE CITY • BUKA 24 JAM •</span>
+        </div>
+    </div>
+
+    <!-- BEGIN: Navigation -->
+    <nav class="bg-softCream/80 backdrop-blur-md sticky top-0 z-40 py-5 px-6 md:px-12 flex justify-between items-center transition-all">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-apricot rounded-full flex items-center justify-center text-white font-bold text-xl">K</div>
+            <span class="font-heading text-2xl font-bold tracking-tight text-apricot">KULEGA</span>
+        </div>
+        <div class="hidden md:flex gap-10 font-bold text-sm tracking-wide">
+            <a class="hover:text-apricot transition" href="#about">Tentang</a>
+            <a class="hover:text-apricot transition" href="#menu">Menu</a>
+            <a class="hover:text-apricot transition" href="#vibes">Vibes</a>
+            <a class="hover:text-apricot transition" href="#location">Lokasi</a>
+        </div>
+        <a class="bg-white text-apricot px-6 py-2.5 rounded-full border border-apricot/30 shadow-sm font-bold text-sm hover:bg-apricot hover:text-white transition-all duration-300" href="https://wa.me/628111966162">
+            WhatsApp Us
+        </a>
+    </nav>
+
+    <!-- BEGIN: Hero Section -->
+    <header class="relative py-12 md:py-20 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12 max-w-7xl mx-auto overflow-visible">
+        <div class="relative z-10 flex-1 text-center md:text-left">
+            <div class="inline-block bg-sageGreen text-warmDark/70 px-4 py-1.5 rounded-full font-bold text-[10px] uppercase tracking-widest mb-8">
+                ⭐ 4.7 (956+ Review Pelanggan)
+            </div>
+            <h1 class="font-heading text-6xl md:text-8xl leading-tight font-bold mb-8">
+                <span class="block text-apricot">Keep Calm</span>
+                <span class="block outline-text italic text-mutedClay">&amp; Stay Hungry</span>
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-softGrey mb-10 max-w-md leading-relaxed">
+                Tempat nongkrong paling homey di Greenlake. Nikmati Pancong lumer &amp; Kopi hangat <span class="text-apricot font-bold">24 Jam Non-Stop!</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a class="bg-apricot text-white px-10 py-4 rounded-full shadow-lg shadow-apricot/20 font-bold text-lg hover:scale-105 transition-transform" href="https://wa.me/628111966162">
+                    Order Now
+                </a>
+                <a class="bg-white text-softGrey border border-softGrey/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-softGrey/5 transition-colors" href="#menu">
+                    View Menu
+                </a>
+            </div>
+        </div>
+        <div class="flex-1 relative">
+            <div class="relative z-10 w-full aspect-square rounded-4xl overflow-hidden shadow-2xl shadow-apricot/10 border-8 border-white">
+                <img alt="Kulega Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZMWkBxWVbD2v8R4qWoz8au28WvrajyjlSNvJlHk7ZlR3silrLvL2rQJmE3BRvHRgIkJcykIZpX5fXmOawLsE-_5nabChR7eei10QazJZT5DOOv_12XyxTkm8w13hzS41sosb5H0YFIw1ZYaWWupvvUAdRRttLz-cOyvFNfJCqVI6HlU-v2mhezh5MVaeD9NQ2zGFtavSLbDiB-8CccvCL4gfj_myNWWs9PFJmEdcooSn_RnYZUXpx6zSMeT56a4O-JlLrslvrPM"/>
+            </div>
+            <!-- Accent Illustration Blobs -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-sageGreen rounded-full blur-2xl opacity-40"></div>
+            <div class="absolute -bottom-6 -left-6 bg-mutedClay text-white font-bold w-28 h-28 rounded-full flex flex-col items-center justify-center text-center p-4 rotate-12 z-20 shadow-xl border-4 border-white">
+                <span class="uppercase text-[10px] tracking-widest leading-tight">Always<br/>Open<br/>24/7</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- BEGIN: About Section -->
+    <section class="py-24 px-6 md:px-12" id="about">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold leading-tight">Spot Favorit di <span class="text-apricot">Greenlake</span> City</h2>
+            </div>
+            <div class="flex-1">
+                <p class="text-lg md:text-xl font-medium leading-relaxed text-softGrey border-l-4 border-sageGreen pl-8">
+                    Kulega hadir sebagai pelabuhan terakhir bagi kamu yang lapar tengah malam atau butuh tempat produktif di pagi hari.
+                    Dengan <span class="text-sageGreen font-bold bg-sageGreen/10 px-1 rounded">Free Wi-Fi</span> dan suasana yang tenang.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN: Menu Highlights -->
+    <section class="py-24 px-6 md:px-12 bg-white/40" id="menu">
+        <div class="text-center mb-16">
+            <span class="text-apricot font-bold uppercase tracking-[0.3em] text-xs">Menu Pilihan</span>
+            <h2 class="font-heading text-5xl md:text-7xl font-bold mt-4">Paling <span class="outline-text text-apricot">Favorit</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <!-- Card 1 -->
+            <div class="group bg-white p-6 rounded-4xl shadow-xl shadow-warmDark/5 hover:translate-y-[-8px] transition-all duration-500 border border-warmDark/5">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl">
+                    <img alt="Pancong Oreo" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTCafHU68MBNpp1RruyNfqgorEeW3UJKeXfLGIKDWo3ACN4Up7cQPCoj2jc8qsWH-_Fdo1Cz7A3FxFsnEXn18DWaCmZA8v5hSM_BZ7rIn-oWWxNbv48zfWLZcVaDFRvPBjEGi2yCGj4YzDACTtjO0p3XiXCEOxDZ1PRlEsvUMsVExBSlrNtw6lvOdzpJ1gsqp6KsknGW98TMo99LelOYS33DCEOdb-VqBAicPzM9-B-oigOmICybwJsR9C0F9XgyAp-k0PUgEE0Z4"/>
+                    <div class="absolute bottom-4 right-4 bg-apricot text-white font-bold px-4 py-2 rounded-full text-sm">Rp 25k</div>
+                </div>
+                <h4 class="font-heading text-2xl font-bold mb-3">Pancong Oreo</h4>
+                <p class="text-softGrey font-medium mb-8 text-sm leading-relaxed">Adonan pancong lumer dengan taburan biskuit oreo melimpah.</p>
+                <button class="w-full bg-softCream text-apricot py-4 rounded-2xl font-bold text-sm tracking-wide border border-apricot/20 hover:bg-apricot hover:text-white transition-all">Order Now</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="group bg-white p-6 rounded-4xl shadow-2xl shadow-apricot/10 hover:translate-y-[-8px] transition-all duration-500 border-2 border-apricot/10">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl">
+                    <img alt="Mie Instan Special" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvqmf14qXNThOuU9CuoTN4Jje8ZlKg-Tdh_iRaq4h0OIn0TGSgH2SPALWEb7nKTutytAI_X8962A-F79fbUky7IVcHKWzPNxSjIuoVHodu7GQTmCsiEpHdg5aChXrVxMOV0e_RrRPJjpD8U9JHceJ1382ETVLFwoVdY2_YjfsTt7vv5mypk65d6iCU36ciMjlAiiw0W23OMot08Gtm35iLMwhw22yoV87apxfsBazXJPAYZuDcpV1J9jw1JbLBiaYmUUv2Dk"/>
+                    <div class="absolute bottom-4 right-4 bg-apricot text-white font-bold px-4 py-2 rounded-full text-sm">Rp 30k</div>
+                </div>
+                <h4 class="font-heading text-2xl font-bold mb-3">Mie Special</h4>
+                <p class="text-softGrey font-medium mb-8 text-sm leading-relaxed">Mie kuah/goreng dengan telur, kornet, sayuran dan bumbu rahasia.</p>
+                <button class="w-full bg-apricot text-white py-4 rounded-2xl font-bold text-sm tracking-wide shadow-lg shadow-apricot/20 hover:scale-[1.02] transition-all">Order Now</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="group bg-white p-6 rounded-4xl shadow-xl shadow-warmDark/5 hover:translate-y-[-8px] transition-all duration-500 border border-warmDark/5">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl">
+                    <img alt="Kopi Susu" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk73POvp-5t816q50jLAGjRmON7BC3tHOW_YM--1SMk-FvcijOI3O-2TvfACP3LVzYb25JxwlNQ8irbOTnZRWvjuZ_gt9WTNNPEU3bnUdrUozMzVkYl6dpETM6yCTIYvC0UBbXhutgWzJAxT3QYrhiAMcXH3YqYurbg89ZWMbVwmmSSw2-IAaD0MUY8z7_4jOR5G2SYAgM6ZAk31sxmLlvI2t01PXPQlbHHo8kC0w6lM4LfCqUFZSV2QdfQcORvOoNa6Y1sdLu9ig"/>
+                    <div class="absolute bottom-4 right-4 bg-apricot text-white font-bold px-4 py-2 rounded-full text-sm">Rp 22k</div>
+                </div>
+                <h4 class="font-heading text-2xl font-bold mb-3">Kopi Susu Aren</h4>
+                <p class="text-softGrey font-medium mb-8 text-sm leading-relaxed">Paduan kopi arabica robusta dengan gula aren asli pilihan.</p>
+                <button class="w-full bg-softCream text-apricot py-4 rounded-2xl font-bold text-sm tracking-wide border border-apricot/20 hover:bg-apricot hover:text-white transition-all">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN: Facilities -->
+    <section class="py-16 px-6 md:px-12" id="vibes">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            <div class="flex flex-col items-center justify-center p-8 bg-white rounded-3xl border border-warmDark/5 shadow-sm">
+                <span class="font-heading text-3xl font-bold text-apricot mb-2">24/7</span>
+                <span class="font-bold text-[10px] uppercase text-softGrey tracking-widest text-center">Open Non-Stop</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 bg-sageGreen/20 rounded-3xl border border-sageGreen/30">
+                <span class="font-heading text-3xl font-bold text-warmDark mb-2">WIFI</span>
+                <span class="font-bold text-[10px] uppercase text-softGrey tracking-widest text-center">High Speed</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 bg-white rounded-3xl border border-warmDark/5 shadow-sm">
+                <span class="font-heading text-3xl font-bold text-apricot mb-2">PLUGS</span>
+                <span class="font-bold text-[10px] uppercase text-softGrey tracking-widest text-center">Everywhere</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 bg-mutedClay/10 rounded-3xl border border-mutedClay/20">
+                <span class="font-heading text-3xl font-bold text-warmDark mb-2">AIR</span>
+                <span class="font-bold text-[10px] uppercase text-softGrey tracking-widest text-center">Outdoor Area</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 bg-white rounded-3xl border border-warmDark/5 shadow-sm">
+                <span class="font-heading text-3xl font-bold text-apricot mb-2">SPOT</span>
+                <span class="font-bold text-[10px] uppercase text-softGrey tracking-widest text-center">Instagenic</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN: Instagram Section -->
+    <section class="py-24 px-6 md:px-12 bg-white/40" id="instagram">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-apricot font-bold uppercase tracking-[0.3em] text-xs block mb-4">Follow Us</span>
+            <h2 class="font-heading text-5xl md:text-7xl font-bold mb-4">@kulega.glc</h2>
+            <p class="text-softGrey max-w-lg mx-auto mb-8 text-lg">Stay updated with our latest menu, events, and community moments.</p>
+            <a class="inline-flex items-center gap-2 bg-gradient-to-r from-apricot to-mutedClay text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:opacity-90 transition-opacity" href="https://www.instagram.com/kulega.glc/" target="_blank" rel="noopener noreferrer">
+                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                Follow on Instagram
+            </a>
+            <!-- Instagram Embed -->
+            <div class="w-full max-w-5xl mx-auto mt-16">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/kulega.glc/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:0; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0 auto; padding:0; width:100%;">
+                    <div style="padding:16px;">
+                        <a href="https://www.instagram.com/kulega.glc/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <div style="display: flex; flex-direction: row; align-items: center;">
+                                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g>
+                                </svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+                            </div>
+                        </a>
+                        <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/kulega.glc/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Kulega Greenlake City (@kulega.glc)</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <!-- END: Instagram Section -->
+
+    <!-- BEGIN: Testimonials -->
+    <section class="py-24 px-6 md:px-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <h2 class="font-heading text-5xl md:text-7xl font-bold leading-none">Apa Kata <span class="text-apricot">Mereka?</span></h2>
+                <div class="bg-sageGreen/30 px-6 py-3 rounded-full border border-sageGreen">
+                    <p class="font-bold text-warmDark text-lg">⭐ 4.7 Google Rating</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-4xl border border-white shadow-xl shadow-warmDark/5">
+                    <p class="text-xl font-bold text-softGrey italic mb-10">"Tempat paling asik buat nugas sampai pagi. Kopinya mantap, internetnya kenceng!"</p>
+                    <div class="flex items-center gap-4 border-t border-sageGreen/20 pt-8">
+                        <div class="w-12 h-12 bg-apricot/20 rounded-full flex items-center justify-center text-apricot font-bold">CH</div>
+                        <div>
+                            <h5 class="font-bold text-warmDark">Connie Halim</h5>
+                            <p class="text-[10px] font-bold uppercase text-apricot tracking-widest">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-apricot p-10 rounded-4xl border-4 border-white shadow-2xl shadow-apricot/20 text-white">
+                    <p class="text-xl font-bold italic mb-10">"Pancongnya juara, lumer banget di mulut. Wajib coba yang varian coklat keju!"</p>
+                    <div class="flex items-center gap-4 border-t border-white/20 pt-8">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">A</div>
+                        <div>
+                            <h5 class="font-bold">Arief</h5>
+                            <p class="text-[10px] font-bold uppercase text-white/70 tracking-widest">Customer Setia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm p-10 rounded-4xl border border-white shadow-xl shadow-warmDark/5">
+                    <p class="text-xl font-bold text-softGrey italic mb-10">"Vibesnya santuy parah. Buat nongkrong sama temen-temen tiap weekend oke banget."</p>
+                    <div class="flex items-center gap-4 border-t border-sageGreen/20 pt-8">
+                        <div class="w-12 h-12 bg-mutedClay/20 rounded-full flex items-center justify-center text-mutedClay font-bold">VW</div>
+                        <div>
+                            <h5 class="font-bold text-warmDark">Valeska Carys W.</h5>
+                            <p class="text-[10px] font-bold uppercase text-apricot tracking-widest">Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN: Visit Us -->
+    <section class="py-24 px-6 md:px-12" id="location">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row bg-white rounded-4xl overflow-hidden shadow-2xl shadow-warmDark/5 border border-white">
+            <div class="flex-1 p-12 lg:p-20">
+                <h2 class="font-heading text-5xl font-bold mb-12 text-apricot">Visit Us</h2>
+                <div class="space-y-12">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-sageGreen/20 rounded-full flex items-center justify-center shrink-0">📍</div>
+                        <div>
+                            <p class="font-bold uppercase text-[10px] tracking-widest text-softGrey mb-2">Alamat</p>
+                            <p class="text-lg font-bold text-warmDark leading-relaxed">Jl. Green Lake City Boulevard, Ruko Food City No.35-36, West Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-apricot/10 rounded-full flex items-center justify-center shrink-0">🕒</div>
+                        <div>
+                            <p class="font-bold uppercase text-[10px] tracking-widest text-softGrey mb-2">Jam Operasional</p>
+                            <p class="text-2xl font-bold text-apricot">Buka 24 Jam</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-mutedClay/10 rounded-full flex items-center justify-center shrink-0">📞</div>
+                        <div>
+                            <p class="font-bold uppercase text-[10px] tracking-widest text-softGrey mb-2">Kontak</p>
+                            <p class="text-lg font-bold text-warmDark">0811-1966-162 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-8">
+                        <a class="inline-flex items-center justify-center gap-2 bg-apricot text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-warmDark transition-colors" href="https://www.google.com/maps/dir/?api=1&destination=-6.1800599,106.7092153" target="_blank" rel="noopener noreferrer">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                            Get Directions
+                        </a>
+                        <a class="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-green-700 transition-colors" href="https://api.whatsapp.com/send/?phone=628111966162" target="_blank" rel="noopener noreferrer">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 min-h-[400px] relative">
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.524088960905!2d106.7070266!3d-6.1800599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f91fe8b99d01%3A0x855500297b7bbe8c!2sKulega%20(Pancong%20-%20Mie%20-%20Kopi)%20Greenlake%20City!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN: Footer -->
+    <footer class="bg-softCream py-20 px-6 md:px-12 text-center">
+        <div class="flex items-center justify-center gap-3 mb-12">
+            <div class="w-12 h-12 bg-apricot rounded-full flex items-center justify-center text-white font-bold text-2xl">K</div>
+            <span class="font-heading text-4xl font-bold tracking-tight text-apricot">KULEGA</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-10 mb-16">
+            <a class="font-bold text-softGrey hover:text-apricot transition" href="#">Instagram</a>
+            <a class="font-bold text-softGrey hover:text-apricot transition" href="#">Facebook</a>
+            <a class="font-bold text-softGrey hover:text-apricot transition" href="#">TikTok</a>
+        </div>
+        <div class="max-w-md mx-auto h-[1px] bg-apricot/10 mb-8"></div>
+        <p class="font-bold text-softGrey/50 uppercase text-[10px] tracking-[0.2em]">© 2024 Kulega Greenlake City. Stay Safe, Stay Hungry.</p>
+    </footer>
+
+    <!-- BEGIN: Floating Actions -->
+    <a class="floating-wa bg-apricot text-white p-5 rounded-full shadow-2xl shadow-apricot/30 flex items-center justify-center hover:scale-110 transition-all border-4 border-white" href="https://wa.me/628111966162" title="Chat on WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.832 2.746 1.243 4.412 1.244 5.45.002 9.883-4.43 9.886-9.881.002-5.452-4.435-9.887-9.886-9.887-2.64 0-5.123 1.03-6.99 2.897s-2.893 4.354-2.894 6.993c-.001 1.759.485 3.078 1.293 4.395l-.84 3.07 3.14-.821z"></path>
+        </svg>
+    </a>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "Kulega (Pancong - Mie - Kopi) Greenlake City",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuALZMWkBxWVbD2v8R4qWoz8au28WvrajyjlSNvJlHk7ZlR3silrLvL2rQJmE3BRvHRgIkJcykIZpX5fXmOawLsE-_5nabChR7eei10QazJZT5DOOv_12XyxTkm8w13hzS41sosb5H0YFIw1ZYaWWupvvUAdRRttLz-cOyvFNfJCqVI6HlU-v2mhezh5MVaeD9NQ2zGFtavSLbDiB-8CccvCL4gfj_myNWWs9PFJmEdcooSn_RnYZUXpx6zSMeT56a4O-JlLrslvrPM",
+            "url": "https://kulega-greenlake.com",
+            "telephone": "+628111966162",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Green Lake City Boulevard, Ruko Food City No.35-36",
+                "addressLocality": "Jakarta Barat",
+                "addressRegion": "DKI Jakarta",
+                "postalCode": "11750",
+                "addressCountry": "ID"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -6.1827,
+                "longitude": 106.7024
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        }
+    </script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
