@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KIKO Gading Serpong - Authentic Italian Pasta & Restaurant. Fresh handmade pasta, premium ingredients, and warm Italian hospitality in the heart of Gading Serpong.">
+    <title>KIKO Gading Serpong | Authentic Italian Pasta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8B2C2C;
+            --primary-light: #A94442;
+            --accent: #D4A84B;
+            --cream: #FDF6EC;
+            --dark: #2C1810;
+            --olive: #556B2F;
+            --text-dark: #333333;
+            --text-muted: #777777;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+        }
+
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(253, 246, 236, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(139, 44, 44, 0.1);
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary) !important;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .navbar-brand img {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            margin: 0 0.5rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover { color: var(--primary) !important; }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(44, 24, 16, 0.5), rgba(44, 24, 16, 0.7)),
+                        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 { font-size: 4.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .accent-text { color: var(--accent); }
+        .hero .tagline {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .hero-desc {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: rgba(255,255,255,0.75);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .btn-primary-custom {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .btn-primary-custom:hover {
+            background: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 44, 44, 0.3);
+            color: white;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 1rem 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            background: transparent;
+            border-radius: 50px;
+        }
+
+        .btn-outline-custom:hover {
+            background: var(--accent);
+            color: var(--dark);
+        }
+
+        /* Rating Badge */
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(212, 168, 75, 0.15);
+            border: 1px solid var(--accent);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+        }
+
+        .rating-badge i { color: var(--accent); margin-right: 0.5rem; }
+        .rating-badge span { color: var(--accent); font-weight: 600; }
+        .rating-badge .text-white { color: rgba(255,255,255,0.7) !important; margin-left: 0.5rem; }
+
+        /* Sections */
+        section { padding: 6rem 0; }
+        .section-title { font-size: 3rem; margin-bottom: 1rem; color: var(--dark); }
+        .section-subtitle {
+            color: var(--primary);
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        /* About */
+        .about { background: white; }
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        .about-img img { width: 100%; height: 450px; object-fit: cover; }
+        .about-text p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+        .feature-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .feature-list i { color: var(--olive); font-size: 1.2rem; }
+
+        /* Menu Preview */
+        .menu-section { background: var(--dark); color: white; }
+        .menu-section .section-subtitle { color: var(--accent); }
+        .menu-section .section-title { color: white; }
+
+        .menu-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .menu-card:hover { transform: translateY(-5px); }
+        .menu-card img { width: 100%; height: 200px; object-fit: cover; }
+        .menu-card-body { padding: 1.5rem; }
+        .menu-card h5 { color: var(--accent); margin-bottom: 0.5rem; }
+        .menu-card p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+        .menu-price { color: var(--primary-light); font-weight: 700; font-size: 1.1rem; }
+
+        /* Location */
+        .location { background: white; }
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            height: 400px;
+        }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+        .contact-item h5 { margin-bottom: 0.3rem; font-size: 1rem; }
+        .contact-item p { color: var(--text-muted); margin: 0; }
+        .contact-item a { color: var(--text-muted); text-decoration: none; }
+        .contact-item a:hover { color: var(--primary); }
+
+        /* Gallery */
+        .gallery { background: var(--cream); }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(139, 44, 44, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay i { font-size: 2rem; color: white; }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            text-align: center;
+            color: white;
+        }
+        .cta-section h2 { color: white; margin-bottom: 1rem; }
+        .cta-section p { color: rgba(255,255,255,0.85); margin-bottom: 2rem; font-size: 1.1rem; }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            padding: 3rem 0 1.5rem;
+            border-top: 1px solid rgba(212, 168, 75, 0.2);
+        }
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .social-links { display: flex; gap: 1rem; margin: 1.5rem 0; }
+        .social-links a {
+            width: 45px; height: 45px;
+            border: 1px solid var(--accent);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent);
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover { background: var(--accent); color: var(--dark); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Floating WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+            color: white;
+        }
+        .wa-tooltip {
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .wa-tooltip::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 8px 0 8px 8px;
+            border-style: solid;
+            border-color: transparent transparent transparent #333;
+        }
+        .wa-float:hover .wa-tooltip { opacity: 1; visibility: visible; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-img img { height: 300px; }
+        }
+        @media (max-width: 576px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .tagline { font-size: 0.9rem; letter-spacing: 2px; }
+            .wa-float { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 1.5rem; }
+            .wa-tooltip { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=100&q=80" alt="KIKO Logo">
+                KIKO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: var(--primary);">
+                <i class="bi bi-list" style="color: var(--primary); font-size: 1.5rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="rating-badge">
+                <i class="bi bi-star-fill"></i>
+                <span>4.9</span>
+                <span class="text-white">Google Reviews</span>
+            </div>
+            <h1><span class="accent-text">KIKO</span> Gading Serpong</h1>
+            <p class="tagline">Authentic Italian Pasta & Restaurant</p>
+            <p class="hero-desc">
+                Fresh handmade pasta, premium imported ingredients, and the warmth of Italian hospitality — right in the heart of Gading Serpong.
+            </p>
+            <div class="mt-4">
+                <a href="#menu" class="btn btn-primary-custom me-3">Our Menu</a>
+                <a href="https://wa.me/628118186882" target="_blank" class="btn btn-outline-custom">Reserve Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?w=800&q=80" alt="KIKO Kitchen">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text ps-lg-4">
+                        <p class="section-subtitle">Our Story</p>
+                        <h2 class="section-title">Taste of Italy in Every Bite</h2>
+                        <p>At KIKO, we believe great pasta starts with passion. Every dish is crafted with freshly made pasta, imported Italian ingredients, and recipes passed down through generations.</p>
+                        <p>Located in the vibrant Gading Serpong area, KIKO offers a cozy dining experience perfect for family dinners, date nights, or casual gatherings with friends.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Fresh handmade pasta daily</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium imported ingredients</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Cozy Italian atmosphere</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Friendly & attentive service</li>
+                        </ul>
+                        <a href="https://wa.me/628118186882" target="_blank" class="btn btn-primary-custom mt-4">
+                            <i class="bi bi-whatsapp me-2"></i>Book a Table
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-subtitle">Our Specialties</p>
+                <h2 class="section-title">Signature Dishes</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Carbonara">
+                        <div class="menu-card-body">
+                            <h5>Spaghetti Carbonara</h5>
+                            <p>Classic Roman recipe with guanciale, egg yolk, and pecorino romano</p>
+                            <span class="menu-price">Rp 75.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80" alt="Aglio Olio">
+                        <div class="menu-card-body">
+                            <h5>Aglio Olio e Peperoncino</h5>
+                            <p>Garlic, olive oil, and chili flakes — simple yet flavorful</p>
+                            <span class="menu-price">Rp 55.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=80" alt="Bolognese">
+                        <div class="menu-card-body">
+                            <h5>Pappardelle Bolognese</h5>
+                            <p>Slow-cooked beef ragu with fresh pappardelle pasta</p>
+                            <span class="menu-price">Rp 85.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Pizza">
+                        <div class="menu-card-body">
+                            <h5>Margherita Pizza</h5>
+                            <p>San Marzano tomatoes, fresh mozzarella, and basil</p>
+                            <span class="menu-price">Rp 65.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-subtitle">Ambiance</p>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80" alt="Interior">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" alt="Dish">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Pasta Making">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&q=80" alt="Restaurant">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?w=400&q=80" alt="Dessert">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=400&q=80" alt="Wine">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=80" alt="Table Setting">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=400&q=80" alt="Fresh Pasta">
+                    <div class="gallery-overlay"><i class="bi bi-instagram"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-subtitle">Find Us</p>
+                <h2 class="section-title">Location & Contact</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3!2d106.6277!3d-6.2607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKIKO%20Gading%20Serpong!5e0!3m2!1sen!2sid!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>Gading Serpong, Tangerang, Banten</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p><a href="tel:+628118186882">+62 811-8186-882</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <p><a href="https://wa.me/628118186882" target="_blank">Chat with us</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <h5>Opening Hours</h5>
+                                <p>Mon - Sun: 10:00 - 22:00</p>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com/?cid=13119580452100002300" target="_blank" class="btn btn-primary-custom mt-3">
+                            <i class="bi bi-map me-2"></i>Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for an Authentic Italian Experience?</h2>
+            <p>Reserve your table now and let us take you on a culinary journey to Italy.</p>
+            <a href="https://wa.me/628118186882?text=Halo%20KIKO%2C%20saya%20mau%20reservasi%20meja" target="_blank" class="btn btn-outline-custom" style="border-color: white; color: white;">
+                <i class="bi bi-whatsapp me-2"></i>Reserve via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">KIKO</div>
+                    <p style="color: var(--text-muted);">Authentic Italian Pasta & Restaurant in Gading Serpong. Fresh pasta, premium ingredients, unforgettable moments.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 style="color: var(--accent);">Quick Links</h5>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#home" style="color: var(--text-muted); text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#about" style="color: var(--text-muted); text-decoration: none;">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#menu" style="color: var(--text-muted); text-decoration: none;">Menu</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#gallery" style="color: var(--text-muted); text-decoration: none;">Gallery</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#location" style="color: var(--text-muted); text-decoration: none;">Location</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 style="color: var(--accent);">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="https://wa.me/628118186882" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://maps.google.com/?cid=13119580452100002300" target="_blank"><i class="bi bi-geo-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KIKO Gading Serpong. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628118186882" target="_blank" class="wa-float" aria-label="Chat WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="wa-tooltip">Reservasi Sekarang</span>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
