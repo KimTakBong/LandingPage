@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Aneka Nasi Bakar & Nasi Kelor ASN | All Food Culinary</title>
+    
+    <!-- External Scripts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links and sections
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            const sections = document.querySelectorAll('section[id]');
+            const nav = document.querySelector('nav');
+            
+            // Create underline indicator
+            const underline = document.createElement('div');
+            underline.className = 'nav-underline absolute bottom-0 left-0 h-0.5 bg-accent-gold transition-all duration-300 ease-in-out display-none';
+            underline.style.width = '0';
+            underline.style.zIndex = '40';
+            
+            // Add underline to navigation container
+            nav.style.position = 'relative';
+            nav.appendChild(underline);
+            
+            // Function to update active link and underline position
+            function updateActiveLink() {
+                const scrollPosition = window.scrollY + 100;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        // Find the corresponding nav link
+                        const targetId = section.getAttribute('id');
+                        const activeLink = document.querySelector(`nav a[href="#${targetId}"]`);
+                        
+                        if (activeLink) {
+                            // Remove active state from all links
+                            navLinks.forEach(link => {
+                                link.classList.remove('border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
+                                link.classList.add('text-text-muted-clay');
+                            });
+                            
+                            // Update underline position
+                            const linkRect = activeLink.getBoundingClientRect();
+                            const navRect = nav.getBoundingClientRect();
+                            
+                            underline.style.left = `${linkRect.left - navRect.left}px`;
+                            underline.style.width = `${linkRect.width}px`;
+                        }
+                    }
+                });
+            }
+            
+            // Handle click events
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active state from all links
+                    navLinks.forEach(l => {
+                        l.classList.remove('border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
+                        l.classList.add('text-text-muted-clay');
+                    });
+                    
+                    // Add active state to clicked link
+                    this.classList.remove('text-text-muted-clay');
+                    this.classList.add('text-text-rich-brown', 'border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
+                    
+                    // Update underline position
+                    const linkRect = this.getBoundingClientRect();
+                    const navRect = nav.getBoundingClientRect();
+                    
+                    underline.style.left = `${linkRect.left - navRect.left}px`;
+                    underline.style.width = `${linkRect.width}px`;
+                    
+                    // Smooth scroll to section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Update on scroll and resize
+            window.addEventListener('scroll', updateActiveLink);
+            window.addEventListener('resize', updateActiveLink);
+            
+            // Initial update
+            updateActiveLink();
+        });
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "accent-gold": "#f97316", // Vibrant orange from image_2
+                        "accent-warm-yellow": "#fbbf24", // Warm yellow from image_2
+                        "surface-tan": "#fdf8f1", // Soft warm off-white/tan background
+                        "border-sepia": "#e5d5c8",
+                        "text-rich-brown": "#2d1a0c", // Darker rich brown for high contrast
+                        "text-muted-clay": "#5c4d42",
+                        "surface-cream": "#fffcf9" // Very light warm off-white
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "card-padding": "24px",
+                        "container-max-width": "1200px",
+                        "section-gap": "80px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-lg": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["30px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.15);
+        }
+        
+        .image-zoom-container img {
+            transition: transform 0.5s ease;
+        }
+        
+        .image-zoom-container:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-surface-tan text-text-rich-brown font-body-md antialiased">
+    
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-surface-tan/90 backdrop-blur-md shadow-sm border-b border-border-sepia/20">
+        <nav class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max-width mx-auto">
+            <div class="font-headline-md text-headline-md font-bold text-accent-gold">ASN</div>
+            
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-text-rich-brown font-bold font-label-sm text-label-sm" href="#home">Home</a>
+                <a class="text-text-muted-clay hover:text-accent-gold transition-colors duration-200 font-label-sm text-label-sm" href="#menu">Menu</a>
+                <a class="text-text-muted-clay hover:text-accent-gold transition-colors duration-200 font-label-sm text-label-sm" href="#about">Gallery</a>
+                <a class="text-text-muted-clay hover:text-accent-gold transition-colors duration-200 font-label-sm text-label-sm" href="#location">Location</a>
+                <a class="bg-accent-gold text-white px-6 py-2 rounded-full font-label-sm text-label-sm hover:brightness-110 active:scale-95 transition-all shadow-md" href="https://wa.me/yournumber">Order Now</a>
+            </div>
+            
+            <button class="md:hidden text-text-rich-brown">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-section-gap px-margin-mobile" id="home">
+        <div class="max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <span class="inline-block bg-accent-warm-yellow/20 text-accent-gold px-4 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-widest font-bold">Tradisi Rasa</span>
+                <h1 class="font-headline-lg text-headline-lg md:text-6xl text-text-rich-brown">Aneka Nasi Bakar & Nasi Kelor ASN</h1>
+                <p class="font-body-lg text-body-lg text-text-muted-clay max-w-xl">
+                    All Food Culinary - Menyajikan berbagai varian nasi bakar dan nasi kelor dengan cita rasa autentik dan bahan berkualitas.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a class="bg-accent-gold text-white px-8 py-4 rounded-full font-label-sm text-label-sm flex items-center gap-2 hover-lift active:scale-95 shadow-lg shadow-accent-gold/20" href="https://wa.me/yournumber">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        PESAN VIA WHATSAPP
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 relative">
+                <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img alt="Ayam Suir ASN Hero" class="w-full h-[500px] object-cover" data-alt="A beautifully plated Indonesian dish featuring shredded spicy chicken or Ayam Suir arranged neatly on a bed of fragrant white rice. The setting is a warm, rustic kitchen with soft morning sunlight streaming in, highlighting the vibrant reds of the chili and the golden tones of the seasoned meat. The overall aesthetic is artisanal and high-end culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcTERdZT3imh9cpfPwLxB2u_YXCf6c684_C4UuAiezfrxlI_HR-iurk7sVddBbo5TAvkV5n8eVMy2zdlG1QSlRCJAPMTLg7A4J2JZbhXFoBzu9ogymIRaleIv0trFEODhX8gHPZwmmxlFQYyAfizNbNTmgV225Gx0P9sy9gS-hlFn6x8-LrZnJgiSdDJLMEEXs4BXhBr8YRuUwX0t5dhBf9SRfdbgn652F1q59s0EtWF4z47YWLh5OpmZk-smOh3BOHSWMgnBpTw"/>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-accent-warm-yellow text-text-rich-brown p-6 rounded-2xl shadow-xl hidden md:block">
+                    <p class="font-headline-md text-headline-md">100% Halal</p>
+                    <p class="font-label-sm text-label-sm opacity-80 uppercase font-bold">Indonesia Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Gallery -->
+    <section class="py-section-gap bg-surface-cream/50" id="menu">
+        <div class="max-w-container-max-width mx-auto px-margin-mobile">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="font-headline-lg text-headline-lg">Menu Kami</h2>
+                <div class="w-20 h-1 bg-accent-gold mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Kelor ASN + Ayam Krik Kriuk Sambel Ijo" class="w-full h-full object-cover" src="assets/asn/NasiKelorASN25k.jpg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">25k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Kelor ASN + Ayam Krik Kriuk Sambel Ijo</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi kelor gurih dengan ayam krik kriuk renyah dan sambel ijo segar.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Kelor ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiKelorASN24k.jpeg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">24k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Kelor ASN + Ayam Goreng Sambel Terasi</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi kelor gurih dengan ayam goreng renyah dan sambel terasi khas.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Kelor ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiKelorASN26k.jpg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">26k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Kelor ASN + Ayam Bakar Sambel Terasi</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi kelor gurih dengan ayam bakar lezat dan sambel terasi khas.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Putih ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiPutihASN23k.jpg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">23k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Putih ASN + Ayam Bakar Sambel Terasi</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi Putih hangat dengan ayam bakar lezat dan sambel terasi khas.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Putih ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiPutihASN22k.jpg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">22k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Putih ASN + Ayam Krik Kriuk Sambel Ijo</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi putih hangat dengan ayam krik kriuk renyah dan sambel ijo segar.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
+                    <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
+                        <img alt="Nasi Putih ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiPutihASN21k.jpg"/>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg">21k</div>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Nasi Putih ASN + Ayam Goreng Sambel Terasi</h3>
+                    <p class="text-text-muted-clay font-body-md mb-4">Nasi putih hangat dengan ayam goreng renyah dan sambel terasi khas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-section-gap" id="about">
+        <div class="max-w-container-max-width mx-auto px-margin-mobile flex flex-col md:flex-row-reverse items-center gap-16">
+            <div class="flex-1 space-y-6">
+                <h2 class="font-headline-lg text-headline-lg">Komitmen Kualitas</h2>
+                <p class="font-body-lg text-body-lg text-text-muted-clay leading-relaxed">
+                    Di Ayam Suir Neng (ASN), kami percaya bahwa makanan yang baik dimulai dari bahan yang jujur. Setiap porsi yang kami sajikan menggunakan bahan-bahan segar pilihan tanpa pengawet tambahan.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="flex flex-col gap-2">
+                        <span class="material-symbols-outlined text-accent-gold text-4xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+                        <h4 class="font-bold">Bahan Alami</h4>
+                        <p class="text-sm text-text-muted-clay">Hanya menggunakan bumbu dapur asli nusantara.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="material-symbols-outlined text-accent-gold text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        <h4 class="font-bold">Hygiene Prioritas</h4>
+                        <p class="text-sm text-text-muted-clay">Proses pengolahan yang bersih dan terstandarisasi.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-1">
+                <div class="grid grid-cols-2 gap-4">
+                    <img alt="Kitchen" class="rounded-2xl w-full h-64 object-cover border-2 border-white shadow-lg" data-alt="A clean and professional commercial kitchen where a chef is meticulously preparing ingredients for Ayam Suir. The environment is stainless steel and pristine, representing a high standard of hygiene. The lighting is bright and even, showcasing the vibrant colors of fresh chili, garlic, and shallots on a wooden prep table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-P-xhi_r0iPJH_OyLzDkQCz5BEBMF2vSy6luzofcqyr0Of5rq7gPaIe2ON_yXOrsm_E0cBOlIJxG68Dhto_poVP2RFmouaZEIt-kFQxp3NtDUK0yCsRKgMMXAFlobx-99XdusrezOUQeoP8h_efMwlkxlr8vFIUbWSpm9A0q6GUg4lb-OEjc8rQ9D5GDqbwoQLQvARP8uSSZzbxdwQiSSmdf3lIOjbWbI_gzvDHk61DRVsY96A_08ydpi2ks6E3Y1zjBVK7pVKQ"/>
+                    <img alt="Spices" class="rounded-2xl w-full h-64 object-cover mt-8 border-2 border-white shadow-lg" data-alt="An assortment of fresh Indonesian spices including red chilies, lemongrass, and turmeric arranged artistically on a rustic tabletop. The scene conveys authenticity and the artisanal nature of the recipes used at ASN. Warm, soft-focus background with a focus on the natural textures of the raw ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2jwEGAv87yewm73WnfFEqwm-EBC9MGTqKEHEmkqzirKA05457de2yFeL_kaQ7o6Ty0yBm5kiEHenLo18x2PNlO8pDdmn5JKvyN7w32mVDQGjcM_Buy-B6ArKZxzLl169F9EcX7QxOVUgbtq4hx-bCB2bbC3BKVe1hjODz31XkD0VWc5N0W71T43VDkMBnk8n21ZIZFTU0C2LKsoFzKKhdnlnf4cXTFBGyKJC2WVUiPpkhY1EkDxSkpJ7lEjWhQGyQgzFKRWBKug"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Operational Hours & Location -->
+    <section class="py-section-gap bg-accent-warm-yellow/5" id="location">
+        <div class="max-w-container-max-width mx-auto px-margin-mobile">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Operational Hours -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-border-sepia/30">
+                    <h3 class="font-headline-md text-headline-md mb-8 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent-gold">schedule</span>
+                        Jam Operasional
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between pb-3 border-b border-border-sepia/20">
+                            <span class="font-semibold">Senin - Jumat</span>
+                            <span class="text-text-rich-brown">09:00 - 20:00 WIB</span>
+                        </div>
+                        <div class="flex justify-between pb-3 border-b border-border-sepia/20">
+                            <span class="font-semibold">Sabtu</span>
+                            <span class="text-text-rich-brown">10:00 - 21:00 WIB</span>
+                        </div>
+                        <div class="flex justify-between pb-3 text-accent-gold">
+                            <span class="font-semibold">Minggu</span>
+                            <span class="font-bold">Tutup</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-4 bg-accent-gold/10 rounded-xl border border-accent-gold/20">
+                        <p class="text-sm text-text-rich-brown font-medium italic text-center">Tersedia juga di Gofood, Grabfood, dan ShopeeFood!</p>
+                    </div>
+                </div>
+                
+                <!-- Location -->
+                <div class="space-y-6">
+                    <h3 class="font-headline-md text-headline-md flex items-center gap-3 text-text-rich-brown">
+                        <span class="material-symbols-outlined text-accent-gold">location_on</span>
+                        Lokasi Kami
+                    </h3>
+                    <p class="font-body-lg text-body-lg text-text-muted-clay">
+                        Jl. Raya Kuliner No. 123, <br/>
+                        Jakarta Selatan, 12345
+                    </p>
+                    <div class="w-full h-64 bg-border-sepia/20 rounded-2xl overflow-hidden relative border border-border-sepia/30 shadow-inner">
+                        <!-- Placeholder for Map -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-text-muted-clay bg-[#f4f1ee]">
+                            <span class="material-symbols-outlined text-4xl mb-2 text-accent-gold">map</span>
+                            <p class="font-bold">Interactive Map Placeholder</p>
+                            <span data-location="Jakarta South"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-text-rich-brown text-surface-tan py-12 px-margin-mobile mt-section-gap">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+                <div>
+                    <div class="font-headline-md text-headline-md text-accent-warm-yellow mb-2">ASN</div>
+                    <p class="text-surface-tan/70 max-w-xs font-body-md">Artisanal Culinary Excellence. Rasa tradisional, kualitas bintang lima.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a class="text-accent-warm-yellow hover:text-white transition-all hover:scale-110" href="#">
+                        <span class="material-symbols-outlined">social_leaderboard</span>
+                    </a>
+                    <a class="text-accent-warm-yellow hover:text-white transition-all hover:scale-110" href="#">
+                        <span class="material-symbols-outlined">camera</span>
+                    </a>
+                    <a class="text-accent-warm-yellow hover:text-white transition-all hover:scale-110" href="#">
+                        <span class="material-symbols-outlined">share</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-surface-tan/10 gap-4">
+                <p class="text-surface-tan/50 text-body-md">© 2024 Ayam Suir Neng (ASN). Artisanal Culinary Excellence.</p>
+                <div class="flex gap-8">
+                    <a class="text-surface-tan/50 hover:text-accent-warm-yellow hover:underline transition-all" href="#">Privacy Policy</a>
+                    <a class="text-surface-tan/50 hover:text-accent-warm-yellow hover:underline transition-all" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-white rounded-t-xl shadow-2xl border-t border-border-sepia/30">
+        <a class="flex flex-col items-center justify-center bg-accent-gold text-white rounded-full px-4 py-1" href="#home">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-[10px] font-semibold mt-0.5">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-text-muted-clay" href="#menu">
+            <span class="material-symbols-outlined">restaurant_menu</span>
+            <span class="text-[10px] font-semibold mt-0.5">Menu</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-text-muted-clay" href="#about">
+            <span class="material-symbols-outlined">grid_view</span>
+            <span class="text-[10px] font-semibold mt-0.5">Gallery</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-text-muted-clay" href="https://wa.me/yournumber">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="text-[10px] font-semibold mt-0.5">Contact</span>
+        </a>
+    </div>
+    
+    <!-- Floating WhatsApp Button -->
+    <a class="fixed bottom-24 right-6 md:bottom-10 md:right-10 w-14 h-14 bg-accent-gold text-white rounded-full shadow-2xl flex items-center justify-center z-[60] hover-lift active:scale-95 transition-all" href="https://wa.me/yournumber">
+        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+    </a>
+</body>
+</html>
