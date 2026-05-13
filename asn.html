@@ -4,85 +4,100 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Aneka Nasi Bakar & Nasi Kelor ASN | All Food Culinary</title>
-    
+
     <!-- External Scripts -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Custom JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get all navigation links and sections
-            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"], .bottom-nav a[href^="#"]');
             const sections = document.querySelectorAll('section[id]');
             const nav = document.querySelector('nav');
-            
+
             // Create underline indicator
             const underline = document.createElement('div');
             underline.className = 'nav-underline absolute bottom-0 left-0 h-0.5 bg-accent-gold transition-all duration-300 ease-in-out display-none';
             underline.style.width = '0';
             underline.style.zIndex = '40';
-            
+
             // Add underline to navigation container
             nav.style.position = 'relative';
             nav.appendChild(underline);
-            
+
             // Function to update active link and underline position
             function updateActiveLink() {
                 const scrollPosition = window.scrollY + 100;
-                
+
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.offsetHeight;
-                    
+
                     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                         // Find the corresponding nav link
                         const targetId = section.getAttribute('id');
                         const activeLink = document.querySelector(`nav a[href="#${targetId}"]`);
-                        
+
                         if (activeLink) {
                             // Remove active state from all links
                             navLinks.forEach(link => {
                                 link.classList.remove('border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
                                 link.classList.add('text-text-muted-clay');
+                                
+                                // Remove mobile active styles
+                                link.classList.remove('bg-accent-gold', 'text-white', 'rounded-full');
                             });
-                            
-                            // Update underline position
+
+                            // Update desktop underline position
                             const linkRect = activeLink.getBoundingClientRect();
                             const navRect = nav.getBoundingClientRect();
-                            
+
                             underline.style.left = `${linkRect.left - navRect.left}px`;
                             underline.style.width = `${linkRect.width}px`;
                         }
                     }
                 });
             }
-            
+
             // Handle click events
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
+
                     // Remove active state from all links
                     navLinks.forEach(l => {
+                        // Remove desktop active styles
                         l.classList.remove('border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
                         l.classList.add('text-text-muted-clay');
+                        
+                        // Remove mobile active styles
+                        l.classList.remove('bg-accent-gold', 'text-white', 'rounded-full');
                     });
-                    
+
                     // Add active state to clicked link
                     this.classList.remove('text-text-muted-clay');
-                    this.classList.add('text-text-rich-brown', 'border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
                     
-                    // Update underline position
-                    const linkRect = this.getBoundingClientRect();
-                    const navRect = nav.getBoundingClientRect();
-                    
-                    underline.style.left = `${linkRect.left - navRect.left}px`;
-                    underline.style.width = `${linkRect.width}px`;
-                    
+                    // Check if it's a mobile navigation link
+                    if (this.closest('.bottom-nav')) {
+                        // Mobile active styles
+                        this.classList.add('bg-accent-gold', 'text-white', 'rounded-full');
+                    } else {
+                        // Desktop active styles
+                        this.classList.add('text-text-rich-brown', 'border-b-2', 'border-accent-gold', 'pb-1', 'font-bold');
+                        
+                        // Update underline position (desktop only)
+                        const linkRect = this.getBoundingClientRect();
+                        const navRect = nav.getBoundingClientRect();
+
+                        underline.style.left = `${linkRect.left - navRect.left}px`;
+                        underline.style.width = `${linkRect.width}px`;
+                    }
+
                     // Smooth scroll to section
                     const targetId = this.getAttribute('href').substring(1);
                     const targetSection = document.getElementById(targetId);
-                    
+
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
@@ -91,20 +106,20 @@
                     }
                 });
             });
-            
+
             // Update on scroll and resize
             window.addEventListener('scroll', updateActiveLink);
             window.addEventListener('resize', updateActiveLink);
-            
+
             // Initial update
             updateActiveLink();
         });
     </script>
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
+
     <!-- Tailwind Config -->
     <script id="tailwind-config">
         tailwind.config = {
@@ -155,26 +170,26 @@
             },
         }
     </script>
-    
+
     <!-- Custom Styles -->
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        
+
         .hover-lift {
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
         }
-        
+
         .hover-lift:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.15);
         }
-        
+
         .image-zoom-container img {
             transition: transform 0.5s ease;
         }
-        
+
         .image-zoom-container:hover img {
             transform: scale(1.1);
         }
@@ -182,12 +197,12 @@
 </head>
 
 <body class="bg-surface-tan text-text-rich-brown font-body-md antialiased">
-    
+
     <!-- Top Navigation Bar -->
     <header class="fixed top-0 w-full z-50 bg-surface-tan/90 backdrop-blur-md shadow-sm border-b border-border-sepia/20">
         <nav class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max-width mx-auto">
             <div class="font-headline-md text-headline-md font-bold text-accent-gold">ASN</div>
-            
+
             <div class="hidden md:flex gap-8 items-center">
                 <a class="text-text-rich-brown font-bold font-label-sm text-label-sm" href="#home">Home</a>
                 <a class="text-text-muted-clay hover:text-accent-gold transition-colors duration-200 font-label-sm text-label-sm" href="#menu">Menu</a>
@@ -195,13 +210,13 @@
                 <a class="text-text-muted-clay hover:text-accent-gold transition-colors duration-200 font-label-sm text-label-sm" href="#location">Location</a>
                 <a class="bg-accent-gold text-white px-6 py-2 rounded-full font-label-sm text-label-sm hover:brightness-110 active:scale-95 transition-all shadow-md" href="https://wa.me/628884590743" target="_blank">Order Now</a>
             </div>
-            
+
             <button class="md:hidden text-text-rich-brown">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </nav>
     </header>
-    
+
     <!-- Hero Section -->
     <section class="pt-32 pb-section-gap px-margin-mobile" id="home">
         <div class="max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -218,7 +233,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="flex-1 relative">
                 <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                     <img alt="Ayam Suir ASN Hero" class="w-full h-[500px] object-cover" data-alt="A beautifully plated Indonesian dish featuring shredded spicy chicken or Ayam Suir arranged neatly on a bed of fragrant white rice. The setting is a warm, rustic kitchen with soft morning sunlight streaming in, highlighting the vibrant reds of the chili and the golden tones of the seasoned meat. The overall aesthetic is artisanal and high-end culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcTERdZT3imh9cpfPwLxB2u_YXCf6c684_C4UuAiezfrxlI_HR-iurk7sVddBbo5TAvkV5n8eVMy2zdlG1QSlRCJAPMTLg7A4J2JZbhXFoBzu9ogymIRaleIv0trFEODhX8gHPZwmmxlFQYyAfizNbNTmgV225Gx0P9sy9gS-hlFn6x8-LrZnJgiSdDJLMEEXs4BXhBr8YRuUwX0t5dhBf9SRfdbgn652F1q59s0EtWF4z47YWLh5OpmZk-smOh3BOHSWMgnBpTw"/>
@@ -230,7 +245,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Menu Gallery -->
     <section class="py-section-gap bg-surface-cream/50" id="menu">
         <div class="max-w-container-max-width mx-auto px-margin-mobile">
@@ -238,9 +253,9 @@
                 <h2 class="font-headline-lg text-headline-lg">Menu Kami</h2>
                 <div class="w-20 h-1 bg-accent-gold mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
                     <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
                         <img alt="Nasi Kelor ASN + Ayam Krik Kriuk Sambel Ijo" class="w-full h-full object-cover" src="assets/asn/NasiKelorASN25k.jpg"/>
@@ -249,7 +264,7 @@
                     <h3 class="font-headline-md text-headline-md mb-2">Nasi Kelor ASN + Ayam Krik Kriuk Sambel Ijo</h3>
                     <p class="text-text-muted-clay font-body-md mb-4">Nasi kelor gurih dengan ayam krik kriuk renyah dan sambel ijo segar.</p>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-card-padding hover-lift border border-border-sepia/30 group">
                     <div class="relative rounded-xl overflow-hidden mb-6 image-zoom-container h-64">
                         <img alt="Nasi Kelor ASN + Ayam Goreng Sambel Terasi" class="w-full h-full object-cover" src="assets/asn/NasiKelorASN24k.jpeg"/>
@@ -298,7 +313,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- About Section -->
     <section class="py-section-gap" id="about">
         <div class="max-w-container-max-width mx-auto px-margin-mobile flex flex-col md:flex-row-reverse items-center gap-16">
@@ -320,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="flex-1">
                 <div class="grid grid-cols-2 gap-4">
                     <img alt="Kitchen" class="rounded-2xl w-full h-64 object-cover border-2 border-white shadow-lg" data-alt="A clean and professional commercial kitchen where a chef is meticulously preparing ingredients for Ayam Suir. The environment is stainless steel and pristine, representing a high standard of hygiene. The lighting is bright and even, showcasing the vibrant colors of fresh chili, garlic, and shallots on a wooden prep table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-P-xhi_r0iPJH_OyLzDkQCz5BEBMF2vSy6luzofcqyr0Of5rq7gPaIe2ON_yXOrsm_E0cBOlIJxG68Dhto_poVP2RFmouaZEIt-kFQxp3NtDUK0yCsRKgMMXAFlobx-99XdusrezOUQeoP8h_efMwlkxlr8vFIUbWSpm9A0q6GUg4lb-OEjc8rQ9D5GDqbwoQLQvARP8uSSZzbxdwQiSSmdf3lIOjbWbI_gzvDHk61DRVsY96A_08ydpi2ks6E3Y1zjBVK7pVKQ"/>
@@ -329,7 +344,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Operational Hours & Location -->
     <section class="py-section-gap bg-accent-warm-yellow/5" id="location">
         <div class="max-w-container-max-width mx-auto px-margin-mobile">
@@ -358,7 +373,7 @@
                         <p class="text-sm text-text-rich-brown font-medium italic text-center">Tersedia juga di Gofood, Grabfood, dan ShopeeFood!</p>
                     </div>
                 </div>
-                
+
                 <!-- Location -->
                 <div class="space-y-6">
                     <h3 class="font-headline-md text-headline-md flex items-center gap-3 text-text-rich-brown">
@@ -381,7 +396,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="bg-text-rich-brown text-surface-tan py-12 px-margin-mobile mt-section-gap">
         <div class="max-w-container-max-width mx-auto">
@@ -411,9 +426,9 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Bottom Navigation Bar (Mobile) -->
-    <div class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-white rounded-t-xl shadow-2xl border-t border-border-sepia/30">
+    <div class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-white rounded-t-xl shadow-2xl border-t border-border-sepia/30 bottom-nav">
         <a class="flex flex-col items-center justify-center bg-accent-gold text-white rounded-full px-4 py-1" href="#home">
             <span class="material-symbols-outlined">home</span>
             <span class="text-[10px] font-semibold mt-0.5">Home</span>
@@ -431,7 +446,7 @@
             <span class="text-[10px] font-semibold mt-0.5">Contact</span>
         </a>
     </div>
-    
+
     <!-- Floating WhatsApp Button -->
     <a class="fixed bottom-24 right-6 md:bottom-10 md:right-10 w-14 h-14 bg-accent-gold text-white rounded-full shadow-2xl flex items-center justify-center z-[60] hover-lift active:scale-95 transition-all" href="https://wa.me/628884590743" target="_blank" rel="noopener noreferrer">
         <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
